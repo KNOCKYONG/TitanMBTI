@@ -29,6 +29,11 @@ const QuestionCard = ({
     setSelectedOption(index);
     setIsTransitioning(true);
     
+    // 모바일에서 버튼 포커스 제거
+    if (document.activeElement) {
+      document.activeElement.blur();
+    }
+    
     // 애니메이션 없이 바로 전환
     requestAnimationFrame(() => {
       onAnswer(type);
@@ -160,6 +165,7 @@ const QuestionCard = ({
                             w-full min-h-[100px] md:min-h-[120px] p-5 md:p-8 text-left relative overflow-visible group flex items-center
                             border-gray-700/50 hover:border-amber-500/30 hover:bg-gray-800/50
                             transition-all duration-300 transform hover:scale-[1.02]
+                            focus:outline-none focus:ring-0 active:scale-[0.98]
                           `}
                         >
                           {/* Left Border Accent */}
@@ -210,12 +216,6 @@ const QuestionCard = ({
                         <div className="w-24" /> // Spacer
                       )}
                     </div>
-
-                    {/* Tip */}
-                    <p className="text-sm text-gray-500 text-center flex-1 mx-4">
-                      직감적으로 끌리는<br className="md:hidden" />
-                      답변을 선택하세요
-                    </p>
 
                     <div className="w-24" />
                   </motion.div>
