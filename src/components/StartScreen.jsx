@@ -182,31 +182,9 @@ const StartScreen = ({ onStart }) => {
                   </Card>
                 </div>
 
-                {/* Floating Elements */}
-                <motion.div
-                  className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full opacity-20 blur-xl"
-                  animate={{
-                    y: [0, -20, 0],
-                    scale: [1, 1.1, 1],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                <motion.div
-                  className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-tr from-orange-500 to-red-600 rounded-full opacity-20 blur-xl"
-                  animate={{
-                    y: [0, 20, 0],
-                    scale: [1, 1.2, 1],
-                  }}
-                  transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
+                {/* Static Floating Elements - 애니메이션 제거로 성능 향상 */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full opacity-20 blur-xl" />
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-tr from-orange-500 to-red-600 rounded-full opacity-20 blur-xl" />
               </motion.div>
             </div>
 

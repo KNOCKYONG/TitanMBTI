@@ -24,14 +24,15 @@ const QuestionCard = ({
   }, [questionNumber]);
 
   const handleAnswer = (type, index) => {
+    if (isTransitioning) return; // 이미 전환 중이면 무시
+    
     setSelectedOption(index);
     setIsTransitioning(true);
     
-    setTimeout(() => {
+    // 애니메이션 없이 바로 전환
+    requestAnimationFrame(() => {
       onAnswer(type);
-      setSelectedOption(null);
-      setIsTransitioning(false);
-    }, 200); // 600ms에서 200ms로 단축
+    });
   };
 
   const progress = (questionNumber / totalQuestions) * 100;
@@ -50,31 +51,9 @@ const QuestionCard = ({
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/50" />
         </div>
 
-        {/* Animated Background Orbs */}
-        <motion.div
-          className="absolute top-1/4 -left-32 w-64 h-64 bg-amber-500/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, 100, 0],
-            y: [0, -50, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="absolute bottom-1/4 -right-32 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, -100, 0],
-            y: [0, 50, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
+        {/* Static Background Orbs - 애니메이션 제거로 성능 향상 */}
+        <div className="absolute top-1/4 -left-32 w-64 h-64 bg-amber-500/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl" />
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4">

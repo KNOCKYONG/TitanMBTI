@@ -33,31 +33,9 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/50" />
       </div>
 
-      {/* Animated Background Elements */}
-      <motion.div
-        className="absolute top-1/3 -left-48 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl"
-        animate={{
-          x: [0, 200, 0],
-          y: [0, -100, 0],
-        }}
-        transition={{
-          duration: 25,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div
-        className="absolute bottom-1/3 -right-48 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl"
-        animate={{
-          x: [0, -200, 0],
-          y: [0, 100, 0],
-        }}
-        transition={{
-          duration: 30,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
+      {/* Static Background Elements - 애니메이션 제거로 성능 향상 */}
+      <div className="absolute top-1/3 -left-48 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 -right-48 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl" />
 
       {/* Content */}
       <div className="relative z-10">
@@ -153,9 +131,12 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                       >
                         <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-500/30 shadow-2xl">
                           <img 
-                            src={`/images/characters/${mbtiType}/profile.png`}
+                            src={`${import.meta.env.BASE_URL}images/characters/${mbtiType}/profile.png`}
                             alt={character.name}
                             className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.target.src = `${import.meta.env.BASE_URL}images/characters/default.png`;
+                            }}
                           />
                         </div>
                       </motion.div>
