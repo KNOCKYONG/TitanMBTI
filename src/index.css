@@ -1,0 +1,311 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/animations.css';
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 35 95% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 35 95% 50%;
+    --radius: 0.5rem;
+  }
+  
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  /* Typography Scale - Reduced sizes */
+  h1 { @apply text-2xl md:text-3xl font-bold; }
+  h2 { @apply text-xl md:text-2xl font-semibold; }
+  h3 { @apply text-lg md:text-xl font-semibold; }
+  h4 { @apply text-base md:text-lg font-medium; }
+  p { @apply text-sm leading-normal; }
+  
+  /* Focus States */
+  *:focus {
+    outline: none;
+  }
+  
+  *:focus-visible {
+    @apply ring-2 ring-titan-gold ring-offset-2 ring-offset-titan-dark;
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Selection */
+  ::selection {
+    @apply bg-titan-gold/30 text-white;
+  }
+
+  /* Accessibility - Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Button Base */
+  .btn-base {
+    @apply font-medium py-2 px-4 rounded-lg transition-all duration-200 transform active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed text-sm;
+  }
+  
+  /* Card Base */
+  .card-base {
+    @apply backdrop-blur-md rounded-xl shadow-lg border border-white/10;
+  }
+  
+  /* Glass Effect */
+  .glass {
+    @apply bg-gradient-to-b from-white/5 to-white/[0.02] backdrop-blur-xl;
+  }
+
+  /* 3D Effects */
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  /* Particle Effects */
+  .particle-container {
+    @apply absolute inset-0 pointer-events-none overflow-hidden;
+  }
+}
+
+@layer utilities {
+  /* Animation Keyframes */
+  @keyframes wallShake {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    10% { transform: translateX(-2px) translateY(-1px); }
+    20% { transform: translateX(2px) translateY(1px); }
+    30% { transform: translateX(-1px) translateY(-2px); }
+    40% { transform: translateX(1px) translateY(2px); }
+    50% { transform: translateX(-2px) translateY(1px); }
+    60% { transform: translateX(2px) translateY(-1px); }
+    70% { transform: translateX(-1px) translateY(2px); }
+    80% { transform: translateX(1px) translateY(-2px); }
+    90% { transform: translateX(-2px) translateY(1px); }
+  }
+
+  @keyframes debrisFall {
+    0% {
+      transform: translateY(0) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg) scale(0.5);
+      opacity: 0;
+    }
+  }
+
+  @keyframes lightningFlicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  @keyframes steamRise {
+    0% {
+      transform: translateY(0) scale(0.5) rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-200px) scale(2) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes wireSlash {
+    0% {
+      stroke-dashoffset: var(--dash-length, 50);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes sparkle {
+    0% {
+      transform: scale(0) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5) rotate(180deg);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes cardFlip {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    50% {
+      transform: perspective(1000px) rotateY(-90deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(-180deg);
+    }
+  }
+
+  @keyframes titanTransform {
+    0% {
+      transform: scale(1) rotate(0deg);
+      filter: brightness(1);
+    }
+    25% {
+      transform: scale(1.1) rotate(-2deg);
+      filter: brightness(1.3);
+    }
+    50% {
+      transform: scale(1.2) rotate(1deg);
+      filter: brightness(1.5);
+    }
+    75% {
+      transform: scale(1.1) rotate(-1deg);
+      filter: brightness(1.3);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      filter: brightness(1);
+    }
+  }
+
+  @keyframes wingFlap {
+    0%, 100% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    25% {
+      transform: rotateX(15deg) rotateY(-10deg);
+    }
+    50% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    75% {
+      transform: rotateX(-15deg) rotateY(10deg);
+    }
+  }
+
+  @keyframes crackGrow {
+    0% {
+      stroke-dasharray: 0 1000;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dasharray: 1000 1000;
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  /* Utility Classes */
+  .animate-wall-shake {
+    animation: wallShake 0.5s ease-in-out;
+  }
+
+  .animate-debris-fall {
+    animation: debrisFall 2s ease-out forwards;
+  }
+
+  .animate-lightning-flicker {
+    animation: lightningFlicker 0.1s ease-in-out infinite;
+  }
+
+  .animate-steam-rise {
+    animation: steamRise 3s ease-out infinite;
+  }
+
+  .animate-wire-slash,
+  .animate-slash {
+    animation: wireSlash 0.3s ease-out forwards;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 0.4s ease-out forwards;
+  }
+
+  .animate-card-flip {
+    animation: cardFlip 0.6s ease-in-out forwards;
+  }
+
+  .animate-titan-transform {
+    animation: titanTransform 1s ease-in-out;
+  }
+
+  .animate-wing-flap {
+    animation: wingFlap 2s ease-in-out infinite;
+  }
+
+  .animate-crack-grow {
+    animation: crackGrow 0.8s ease-out forwards;
+  }
+
+  .animate-fade-out {
+    animation: fadeOut 0.3s ease-out forwards;
+  }
+
+  /* Background Utilities */
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+
+  .bg-gradient-conic {
+    background-image: conic-gradient(var(--tw-gradient-stops));
+  }
+}

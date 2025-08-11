@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wall Maria Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#334155;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="wallGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6b5d4f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a4a3a;stop-opacity:1" />
+    </linearGradient>
+    
+    <pattern id="wallTexture" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="95" height="95" fill="#7d6951" stroke="#5a4a3a" stroke-width="3"/>
+      <rect x="105" y="0" width="95" height="95" fill="#8b7355" stroke="#5a4a3a" stroke-width="3"/>
+      <rect x="0" y="105" width="95" height="95" fill="#8b7355" stroke="#5a4a3a" stroke-width="3"/>
+      <rect x="105" y="105" width="95" height="95" fill="#7d6951" stroke="#5a4a3a" stroke-width="3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Sky -->
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#skyGradient)"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="300" cy="200" rx="150" ry="50" fill="#475569" opacity="0.3"/>
+  <ellipse cx="600" cy="150" rx="200" ry="60" fill="#475569" opacity="0.3"/>
+  <ellipse cx="1200" cy="180" rx="180" ry="55" fill="#475569" opacity="0.3"/>
+  <ellipse cx="1600" cy="220" rx="160" ry="50" fill="#475569" opacity="0.3"/>
+  
+  <!-- Wall -->
+  <rect x="0" y="400" width="1920" height="680" fill="url(#wallGradient)"/>
+  <rect x="0" y="400" width="1920" height="680" fill="url(#wallTexture)" opacity="0.5"/>
+  
+  <!-- Wall top details -->
+  <rect x="0" y="380" width="1920" height="20" fill="#5a4a3a"/>
+  
+  <!-- Wall segments -->
+  <line x1="400" y1="400" x2="400" y2="1080" stroke="#5a4a3a" stroke-width="4"/>
+  <line x1="800" y1="400" x2="800" y2="1080" stroke="#5a4a3a" stroke-width="4"/>
+  <line x1="1200" y1="400" x2="1200" y2="1080" stroke="#5a4a3a" stroke-width="4"/>
+  <line x1="1600" y1="400" x2="1600" y2="1080" stroke="#5a4a3a" stroke-width="4"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="1000" width="1920" height="80" fill="#3e3428"/>
+  
+  <!-- Atmospheric haze -->
+  <rect x="0" y="0" width="1920" height="1080" fill="#1e293b" opacity="0.2"/>
+</svg>
