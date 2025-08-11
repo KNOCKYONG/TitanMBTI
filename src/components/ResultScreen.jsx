@@ -105,7 +105,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 200 }}
                 >
-                  당신은 <span className="text-gradient animate-gradient">{character.name}</span> 타입!
+                  당신은 <span className="text-gradient animate-gradient">{character.name}</span>!
                 </motion.h1>
                 
                 <p className="text-xl text-gray-300">
