@@ -52,7 +52,8 @@ export const shareKakao = (mbtiType, character) => {
     title: `나의 진격의 거인 캐릭터는 ${character.name}!`
   });
   
-  window.Kakao.Share.sendDefault({
+  try {
+    window.Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
       title: `나의 진격의 거인 캐릭터는 ${character.name}!`,
@@ -72,7 +73,12 @@ export const shareKakao = (mbtiType, character) => {
         },
       },
     ],
-  });
+    });
+    console.log('카카오톡 공유 완료');
+  } catch (error) {
+    console.error('카카오톡 공유 실패:', error);
+    alert('카카오톡 공유 중 오류가 발생했습니다.');
+  }
 };
 
 export const copyLink = async (mbtiType) => {

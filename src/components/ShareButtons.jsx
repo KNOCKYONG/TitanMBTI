@@ -13,10 +13,21 @@ const ShareButtons = ({ mbtiType, character }) => {
     }
   };
 
-  const handleKakaoShare = () => {
+  const handleKakaoShare = async () => {
+    // 카카오 SDK 초기화 확인
+    if (!window.Kakao || !window.Kakao.isInitialized()) {
+      console.error('카카오 SDK가 초기화되지 않았습니다.');
+      alert('잠시 후 다시 시도해주세요.');
+      return;
+    }
+    
     setIsSharing(true);
-    shareKakao(mbtiType, character);
-    setTimeout(() => setIsSharing(false), 1000);
+    
+    // 약간의 지연 후 공유 실행 (SDK 준비 시간)
+    setTimeout(() => {
+      shareKakao(mbtiType, character);
+      setTimeout(() => setIsSharing(false), 1000);
+    }, 100);
   };
 
   const handleNativeShare = async () => {
