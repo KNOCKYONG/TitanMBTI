@@ -149,7 +149,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                             </div>
                           )}
                           <img 
-                            src={`${import.meta.env.BASE_URL}images/characters/${mbtiType}/profile.png`}
+                            src={`/images/characters/${mbtiType}/profile.png`}
                             alt={character.name}
                             className={`w-full h-full object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                             onLoad={() => {
