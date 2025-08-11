@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="400" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Titan Transformation Lightning -->
+  <defs>
+    <linearGradient id="lightningGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main lightning bolt -->
+  <path d="M 100,0 
+           L 80,50 
+           L 110,45 
+           L 90,120 
+           L 120,115 
+           L 85,200 
+           L 115,195 
+           L 95,280 
+           L 105,275 
+           L 100,400" 
+        fill="none" 
+        stroke="url(#lightningGrad)" 
+        stroke-width="8" 
+        filter="url(#glow)"
+        opacity="0.9"/>
+  
+  <!-- Secondary bolts -->
+  <path d="M 80,50 L 60,80 L 70,75 L 50,120" 
+        fill="none" 
+        stroke="url(#lightningGrad)" 
+        stroke-width="4" 
+        filter="url(#glow)"
+        opacity="0.7"/>
+        
+  <path d="M 110,45 L 130,75 L 120,70 L 140,110" 
+        fill="none" 
+        stroke="url(#lightningGrad)" 
+        stroke-width="4" 
+        filter="url(#glow)"
+        opacity="0.7"/>
+        
+  <path d="M 90,120 L 70,160 L 80,155 L 60,200" 
+        fill="none" 
+        stroke="url(#lightningGrad)" 
+        stroke-width="3" 
+        filter="url(#glow)"
+        opacity="0.6"/>
+        
+  <!-- Electric sparks -->
+  <circle cx="100" cy="0" r="10" fill="#fbbf24" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="80" cy="50" r="6" fill="#f59e0b" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="110" cy="45" r="6" fill="#f59e0b" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="90" cy="120" r="5" fill="#f59e0b" filter="url(#glow)" opacity="0.6"/>
+  <circle cx="100" cy="400" r="15" fill="#dc2626" filter="url(#glow)" opacity="0.5"/>
+</svg>
