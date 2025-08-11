@@ -1,6 +1,9 @@
 export const initKakao = (appKey) => {
   if (window.Kakao && !window.Kakao.isInitialized()) {
     window.Kakao.init(appKey);
+    console.log('Kakao SDK 초기화 완료');
+  } else if (!window.Kakao) {
+    console.error('Kakao SDK가 로드되지 않았습니다. index.html의 스크립트 태그를 확인하세요.');
   }
 };
 
@@ -10,14 +13,27 @@ export const shareKakao = (mbtiType, character) => {
     return;
   }
 
+  if (!window.Kakao.isInitialized()) {
+    alert('카카오 SDK가 초기화되지 않았습니다. 환경 변수를 확인하세요.');
+    console.error('Kakao SDK not initialized. Check VITE_KAKAO_APP_KEY environment variable.');
+    return;
+  }
+
   const shareUrl = `${window.location.origin}?result=${mbtiType}`;
+  const imageUrl = `${window.location.origin}${character.image}`;
+  
+  console.log('카카오톡 공유 정보:', {
+    url: shareUrl,
+    image: imageUrl,
+    title: `나의 진격의 거인 캐릭터는 ${character.name}!`
+  });
   
   window.Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
       title: `나의 진격의 거인 캐릭터는 ${character.name}!`,
       description: `MBTI ${mbtiType} - ${character.description}`,
-      imageUrl: `${window.location.origin}${character.image}`,
+      imageUrl: imageUrl,
       link: {
         mobileWebUrl: shareUrl,
         webUrl: shareUrl,

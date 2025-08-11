@@ -18,7 +18,10 @@ function App() {
     // 환경 변수가 있을 경우에만 초기화
     const kakaoKey = import.meta.env.VITE_KAKAO_APP_KEY;
     if (kakaoKey) {
+      console.log('Kakao SDK 초기화 중...');
       initKakao(kakaoKey);
+    } else {
+      console.warn('VITE_KAKAO_APP_KEY 환경 변수가 설정되지 않았습니다. Vercel 환경 변수를 확인하세요.');
     }
   }, []);
 
