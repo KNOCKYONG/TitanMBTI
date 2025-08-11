@@ -1,9 +1,33 @@
 export const initKakao = (appKey) => {
-  if (window.Kakao && !window.Kakao.isInitialized()) {
-    window.Kakao.init(appKey);
-    console.log('Kakao SDK 초기화 완료');
-  } else if (!window.Kakao) {
+  console.log('initKakao 호출됨', {
+    hasKakao: !!window.Kakao,
+    isInitialized: window.Kakao?.isInitialized?.(),
+    appKeyProvided: !!appKey,
+    appKeyLength: appKey?.length
+  });
+
+  if (!window.Kakao) {
     console.error('Kakao SDK가 로드되지 않았습니다. index.html의 스크립트 태그를 확인하세요.');
+    return;
+  }
+
+  if (!appKey) {
+    console.error('카카오 앱 키가 제공되지 않았습니다.');
+    return;
+  }
+
+  try {
+    if (!window.Kakao.isInitialized()) {
+      window.Kakao.init(appKey);
+      console.log('Kakao SDK 초기화 완료', {
+        isInitialized: window.Kakao.isInitialized(),
+        version: window.Kakao.VERSION
+      });
+    } else {
+      console.log('Kakao SDK가 이미 초기화되어 있습니다.');
+    }
+  } catch (error) {
+    console.error('Kakao SDK 초기화 실패:', error);
   }
 };
 

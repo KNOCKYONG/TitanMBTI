@@ -15,11 +15,38 @@ function App() {
 
   // Kakao SDK 초기화
   useEffect(() => {
+    // 디버깅: 모든 환경 변수 확인
+    console.log('환경 변수 확인:', {
+      mode: import.meta.env.MODE,
+      allEnvKeys: Object.keys(import.meta.env),
+      hasKakaoKey: !!import.meta.env.VITE_KAKAO_APP_KEY,
+      kakaoKeyLength: import.meta.env.VITE_KAKAO_APP_KEY?.length || 0
+    });
+
     // 환경 변수가 있을 경우에만 초기화
     const kakaoKey = import.meta.env.VITE_KAKAO_APP_KEY;
     if (kakaoKey) {
-      console.log('Kakao SDK 초기화 중...');
-      initKakao(kakaoKey);
+      console.log('Kakao SDK 초기화 중...', { keyLength: kakaoKey.length });
+      
+      // SDK 로드 확인 후 초기화
+      if (window.Kakao) {
+        initKakao(kakaoKey);
+      } else {
+        // SDK 로드 대기
+        const checkKakaoSDK = setInterval(() => {
+          if (window.Kakao) {
+            console.log('Kakao SDK 로드 완료, 초기화 시작');
+            initKakao(kakaoKey);
+            clearInterval(checkKakaoSDK);
+          }
+        }, 100);
+        
+        // 5초 후 타임아웃
+        setTimeout(() => {
+          clearInterval(checkKakaoSDK);
+          console.error('Kakao SDK 로드 타임아웃');
+        }, 5000);
+      }
     } else {
       console.warn('VITE_KAKAO_APP_KEY 환경 변수가 설정되지 않았습니다. Vercel 환경 변수를 확인하세요.');
     }
