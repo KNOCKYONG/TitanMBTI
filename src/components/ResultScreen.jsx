@@ -13,11 +13,19 @@ import ShareButtons from './ShareButtons.jsx';
 const ResultScreen = ({ mbtiType, onRestart }) => {
   const character = characters[mbtiType];
   const [isRevealing, setIsRevealing] = useState(true);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
   
   useEffect(() => {
     const timer = setTimeout(() => setIsRevealing(false), 2000);
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    // mbtiType이 변경될 때 이미지 상태 리셋
+    setImageLoaded(false);
+    setImageError(false);
+  }, [mbtiType]);
   
   if (!character) {
     return <div className="text-gray-400 text-center">결과를 찾을 수 없습니다.</div>;
@@ -129,13 +137,29 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                           ease: "easeInOut"
                         }}
                       >
-                        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-500/30 shadow-2xl">
+                        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-500/30 shadow-2xl bg-gray-800 relative">
+                          {!imageLoaded && !imageError && (
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="w-12 h-12 border-4 border-amber-500/30 border-t-amber-500 rounded-full animate-spin" />
+                            </div>
+                          )}
+                          {imageError && (
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <Users className="w-24 h-24 text-amber-500/50" />
+                            </div>
+                          )}
                           <img 
                             src={`${import.meta.env.BASE_URL}images/characters/${mbtiType}/profile.png`}
                             alt={character.name}
-                            className="w-full h-full object-cover"
+                            className={`w-full h-full object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                            onLoad={() => {
+                              setImageLoaded(true);
+                              setImageError(false);
+                            }}
                             onError={(e) => {
-                              e.target.src = `${import.meta.env.BASE_URL}images/characters/default.png`;
+                              console.error(`Failed to load image: ${e.target.src}`);
+                              setImageError(true);
+                              setImageLoaded(false);
                             }}
                           />
                         </div>
