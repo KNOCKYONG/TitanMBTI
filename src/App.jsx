@@ -4,6 +4,7 @@ import QuestionCard from './components/QuestionCard.jsx';
 import ResultScreen from './components/ResultScreen.jsx';
 import WorldCup from './components/WorldCup.jsx';
 import EgenTest from './components/EgenTest.jsx';
+import RomanceStyleTest from './components/RomanceStyleTest.jsx';
 import LanguageSelector from './components/LanguageSelector.jsx';
 import SEOMetaTags from './components/SEOMetaTags.jsx';
 import { questions } from './data/questions';
@@ -11,7 +12,7 @@ import { calculateMBTI } from './utils/calculateMBTI';
 import { initKakao } from './utils/shareUtils';
 
 function App() {
-  const [gameState, setGameState] = useState('start'); // start, quiz, result, worldcup, egen
+  const [gameState, setGameState] = useState('start'); // start, quiz, result, worldcup, egen, romance
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [mbtiResult, setMbtiResult] = useState(null);
@@ -126,6 +127,14 @@ function App() {
     setGameState('start');
   };
 
+  const startRomanceTest = () => {
+    setGameState('romance');
+  };
+
+  const handleRomanceBack = () => {
+    setGameState('start');
+  };
+
 
   return (
     <div className="min-h-screen">
@@ -133,7 +142,12 @@ function App() {
         <LanguageSelector />
         
         {gameState === 'start' && (
-          <StartScreen onStart={startQuiz} onWorldCup={startWorldCup} onEgenTest={startEgenTest} />
+          <StartScreen 
+            onStart={startQuiz} 
+            onWorldCup={startWorldCup} 
+            onEgenTest={startEgenTest}
+            onRomanceTest={startRomanceTest}
+          />
         )}
       
         {gameState === 'quiz' && (
@@ -161,6 +175,10 @@ function App() {
         
         {gameState === 'egen' && (
           <EgenTest onBack={handleEgenBack} />
+        )}
+        
+        {gameState === 'romance' && (
+          <RomanceStyleTest onBack={handleRomanceBack} />
         )}
     </div>
   );

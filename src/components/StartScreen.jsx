@@ -8,7 +8,7 @@ import {
   TrendingUp, Target, Heart, Sparkles, Swords 
 } from 'lucide-react';
 
-const StartScreen = ({ onStart, onWorldCup, onEgenTest }) => {
+const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
   const { t } = useTranslation();
   
   const stats = [
@@ -100,63 +100,89 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest }) => {
                   <p>다양한 테스트로 나를 발견해보세요.</p>
                 </div>
 
-                {/* CTA Buttons - Grid layout for 3 buttons */}
+                {/* CTA Buttons - Grid layout for buttons */}
                 <div className="grid gap-4 justify-center lg:justify-start">
-                  {/* MBTI Test Button */}
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Button 
-                      onClick={onStart}
-                      size="lg"
-                      className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-6 py-5 text-base font-semibold shadow-2xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 group"
+                  {/* Top Row - 2 columns */}
+                  <div className="grid grid-cols-2 gap-4">
+                    {/* MBTI Test Button */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                     >
-                      <Play className="mr-2 h-5 w-5" />
-                      MBTI 테스트 시작
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </motion.div>
-                  
-                  {/* Egen Test Button with Trending Badge */}
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="relative"
-                  >
-                    <div className="absolute -top-2 -right-2 z-10">
-                      <Badge className="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-xs px-2 py-1">
-                        <TrendingUp className="w-3 h-3 mr-1" />
-                        HOT
-                      </Badge>
-                    </div>
-                    <Button 
-                      onClick={onEgenTest}
-                      size="lg"
-                      className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-5 text-base font-semibold shadow-2xl shadow-pink-500/25 hover:shadow-pink-500/40 transition-all duration-300 group"
+                      <Button 
+                        onClick={onStart}
+                        size="lg"
+                        className="w-full h-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-4 py-4 text-sm font-semibold shadow-2xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 group"
+                      >
+                        <div className="flex flex-col items-center">
+                          <Play className="h-5 w-5 mb-1" />
+                          <span>MBTI 테스트</span>
+                        </div>
+                      </Button>
+                    </motion.div>
+                    
+                    {/* Romance Style Test Button - NEW */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                     >
-                      <Heart className="mr-2 h-5 w-5" />
-                      에겐남 테토녀 테스트
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </motion.div>
-                  
-                  {/* WorldCup Button */}
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Button 
-                      onClick={onWorldCup}
-                      size="lg"
-                      variant="outline"
-                      className="w-full border-amber-500/50 hover:bg-amber-500/10 hover:border-amber-500 text-white px-6 py-5 text-base font-semibold transition-all duration-300 group"
+                      <Button 
+                        onClick={onRomanceTest}
+                        size="lg"
+                        className="w-full h-full bg-gradient-to-r from-rose-500 to-red-600 hover:from-rose-600 hover:to-red-700 text-white px-4 py-4 text-sm font-semibold shadow-2xl shadow-rose-500/25 hover:shadow-rose-500/40 transition-all duration-300 group"
+                      >
+                        <div className="flex flex-col items-center">
+                          <Heart className="h-5 w-5 mb-1" />
+                          <span>연애 스타일</span>
+                        </div>
+                      </Button>
+                    </motion.div>
+                  </div>
+
+                  {/* Bottom Row - 2 columns */}
+                  <div className="grid grid-cols-2 gap-4">
+                    {/* Egen Test Button with Trending Badge */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="relative"
                     >
-                      <Swords className="mr-2 h-5 w-5 text-amber-400" />
-                      이상형 월드컵
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </motion.div>
+                      <div className="absolute -top-2 -right-2 z-10">
+                        <Badge className="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-xs px-2 py-1">
+                          <TrendingUp className="w-3 h-3 mr-1" />
+                          HOT
+                        </Badge>
+                      </div>
+                      <Button 
+                        onClick={onEgenTest}
+                        size="lg"
+                        className="w-full h-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-4 py-4 text-sm font-semibold shadow-2xl shadow-pink-500/25 hover:shadow-pink-500/40 transition-all duration-300 group"
+                      >
+                        <div className="flex flex-col items-center">
+                          <Sparkles className="h-5 w-5 mb-1" />
+                          <span>에겐남 테토녀</span>
+                        </div>
+                      </Button>
+                    </motion.div>
+                    
+                    {/* WorldCup Button */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Button 
+                        onClick={onWorldCup}
+                        size="lg"
+                        variant="outline"
+                        className="w-full h-full border-amber-500/50 hover:bg-amber-500/10 hover:border-amber-500 text-white px-4 py-4 text-sm font-semibold transition-all duration-300 group"
+                      >
+                        <div className="flex flex-col items-center">
+                          <Swords className="h-5 w-5 mb-1 text-amber-400" />
+                          <span>이상형 월드컵</span>
+                        </div>
+                      </Button>
+                    </motion.div>
+                  </div>
                 </div>
 
                 {/* Trust Indicators */}
