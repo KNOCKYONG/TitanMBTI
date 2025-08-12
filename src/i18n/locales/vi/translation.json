@@ -51,11 +51,17 @@
     "badge": "Phân tích Hoàn thành",
     "mbtiType": "Loại MBTI",
     "yourCharacter": "Nhân vật của bạn là",
+    "youAre": "Bạn là",
+    "notFound": "Không tìm thấy kết quả",
     "characterAnalysis": {
       "title": "Phân tích Tính cách",
       "traits": "Đặc điểm Chính",
       "strengths": "Điểm mạnh",
       "description": "Mô tả Nhân vật"
+    },
+    "characterStats": {
+      "type": "Loại",
+      "rarity": "Độ hiếm"
     },
     "compatibility": {
       "title": "Khả năng Tương thích",
@@ -68,9 +74,15 @@
       "percentage": "dân số",
       "similar": "Loại tương tự"
     },
-    "shareSection": {
+    "sharing": {
       "title": "Chia sẻ Kết quả",
-      "subtitle": "So sánh với bạn bè"
+      "description": "Chia sẻ và so sánh kết quả với bạn bè"
+    },
+    "stats": {
+      "sameType": "Cùng Loại",
+      "accuracy": "Chính xác",
+      "averageRating": "Đánh giá Trung bình",
+      "satisfaction": "Hài lòng"
     },
     "buttons": {
       "restart": "Làm lại Test",
@@ -84,6 +96,12 @@
     "copySuccess": "Đã sao chép",
     "more": "Thêm",
     "shareTitle": "Chia sẻ Kết quả",
-    "compareWithFriends": "So sánh kết quả với bạn bè"
+    "compareWithFriends": "So sánh kết quả với bạn bè",
+    "sharing": "Đang chia sẻ...",
+    "kakaoError": "Vui lòng thử lại sau"
+  },
+  "characters": {
+    "coreTraits": "Đặc điểm Cốt lõi",
+    "bestCompatibility": "Tương thích Tốt nhất"
   }
 }

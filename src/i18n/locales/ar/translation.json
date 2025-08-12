@@ -51,11 +51,17 @@
     "badge": "اكتمل التحليل",
     "mbtiType": "نوع MBTI",
     "yourCharacter": "شخصيتك هي",
+    "youAre": "أنت",
+    "notFound": "لم يتم العثور على النتيجة",
     "characterAnalysis": {
       "title": "تحليل الشخصية",
       "traits": "السمات الرئيسية",
       "strengths": "نقاط القوة",
       "description": "وصف الشخصية"
+    },
+    "characterStats": {
+      "type": "النوع",
+      "rarity": "الندرة"
     },
     "compatibility": {
       "title": "التوافق",
@@ -68,9 +74,15 @@
       "percentage": "من السكان",
       "similar": "أنواع مشابهة"
     },
-    "shareSection": {
-      "title": "شارك نتائجك",
-      "subtitle": "قارن مع أصدقائك"
+    "sharing": {
+      "title": "مشاركة النتائج",
+      "description": "شارك وقارن النتائج مع أصدقائك"
+    },
+    "stats": {
+      "sameType": "نفس النوع",
+      "accuracy": "الدقة",
+      "averageRating": "متوسط التقييم",
+      "satisfaction": "الرضا"
     },
     "buttons": {
       "restart": "إعادة الاختبار",
@@ -84,6 +96,12 @@
     "copySuccess": "تم النسخ",
     "more": "المزيد",
     "shareTitle": "مشاركة النتائج",
-    "compareWithFriends": "قارن النتائج مع الأصدقاء"
+    "compareWithFriends": "قارن النتائج مع الأصدقاء",
+    "sharing": "جاري المشاركة...",
+    "kakaoError": "يرجى المحاولة لاحقاً"
+  },
+  "characters": {
+    "coreTraits": "السمات الأساسية",
+    "bestCompatibility": "أفضل توافق"
   }
 }

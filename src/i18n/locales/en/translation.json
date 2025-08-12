@@ -169,11 +169,17 @@
     "badge": "Analysis Complete",
     "mbtiType": "MBTI Type",
     "yourCharacter": "Your Character is",
+    "youAre": "You are",
+    "notFound": "Result not found",
     "characterAnalysis": {
       "title": "Personality Analysis",
       "traits": "Key Traits",
       "strengths": "Strengths",
       "description": "Character Description"
+    },
+    "characterStats": {
+      "type": "Type",
+      "rarity": "Rarity"
     },
     "compatibility": {
       "title": "Compatibility",
@@ -186,9 +192,15 @@
       "percentage": "of population",
       "similar": "Similar types"
     },
-    "shareSection": {
+    "sharing": {
       "title": "Share Your Results",
-      "subtitle": "Compare with your friends"
+      "description": "Share and compare results with your friends"
+    },
+    "stats": {
+      "sameType": "Same Type",
+      "accuracy": "Accuracy",
+      "averageRating": "Average Rating",
+      "satisfaction": "Satisfaction"
     },
     "buttons": {
       "restart": "Test Again",
@@ -202,9 +214,13 @@
     "copySuccess": "Copied",
     "more": "More",
     "shareTitle": "Share Results",
-    "compareWithFriends": "Compare results with friends"
+    "compareWithFriends": "Compare results with friends",
+    "sharing": "Sharing...",
+    "kakaoError": "Please try again later"
   },
   "characters": {
+    "coreTraits": "Core Traits",
+    "bestCompatibility": "Best Compatibility",
     "INTJ": {
       "name": "Levi Ackerman",
       "title": "The Architect",

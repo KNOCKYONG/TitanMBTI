@@ -169,11 +169,17 @@
     "badge": "分析完成",
     "mbtiType": "MBTI类型",
     "yourCharacter": "你的角色是",
+    "youAre": "你是",
+    "notFound": "未找到结果",
     "characterAnalysis": {
       "title": "性格分析",
       "traits": "主要特征",
       "strengths": "优势",
       "description": "角色描述"
+    },
+    "characterStats": {
+      "type": "类型",
+      "rarity": "稀有度"
     },
     "compatibility": {
       "title": "相性",
@@ -186,9 +192,15 @@
       "percentage": "占总人口",
       "similar": "相似类型"
     },
-    "shareSection": {
+    "sharing": {
       "title": "分享结果",
-      "subtitle": "与朋友比较结果"
+      "description": "与朋友分享并比较结果"
+    },
+    "stats": {
+      "sameType": "相同类型",
+      "accuracy": "准确度",
+      "averageRating": "平均评分",
+      "satisfaction": "满意度"
     },
     "buttons": {
       "restart": "重新测试",
@@ -202,9 +214,13 @@
     "copySuccess": "已复制",
     "more": "更多",
     "shareTitle": "分享结果",
-    "compareWithFriends": "与朋友比较结果"
+    "compareWithFriends": "与朋友比较结果",
+    "sharing": "分享中...",
+    "kakaoError": "请稍后再试"
   },
   "characters": {
+    "coreTraits": "核心特质",
+    "bestCompatibility": "最佳匹配",
     "INTJ": {
       "name": "利威尔·阿克曼",
       "title": "建筑师",

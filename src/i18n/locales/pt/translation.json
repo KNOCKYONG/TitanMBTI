@@ -51,11 +51,17 @@
     "badge": "Análise Completa",
     "mbtiType": "Tipo MBTI",
     "yourCharacter": "Seu Personagem é",
+    "youAre": "Você é",
+    "notFound": "Resultado não encontrado",
     "characterAnalysis": {
       "title": "Análise de Personalidade",
       "traits": "Características Principais",
       "strengths": "Pontos Fortes",
       "description": "Descrição do Personagem"
+    },
+    "characterStats": {
+      "type": "Tipo",
+      "rarity": "Raridade"
     },
     "compatibility": {
       "title": "Compatibilidade",
@@ -68,9 +74,15 @@
       "percentage": "da população",
       "similar": "Tipos similares"
     },
-    "shareSection": {
-      "title": "Compartilhe Seus Resultados",
-      "subtitle": "Compare com seus amigos"
+    "sharing": {
+      "title": "Compartilhar Resultados",
+      "description": "Compartilhe e compare resultados com seus amigos"
+    },
+    "stats": {
+      "sameType": "Mesmo Tipo",
+      "accuracy": "Precisão",
+      "averageRating": "Avaliação Média",
+      "satisfaction": "Satisfação"
     },
     "buttons": {
       "restart": "Fazer Teste Novamente",
@@ -84,6 +96,12 @@
     "copySuccess": "Copiado",
     "more": "Mais",
     "shareTitle": "Compartilhar Resultados",
-    "compareWithFriends": "Compare resultados com amigos"
+    "compareWithFriends": "Compare resultados com amigos",
+    "sharing": "Compartilhando...",
+    "kakaoError": "Tente novamente mais tarde"
+  },
+  "characters": {
+    "coreTraits": "Características Principais",
+    "bestCompatibility": "Melhor Compatibilidade"
   }
 }

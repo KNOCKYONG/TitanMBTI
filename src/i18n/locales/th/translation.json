@@ -51,11 +51,17 @@
     "badge": "วิเคราะห์เสร็จสิ้น",
     "mbtiType": "ประเภท MBTI",
     "yourCharacter": "ตัวละครของคุณคือ",
+    "youAre": "คุณคือ",
+    "notFound": "ไม่พบผลลัพธ์",
     "characterAnalysis": {
       "title": "การวิเคราะห์บุคลิกภาพ",
       "traits": "ลักษณะสำคัญ",
       "strengths": "จุดแข็ง",
       "description": "คำอธิบายตัวละคร"
+    },
+    "characterStats": {
+      "type": "ประเภท",
+      "rarity": "ความหายาก"
     },
     "compatibility": {
       "title": "ความเข้ากันได้",
@@ -68,9 +74,15 @@
       "percentage": "ของประชากร",
       "similar": "ประเภทที่คล้ายกัน"
     },
-    "shareSection": {
+    "sharing": {
       "title": "แบ่งปันผลลัพธ์",
-      "subtitle": "เปรียบเทียบกับเพื่อน"
+      "description": "แบ่งปันและเปรียบเทียบผลลัพธ์กับเพื่อน"
+    },
+    "stats": {
+      "sameType": "ประเภทเดียวกัน",
+      "accuracy": "ความแม่นยำ",
+      "averageRating": "คะแนนเฉลี่ย",
+      "satisfaction": "ความพึงพอใจ"
     },
     "buttons": {
       "restart": "ทำแบบทดสอบใหม่",
@@ -84,6 +96,12 @@
     "copySuccess": "คัดลอกแล้ว",
     "more": "เพิ่มเติม",
     "shareTitle": "แบ่งปันผลลัพธ์",
-    "compareWithFriends": "เปรียบเทียบผลลัพธ์กับเพื่อน"
+    "compareWithFriends": "เปรียบเทียบผลลัพธ์กับเพื่อน",
+    "sharing": "กำลังแบ่งปัน...",
+    "kakaoError": "โปรดลองอีกครั้งในภายหลัง"
+  },
+  "characters": {
+    "coreTraits": "ลักษณะหลัก",
+    "bestCompatibility": "ความเข้ากันได้ดีที่สุด"
   }
 }

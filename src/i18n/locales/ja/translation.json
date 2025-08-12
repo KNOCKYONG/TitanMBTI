@@ -169,11 +169,17 @@
     "badge": "分析完了",
     "mbtiType": "MBTIタイプ",
     "yourCharacter": "あなたのキャラクターは",
+    "youAre": "あなたは",
+    "notFound": "結果が見つかりません",
     "characterAnalysis": {
       "title": "性格分析",
       "traits": "主な特性",
       "strengths": "強み",
       "description": "キャラクター説明"
+    },
+    "characterStats": {
+      "type": "タイプ",
+      "rarity": "レア度"
     },
     "compatibility": {
       "title": "相性",
@@ -186,9 +192,15 @@
       "percentage": "全人口の",
       "similar": "似たタイプ"
     },
-    "shareSection": {
+    "sharing": {
       "title": "結果をシェア",
-      "subtitle": "友達と結果を比較してみよう"
+      "description": "友達と結果をシェアして比較してみよう"
+    },
+    "stats": {
+      "sameType": "同じタイプ",
+      "accuracy": "正確度",
+      "averageRating": "平均評価",
+      "satisfaction": "満足度"
     },
     "buttons": {
       "restart": "もう一度テスト",
@@ -202,9 +214,13 @@
     "copySuccess": "コピー完了",
     "more": "その他",
     "shareTitle": "結果をシェア",
-    "compareWithFriends": "友達と結果を比較"
+    "compareWithFriends": "友達と結果を比較",
+    "sharing": "シェア中...",
+    "kakaoError": "後でもう一度お試しください"
   },
   "characters": {
+    "coreTraits": "コア特性",
+    "bestCompatibility": "最高の相性",
     "INTJ": {
       "name": "リヴァイ・アッカーマン",
       "title": "建築家",

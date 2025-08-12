@@ -169,11 +169,17 @@
     "badge": "분석 완료",
     "mbtiType": "MBTI 유형",
     "yourCharacter": "당신의 캐릭터는",
+    "youAre": "당신은",
+    "notFound": "결과를 찾을 수 없습니다",
     "characterAnalysis": {
       "title": "성격 분석",
       "traits": "주요 특성",
       "strengths": "강점",
       "description": "캐릭터 설명"
+    },
+    "characterStats": {
+      "type": "타입",
+      "rarity": "희귀도"
     },
     "compatibility": {
       "title": "궁합",
@@ -186,9 +192,15 @@
       "percentage": "전체 인구 중",
       "similar": "비슷한 유형"
     },
-    "shareSection": {
+    "sharing": {
       "title": "결과 공유하기",
-      "subtitle": "친구와 결과를 비교해보세요"
+      "description": "친구들과 결과를 공유하고 비교해보세요"
+    },
+    "stats": {
+      "sameType": "같은 유형",
+      "accuracy": "정확도",
+      "averageRating": "평균 평점",
+      "satisfaction": "만족도"
     },
     "buttons": {
       "restart": "다시 테스트하기",
@@ -202,9 +214,13 @@
     "copySuccess": "복사됨",
     "more": "더 보기",
     "shareTitle": "결과 공유하기",
-    "compareWithFriends": "친구와 결과를 비교해보세요"
+    "compareWithFriends": "친구와 결과를 비교해보세요",
+    "sharing": "공유 중...",
+    "kakaoError": "잠시 후 다시 시도해주세요"
   },
   "characters": {
+    "coreTraits": "핵심 특징",
+    "bestCompatibility": "최고의 궁합",
     "INTJ": {
       "name": "리바이 아커만",
       "title": "전략가",

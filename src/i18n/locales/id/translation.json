@@ -51,11 +51,17 @@
     "badge": "Analisis Selesai",
     "mbtiType": "Tipe MBTI",
     "yourCharacter": "Karakter Anda adalah",
+    "youAre": "Anda adalah",
+    "notFound": "Hasil tidak ditemukan",
     "characterAnalysis": {
       "title": "Analisis Kepribadian",
       "traits": "Sifat Utama",
       "strengths": "Kekuatan",
       "description": "Deskripsi Karakter"
+    },
+    "characterStats": {
+      "type": "Tipe",
+      "rarity": "Kelangkaan"
     },
     "compatibility": {
       "title": "Kompatibilitas",
@@ -68,9 +74,15 @@
       "percentage": "dari populasi",
       "similar": "Tipe serupa"
     },
-    "shareSection": {
-      "title": "Bagikan Hasil Anda",
-      "subtitle": "Bandingkan dengan teman"
+    "sharing": {
+      "title": "Bagikan Hasil",
+      "description": "Bagikan dan bandingkan hasil dengan teman Anda"
+    },
+    "stats": {
+      "sameType": "Tipe Yang Sama",
+      "accuracy": "Akurasi",
+      "averageRating": "Rating Rata-rata",
+      "satisfaction": "Kepuasan"
     },
     "buttons": {
       "restart": "Tes Lagi",
@@ -84,6 +96,12 @@
     "copySuccess": "Tersalin",
     "more": "Lainnya",
     "shareTitle": "Bagikan Hasil",
-    "compareWithFriends": "Bandingkan hasil dengan teman"
+    "compareWithFriends": "Bandingkan hasil dengan teman",
+    "sharing": "Membagikan...",
+    "kakaoError": "Silakan coba lagi nanti"
+  },
+  "characters": {
+    "coreTraits": "Sifat Inti",
+    "bestCompatibility": "Kompatibilitas Terbaik"
   }
 }

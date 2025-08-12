@@ -51,11 +51,17 @@
     "badge": "Анализ Завершен",
     "mbtiType": "Тип MBTI",
     "yourCharacter": "Ваш Персонаж",
+    "youAre": "Вы",
+    "notFound": "Результат не найден",
     "characterAnalysis": {
       "title": "Анализ Личности",
       "traits": "Ключевые Черты",
       "strengths": "Сильные Стороны",
       "description": "Описание Персонажа"
+    },
+    "characterStats": {
+      "type": "Тип",
+      "rarity": "Редкость"
     },
     "compatibility": {
       "title": "Совместимость",
@@ -68,9 +74,15 @@
       "percentage": "населения",
       "similar": "Похожие типы"
     },
-    "shareSection": {
-      "title": "Поделитесь Результатами",
-      "subtitle": "Сравните с друзьями"
+    "sharing": {
+      "title": "Поделиться Результатами",
+      "description": "Поделитесь и сравните результаты с друзьями"
+    },
+    "stats": {
+      "sameType": "Тот же Тип",
+      "accuracy": "Точность",
+      "averageRating": "Средний Рейтинг",
+      "satisfaction": "Удовлетворенность"
     },
     "buttons": {
       "restart": "Пройти Тест Снова",
@@ -84,6 +96,12 @@
     "copySuccess": "Скопировано",
     "more": "Еще",
     "shareTitle": "Поделиться Результатами",
-    "compareWithFriends": "Сравните результаты с друзьями"
+    "compareWithFriends": "Сравните результаты с друзьями",
+    "sharing": "Делимся...",
+    "kakaoError": "Пожалуйста, попробуйте позже"
+  },
+  "characters": {
+    "coreTraits": "Основные Черты",
+    "bestCompatibility": "Лучшая Совместимость"
   }
 }
