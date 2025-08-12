@@ -367,6 +367,15 @@
     "actions": {
       "restart": "Restart",
       "back": "Go Back"
+    },
+    "sharing": {
+      "title": "Share Your Champion",
+      "kakao": "Share on KakaoTalk",
+      "copyLink": "Copy Link",
+      "copied": "Copied!",
+      "kakaoTitle": "🏆 {{characterName}} is my favorite character!",
+      "kakaoDescription": "{{characterName}} ({{mbtiType}}) won the Attack on Titan Character Tournament!",
+      "kakaoButton": "Play Tournament"
     }
   }
 }

@@ -33,6 +33,36 @@ export const initKakao = (appKey) => {
   }
 };
 
+export const shareOnKakao = (shareData) => {
+  if (!window.Kakao) {
+    alert(i18n.t('shareButtons.kakaoNotAvailable', '카카오톡 공유 기능을 사용할 수 없습니다.'));
+    return;
+  }
+
+  if (!window.Kakao.isInitialized()) {
+    alert(i18n.t('shareButtons.kakaoNotInitialized', '카카오 SDK가 초기화되지 않았습니다.'));
+    console.error('Kakao SDK not initialized. Check VITE_KAKAO_APP_KEY environment variable.');
+    return;
+  }
+
+  try {
+    window.Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: shareData.title,
+        description: shareData.description,
+        imageUrl: shareData.imageUrl,
+        link: shareData.link,
+      },
+      buttons: shareData.buttons,
+    });
+    console.log('Kakao share completed');
+  } catch (error) {
+    console.error('Kakao share failed:', error);
+    alert(i18n.t('shareButtons.kakaoError', '카카오톡 공유 중 오류가 발생했습니다.'));
+  }
+};
+
 export const shareKakao = (mbtiType, character) => {
   if (!window.Kakao) {
     alert(i18n.t('shareButtons.kakaoNotAvailable', '카카오톡 공유 기능을 사용할 수 없습니다.'));

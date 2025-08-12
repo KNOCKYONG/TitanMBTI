@@ -59,10 +59,17 @@ function App() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const sharedResult = params.get('result');
+    const worldcupMode = params.get('worldcup');
+    const worldcupCharacter = params.get('character');
     
     if (sharedResult && sharedResult.length === 4) {
       setMbtiResult(sharedResult);
       setGameState('result');
+    } else if (worldcupMode === 'winner' && worldcupCharacter) {
+      // 월드컵 우승자 공유 링크로 접근한 경우
+      setGameState('worldcup');
+      // URL 파라미터 제거
+      window.history.replaceState({}, '', '/');
     }
   }, []);
 

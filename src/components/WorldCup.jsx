@@ -6,13 +6,14 @@ import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { 
   Trophy, Crown, Swords, Star, ChevronLeft, RotateCcw, Share2,
-  Users, Award, Sparkles, Heart, Target
+  Users, Award, Sparkles, Heart, Target, Link2, MessageCircle
 } from 'lucide-react';
 import { characters } from '../data/characters';
 import ShareButtons from './ShareButtons';
+import { shareOnKakao } from '../utils/shareUtils';
 
 const WorldCup = ({ onBack }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [currentRound, setCurrentRound] = useState(16);
   const [currentMatch, setCurrentMatch] = useState(0);
   const [candidates, setCandidates] = useState([]);
@@ -22,6 +23,8 @@ const WorldCup = ({ onBack }) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [matchHistory, setMatchHistory] = useState([]);
   const [imageLoadStatus, setImageLoadStatus] = useState({});
+  const [showShareButtons, setShowShareButtons] = useState(false);
+  const [copySuccess, setCopySuccess] = useState(false);
 
   // Initialize candidates
   useEffect(() => {
@@ -111,6 +114,59 @@ const WorldCup = ({ onBack }) => {
     if (currentRound === 4) return t('worldCup.rounds.semiFinal');
     if (currentRound === 8) return t('worldCup.rounds.quarterFinal');
     return t('worldCup.rounds.round16');
+  };
+
+  // Handle Kakao share
+  const handleKakaoShare = (winner) => {
+    const currentUrl = window.location.origin;
+    const shareUrl = `${currentUrl}?worldcup=winner&character=${winner.mbtiType}`;
+    
+    const shareData = {
+      title: t('worldCup.sharing.kakaoTitle', { characterName: winner.name }),
+      description: t('worldCup.sharing.kakaoDescription', { 
+        characterName: winner.name,
+        mbtiType: winner.mbtiType 
+      }),
+      imageUrl: `${currentUrl}/images/characters/${winner.mbtiType}/profile.png`,
+      link: {
+        mobileWebUrl: shareUrl,
+        webUrl: shareUrl,
+      },
+      buttons: [
+        {
+          title: t('worldCup.sharing.kakaoButton'),
+          link: {
+            mobileWebUrl: currentUrl,
+            webUrl: currentUrl,
+          },
+        },
+      ],
+    };
+
+    shareOnKakao(shareData);
+  };
+
+  // Handle copy link
+  const handleCopyLink = async () => {
+    const currentUrl = window.location.origin;
+    const shareUrl = `${currentUrl}?worldcup=winner&character=${finalWinner.mbtiType}`;
+    
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy link:', err);
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = shareUrl;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000);
+    }
   };
 
   // Render final winner screen
@@ -241,6 +297,38 @@ const WorldCup = ({ onBack }) => {
                 </CardContent>
               </Card>
             </div>
+
+            {/* Share Section */}
+            <Card className="glass border-amber-500/20 bg-gradient-to-br from-amber-500/5 to-orange-500/5 max-w-md mx-auto mb-6">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-lg text-white">
+                  <Share2 className="w-5 h-5 text-amber-400" />
+                  {t('worldCup.sharing.title')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="grid grid-cols-2 gap-3">
+                  <Button
+                    onClick={() => handleKakaoShare(finalWinner)}
+                    size="lg"
+                    className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold"
+                  >
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    {t('worldCup.sharing.kakao')}
+                  </Button>
+                  
+                  <Button
+                    onClick={handleCopyLink}
+                    size="lg"
+                    variant="outline"
+                    className="w-full hover:bg-amber-500/10 hover:border-amber-500/50 text-white"
+                  >
+                    <Link2 className="w-5 h-5 mr-2" />
+                    {copySuccess ? t('worldCup.sharing.copied') : t('worldCup.sharing.copyLink')}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
 
             {/* Actions */}
             <div className="flex gap-4 max-w-md mx-auto">
