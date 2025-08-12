@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import StartScreen from './components/StartScreen.jsx';
 import QuestionCard from './components/QuestionCard.jsx';
 import ResultScreen from './components/ResultScreen.jsx';
+import WorldCup from './components/WorldCup.jsx';
 import LanguageSelector from './components/LanguageSelector.jsx';
 import SEOMetaTags from './components/SEOMetaTags.jsx';
 import { questions } from './data/questions';
@@ -9,7 +10,7 @@ import { calculateMBTI } from './utils/calculateMBTI';
 import { initKakao } from './utils/shareUtils';
 
 function App() {
-  const [gameState, setGameState] = useState('start'); // start, quiz, result
+  const [gameState, setGameState] = useState('start'); // start, quiz, result, worldcup
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [mbtiResult, setMbtiResult] = useState(null);
@@ -100,6 +101,14 @@ function App() {
     window.history.replaceState({}, '', '/');
   };
 
+  const startWorldCup = () => {
+    setGameState('worldcup');
+  };
+
+  const handleWorldCupBack = () => {
+    setGameState('result');
+  };
+
 
   return (
     <div className="min-h-screen">
@@ -125,7 +134,12 @@ function App() {
           <ResultScreen
             mbtiType={mbtiResult}
             onRestart={resetQuiz}
+            onWorldCup={startWorldCup}
           />
+        )}
+        
+        {gameState === 'worldcup' && (
+          <WorldCup onBack={handleWorldCupBack} />
         )}
     </div>
   );

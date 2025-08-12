@@ -210,6 +210,9 @@
       "restart": "다시 테스트하기",
       "saveImage": "이미지로 저장",
       "viewDetails": "자세히 보기"
+    },
+    "worldCup": {
+      "button": "이상형 월드컵 16강"
     }
   },
   "shareButtons": {
@@ -344,6 +347,26 @@
       "description": "밝고 유쾌한 성격으로 분위기를 밝게 만드는 인물. 순간을 즐긴다.",
       "traits": ["유머", "사교적", "낙관적", "즉흥적"],
       "quote": "웃자! 웃으면 다 해결돼!"
+    }
+  },
+  "worldCup": {
+    "title": "진격의 거인 이상형 월드컵",
+    "match": "매치",
+    "rounds": {
+      "round16": "16강",
+      "quarterFinal": "8강",
+      "semiFinal": "4강",
+      "final": "결승"
+    },
+    "winner": {
+      "title": "우승자",
+      "place": "순위",
+      "victories": "승리",
+      "winRate": "승률"
+    },
+    "actions": {
+      "restart": "다시 시작",
+      "back": "돌아가기"
     }
   }
 }

@@ -210,6 +210,9 @@
       "restart": "Test Again",
       "saveImage": "Save as Image",
       "viewDetails": "View Details"
+    },
+    "worldCup": {
+      "button": "Character WorldCup Tournament"
     }
   },
   "shareButtons": {
@@ -344,6 +347,26 @@
       "description": "Brightens the atmosphere with cheerful personality. Lives in the moment.",
       "traits": ["Humorous", "Social", "Optimistic", "Spontaneous"],
       "quote": "Let's laugh! Everything works out when you laugh!"
+    }
+  },
+  "worldCup": {
+    "title": "Attack on Titan Character Tournament",
+    "match": "Match",
+    "rounds": {
+      "round16": "Round of 16",
+      "quarterFinal": "Quarter Finals",
+      "semiFinal": "Semi Finals",
+      "final": "Final"
+    },
+    "winner": {
+      "title": "Champion",
+      "place": "Place",
+      "victories": "Victories",
+      "winRate": "Win Rate"
+    },
+    "actions": {
+      "restart": "Restart",
+      "back": "Go Back"
     }
   }
 }
