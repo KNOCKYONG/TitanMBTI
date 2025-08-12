@@ -39,6 +39,9 @@
     },
     "buttons": {
       "start": "Mulai Tes",
+      "romance": "Gaya Romantis",
+      "egen": "Tes Egen/Teto",
+      "worldcup": "Piala Dunia Ideal",
       "learnMore": "Pelajari Lebih Lanjut"
     },
     "trustIndicators": {

@@ -39,6 +39,9 @@
     },
     "buttons": {
       "start": "بدء الاختبار",
+      "romance": "أسلوب الرومانسية",
+      "egen": "اختبار إيجين/تيتو",
+      "worldcup": "كأس العالم المثالية",
       "learnMore": "تعلم المزيد"
     },
     "trustIndicators": {

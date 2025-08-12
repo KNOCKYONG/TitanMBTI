@@ -39,6 +39,9 @@
     },
     "buttons": {
       "start": "Iniciar Teste",
+      "romance": "Estilo Romântico",
+      "egen": "Teste Egen/Teto",
+      "worldcup": "Copa Mundial Ideal",
       "learnMore": "Saiba Mais"
     },
     "trustIndicators": {

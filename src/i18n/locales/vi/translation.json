@@ -39,6 +39,9 @@
     },
     "buttons": {
       "start": "Bắt đầu Test",
+      "romance": "Phong cách Lãng mạn",
+      "egen": "Test Egen/Teto",
+      "worldcup": "World Cup Lý tưởng",
       "learnMore": "Tìm hiểu thêm"
     },
     "trustIndicators": {
