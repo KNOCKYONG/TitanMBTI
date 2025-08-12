@@ -10,7 +10,7 @@
     "restart": "Test Again"
   },
   "startScreen": {
-    "badge": "Most Popular MBTI Test of 2025",
+    "badge": "Most Popular Character Tests 2025",
     "title": {
       "line1": "Which",
       "line2": "Attack on Titan",
@@ -53,9 +53,11 @@
       }
     },
     "buttons": {
-      "start": "Start Test",
-      "learnMore": "Learn More",
-      "worldcup": "Start WorldCup"
+      "start": "MBTI Test",
+      "romance": "Romance Style",
+      "egen": "Egen/Teto Test",
+      "worldcup": "Ideal WorldCup",
+      "learnMore": "Learn More"
     },
     "trustIndicators": {
       "safe": "Safe Test",

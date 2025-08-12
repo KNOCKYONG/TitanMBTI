@@ -1,0 +1,72 @@
+# Robots.txt for Titan MBTI Test
+# https://titanmbti.vercel.app/
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://titanmbti.vercel.app/sitemap.xml
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
+
+# Major search engine crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 0
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: WhatsApp
+Allow: /
+Crawl-delay: 0
+
+User-agent: Telegram
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
