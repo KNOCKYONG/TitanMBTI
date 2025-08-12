@@ -128,11 +128,11 @@ const StartScreen = ({ onStart }) => {
                 >
                   <div className="flex items-center gap-2">
                     <Shield className="w-5 h-5 text-green-400" />
-                    <span className="text-sm text-gray-400">안전한 테스트</span>
+                    <span className="text-sm text-gray-400">{t('startScreen.trustIndicators.safe')}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <TrendingUp className="w-5 h-5 text-blue-400" />
-                    <span className="text-sm text-gray-400">과학적 분석</span>
+                    <span className="text-sm text-gray-400">{t('startScreen.trustIndicators.scientific')}</span>
                   </div>
                 </motion.div>
               </motion.div>

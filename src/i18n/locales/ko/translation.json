@@ -56,6 +56,10 @@
       "start": "테스트 시작하기",
       "learnMore": "자세히 알아보기"
     },
+    "trustIndicators": {
+      "safe": "안전한 테스트",
+      "scientific": "과학적 분석"
+    },
     "howItWorks": {
       "title": "어떻게 진행되나요?",
       "step1": {
@@ -216,7 +220,15 @@
     "shareTitle": "결과 공유하기",
     "compareWithFriends": "친구와 결과를 비교해보세요",
     "sharing": "공유 중...",
-    "kakaoError": "잠시 후 다시 시도해주세요"
+    "kakaoError": "잠시 후 다시 시도해주세요",
+    "kakaoNotAvailable": "카카오톡 공유 기능을 사용할 수 없습니다",
+    "kakaoNotInitialized": "카카오 SDK가 초기화되지 않았습니다"
+  },
+  "share": {
+    "kakaoTitle": "나의 진격의 거인 캐릭터는 {{characterName}}!",
+    "testButton": "나도 테스트하기",
+    "nativeTitle": "진격의 거인 MBTI 테스트",
+    "nativeText": "나의 진격의 거인 캐릭터는 {{characterName}} ({{mbtiType}})!"
   },
   "characters": {
     "coreTraits": "핵심 특징",

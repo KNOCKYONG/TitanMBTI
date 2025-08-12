@@ -56,6 +56,10 @@
       "start": "Start Test",
       "learnMore": "Learn More"
     },
+    "trustIndicators": {
+      "safe": "Safe Test",
+      "scientific": "Scientific Analysis"
+    },
     "howItWorks": {
       "title": "How It Works",
       "step1": {
@@ -216,7 +220,15 @@
     "shareTitle": "Share Results",
     "compareWithFriends": "Compare results with friends",
     "sharing": "Sharing...",
-    "kakaoError": "Please try again later"
+    "kakaoError": "Please try again later",
+    "kakaoNotAvailable": "KakaoTalk share is not available",
+    "kakaoNotInitialized": "Kakao SDK not initialized"
+  },
+  "share": {
+    "kakaoTitle": "My Attack on Titan character is {{characterName}}!",
+    "testButton": "Take the test",
+    "nativeTitle": "Attack on Titan MBTI Test",
+    "nativeText": "My Attack on Titan character is {{characterName}} ({{mbtiType}})!"
   },
   "characters": {
     "coreTraits": "Core Traits",

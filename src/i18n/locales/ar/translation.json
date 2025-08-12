@@ -29,6 +29,10 @@
     "buttons": {
       "start": "بدء الاختبار",
       "learnMore": "تعلم المزيد"
+    },
+    "trustIndicators": {
+      "safe": "اختبار آمن",
+      "scientific": "تحليل علمي"
     }
   },
   "questionCard": {
@@ -98,7 +102,15 @@
     "shareTitle": "مشاركة النتائج",
     "compareWithFriends": "قارن النتائج مع الأصدقاء",
     "sharing": "جاري المشاركة...",
-    "kakaoError": "يرجى المحاولة لاحقاً"
+    "kakaoError": "يرجى المحاولة لاحقاً",
+    "kakaoNotAvailable": "مشاركة KakaoTalk غير متاحة",
+    "kakaoNotInitialized": "Kakao SDK غير مهيأ"
+  },
+  "share": {
+    "kakaoTitle": "شخصيتي من Attack on Titan هي {{characterName}}!",
+    "testButton": "إجراء الاختبار",
+    "nativeTitle": "اختبار MBTI Attack on Titan",
+    "nativeText": "شخصيتي من Attack on Titan هي {{characterName}} ({{mbtiType}})!"
   },
   "characters": {
     "coreTraits": "السمات الأساسية",

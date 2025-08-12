@@ -56,6 +56,10 @@
       "start": "开始测试",
       "learnMore": "了解更多"
     },
+    "trustIndicators": {
+      "safe": "安全测试",
+      "scientific": "科学分析"
+    },
     "howItWorks": {
       "title": "测试流程",
       "step1": {
@@ -216,7 +220,15 @@
     "shareTitle": "分享结果",
     "compareWithFriends": "与朋友比较结果",
     "sharing": "分享中...",
-    "kakaoError": "请稍后再试"
+    "kakaoError": "请稍后再试",
+    "kakaoNotAvailable": "KakaoTalk分享不可用",
+    "kakaoNotInitialized": "Kakao SDK未初始化"
+  },
+  "share": {
+    "kakaoTitle": "我的进击的巨人角色是{{characterName}}！",
+    "testButton": "参加测试",
+    "nativeTitle": "进击的巨人 MBTI 测试",
+    "nativeText": "我的进击的巨人角色是{{characterName}} ({{mbtiType}})！"
   },
   "characters": {
     "coreTraits": "核心特质",

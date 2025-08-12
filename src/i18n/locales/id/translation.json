@@ -29,6 +29,10 @@
     "buttons": {
       "start": "Mulai Tes",
       "learnMore": "Pelajari Lebih Lanjut"
+    },
+    "trustIndicators": {
+      "safe": "Tes Aman",
+      "scientific": "Analisis Ilmiah"
     }
   },
   "questionCard": {
@@ -98,7 +102,15 @@
     "shareTitle": "Bagikan Hasil",
     "compareWithFriends": "Bandingkan hasil dengan teman",
     "sharing": "Membagikan...",
-    "kakaoError": "Silakan coba lagi nanti"
+    "kakaoError": "Silakan coba lagi nanti",
+    "kakaoNotAvailable": "Berbagi KakaoTalk tidak tersedia",
+    "kakaoNotInitialized": "Kakao SDK belum diinisialisasi"
+  },
+  "share": {
+    "kakaoTitle": "Karakter Attack on Titan saya adalah {{characterName}}!",
+    "testButton": "Ikuti tes",
+    "nativeTitle": "Tes MBTI Attack on Titan",
+    "nativeText": "Karakter Attack on Titan saya adalah {{characterName}} ({{mbtiType}})!"
   },
   "characters": {
     "coreTraits": "Sifat Inti",

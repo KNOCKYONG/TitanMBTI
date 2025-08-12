@@ -29,6 +29,10 @@
     "buttons": {
       "start": "Comenzar Test",
       "learnMore": "Saber Más"
+    },
+    "trustIndicators": {
+      "safe": "Test Seguro",
+      "scientific": "Análisis Científico"
     }
   },
   "questionCard": {
@@ -98,7 +102,15 @@
     "shareTitle": "Compartir Resultados",
     "compareWithFriends": "Compara resultados con amigos",
     "sharing": "Compartiendo...",
-    "kakaoError": "Por favor, inténtalo de nuevo más tarde"
+    "kakaoError": "Por favor, inténtalo de nuevo más tarde",
+    "kakaoNotAvailable": "El compartir de KakaoTalk no está disponible",
+    "kakaoNotInitialized": "Kakao SDK no inicializado"
+  },
+  "share": {
+    "kakaoTitle": "¡Mi personaje de Attack on Titan es {{characterName}}!",
+    "testButton": "Hacer el test",
+    "nativeTitle": "Test MBTI de Attack on Titan",
+    "nativeText": "¡Mi personaje de Attack on Titan es {{characterName}} ({{mbtiType}})!"
   },
   "characters": {
     "coreTraits": "Rasgos Principales",

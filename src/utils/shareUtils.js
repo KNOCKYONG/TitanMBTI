@@ -1,3 +1,5 @@
+import i18n from '../i18n/config';
+
 export const initKakao = (appKey) => {
   console.log('initKakao 호출됨', {
     hasKakao: !!window.Kakao,
@@ -33,12 +35,12 @@ export const initKakao = (appKey) => {
 
 export const shareKakao = (mbtiType, character) => {
   if (!window.Kakao) {
-    alert('카카오톡 공유 기능을 사용할 수 없습니다.');
+    alert(i18n.t('shareButtons.kakaoNotAvailable', '카카오톡 공유 기능을 사용할 수 없습니다.'));
     return;
   }
 
   if (!window.Kakao.isInitialized()) {
-    alert('카카오 SDK가 초기화되지 않았습니다. 환경 변수를 확인하세요.');
+    alert(i18n.t('shareButtons.kakaoNotInitialized', '카카오 SDK가 초기화되지 않았습니다.'));
     console.error('Kakao SDK not initialized. Check VITE_KAKAO_APP_KEY environment variable.');
     return;
   }
@@ -46,18 +48,20 @@ export const shareKakao = (mbtiType, character) => {
   const shareUrl = `${window.location.origin}?result=${mbtiType}`;
   const imageUrl = `${window.location.origin}${character.image}`;
   
-  console.log('카카오톡 공유 정보:', {
+  const shareTitle = i18n.t('share.kakaoTitle', { characterName: character.name }, `나의 진격의 거인 캐릭터는 ${character.name}!`);
+  
+  console.log('Kakao share info:', {
     url: shareUrl,
     image: imageUrl,
-    title: `나의 진격의 거인 캐릭터는 ${character.name}!`
+    title: shareTitle
   });
   
   try {
     window.Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
-      title: `나의 진격의 거인 캐릭터는 ${character.name}!`,
-      description: `MBTI ${mbtiType} - ${character.description}`,
+      title: shareTitle,
+      description: `MBTI ${mbtiType} - ${i18n.t(`characters.${mbtiType}.description`, character.description)}`,
       imageUrl: imageUrl,
       link: {
         mobileWebUrl: shareUrl,
@@ -66,7 +70,7 @@ export const shareKakao = (mbtiType, character) => {
     },
     buttons: [
       {
-        title: '나도 테스트하기',
+        title: i18n.t('share.testButton', '나도 테스트하기'),
         link: {
           mobileWebUrl: window.location.origin,
           webUrl: window.location.origin,
@@ -74,10 +78,10 @@ export const shareKakao = (mbtiType, character) => {
       },
     ],
     });
-    console.log('카카오톡 공유 완료');
+    console.log('Kakao share completed');
   } catch (error) {
-    console.error('카카오톡 공유 실패:', error);
-    alert('카카오톡 공유 중 오류가 발생했습니다.');
+    console.error('Kakao share failed:', error);
+    alert(i18n.t('shareButtons.kakaoError', '카카오톡 공유 중 오류가 발생했습니다.'));
   }
 };
 
@@ -115,8 +119,8 @@ export const shareNative = async (mbtiType, character) => {
 
   try {
     await navigator.share({
-      title: '진격의 거인 MBTI 테스트',
-      text: `나의 진격의 거인 캐릭터는 ${character.name} (${mbtiType})!`,
+      title: i18n.t('share.nativeTitle', '진격의 거인 MBTI 테스트'),
+      text: i18n.t('share.nativeText', { characterName: character.name, mbtiType }, `나의 진격의 거인 캐릭터는 ${character.name} (${mbtiType})!`),
       url: `${window.location.origin}?result=${mbtiType}`
     });
     return true;

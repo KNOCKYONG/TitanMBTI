@@ -29,6 +29,10 @@
     "buttons": {
       "start": "Bắt đầu Test",
       "learnMore": "Tìm hiểu thêm"
+    },
+    "trustIndicators": {
+      "safe": "Test An toàn",
+      "scientific": "Phân tích Khoa học"
     }
   },
   "questionCard": {
@@ -98,7 +102,15 @@
     "shareTitle": "Chia sẻ Kết quả",
     "compareWithFriends": "So sánh kết quả với bạn bè",
     "sharing": "Đang chia sẻ...",
-    "kakaoError": "Vui lòng thử lại sau"
+    "kakaoError": "Vui lòng thử lại sau",
+    "kakaoNotAvailable": "Chia sẻ KakaoTalk không khả dụng",
+    "kakaoNotInitialized": "Kakao SDK chưa được khởi tạo"
+  },
+  "share": {
+    "kakaoTitle": "Nhân vật Attack on Titan của tôi là {{characterName}}!",
+    "testButton": "Làm bài test",
+    "nativeTitle": "Test MBTI Attack on Titan",
+    "nativeText": "Nhân vật Attack on Titan của tôi là {{characterName}} ({{mbtiType}})!"
   },
   "characters": {
     "coreTraits": "Đặc điểm Cốt lõi",

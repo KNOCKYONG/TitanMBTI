@@ -29,6 +29,10 @@
     "buttons": {
       "start": "टेस्ट शुरू करें",
       "learnMore": "और जानें"
+    },
+    "trustIndicators": {
+      "safe": "सुरक्षित टेस्ट",
+      "scientific": "वैज्ञानिक विश्लेषण"
     }
   },
   "questionCard": {
@@ -98,7 +102,15 @@
     "shareTitle": "परिणाम साझा करें",
     "compareWithFriends": "दोस्तों के साथ परिणामों की तुलना करें",
     "sharing": "साझा कर रहे हैं...",
-    "kakaoError": "कृपया बाद में पुनः प्रयास करें"
+    "kakaoError": "कृपया बाद में पुनः प्रयास करें",
+    "kakaoNotAvailable": "KakaoTalk साझाकरण उपलब्ध नहीं है",
+    "kakaoNotInitialized": "Kakao SDK प्रारंभ नहीं हुआ"
+  },
+  "share": {
+    "kakaoTitle": "मेरा Attack on Titan चरित्र {{characterName}} है!",
+    "testButton": "टेस्ट लें",
+    "nativeTitle": "Attack on Titan MBTI टेस्ट",
+    "nativeText": "मेरा Attack on Titan चरित्र {{characterName}} ({{mbtiType}}) है!"
   },
   "characters": {
     "coreTraits": "मुख्य गुण",

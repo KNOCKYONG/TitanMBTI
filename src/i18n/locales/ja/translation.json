@@ -56,6 +56,10 @@
       "start": "テストを始める",
       "learnMore": "詳しく見る"
     },
+    "trustIndicators": {
+      "safe": "安全なテスト",
+      "scientific": "科学的分析"
+    },
     "howItWorks": {
       "title": "テストの流れ",
       "step1": {
@@ -216,7 +220,15 @@
     "shareTitle": "結果をシェア",
     "compareWithFriends": "友達と結果を比較",
     "sharing": "シェア中...",
-    "kakaoError": "後でもう一度お試しください"
+    "kakaoError": "後でもう一度お試しください",
+    "kakaoNotAvailable": "カカオトークシェアは利用できません",
+    "kakaoNotInitialized": "Kakao SDKが初期化されていません"
+  },
+  "share": {
+    "kakaoTitle": "私の進撃の巨人キャラクターは{{characterName}}です！",
+    "testButton": "テストを受ける",
+    "nativeTitle": "進撃の巨人 MBTI テスト",
+    "nativeText": "私の進撃の巨人キャラクターは{{characterName}} ({{mbtiType}})です！"
   },
   "characters": {
     "coreTraits": "コア特性",
