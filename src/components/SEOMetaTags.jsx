@@ -34,20 +34,20 @@ const SEOMetaTags = () => {
     // 언어별 SEO 데이터
     const seoData = {
       ko: {
-        title: '진격의 거인 MBTI 테스트 | 나는 어떤 캐릭터일까?',
-        description: '12개의 심리학적 질문으로 당신의 진격의 거인 캐릭터를 찾아보세요. 무료 MBTI 성격 테스트!',
-        keywords: '진격의 거인, MBTI, 성격테스트, 심리테스트, 무료테스트, 애니메이션, 캐릭터, 성격유형, Attack on Titan',
-        ogTitle: '진격의 거인 MBTI 테스트 - 당신은 어떤 캐릭터?',
-        ogDescription: '리바이? 에렌? 미카사? 12개 질문으로 당신의 진격의 거인 캐릭터를 찾아보세요!',
-        twitterTitle: '진격의 거인 MBTI 테스트'
+        title: '진격의 거인 캐릭터 테스트 | MBTI, 에겐남 테토녀, 이상형 월드컵',
+        description: 'MBTI 성격 테스트, 에겐남 테토녀 테스트, 이상형 월드컵까지! 진격의 거인 캐릭터로 나를 발견하세요.',
+        keywords: '진격의 거인, MBTI, 에겐남, 테토녀, 이상형월드컵, 성격테스트, 심리테스트, 무료테스트, 애니메이션, 캐릭터, 성격유형, Attack on Titan, 연애스타일',
+        ogTitle: '진격의 거인 캐릭터 테스트 - 나와 닮은 캐릭터는?',
+        ogDescription: 'MBTI 테스트, 에겐남 테토녀 테스트, 이상형 월드컵! 다양한 테스트로 나와 닮은 진격의 거인 캐릭터를 찾아보세요!',
+        twitterTitle: '진격의 거인 캐릭터 테스트'
       },
       en: {
-        title: 'Attack on Titan MBTI Test | Which Character Are You?',
-        description: 'Discover your Attack on Titan character through 12 psychological questions. Free MBTI personality test!',
-        keywords: 'Attack on Titan, MBTI, personality test, psychology test, free test, anime, character, personality type, 進撃の巨人',
-        ogTitle: 'Attack on Titan MBTI Test - Which Character Are You?',
-        ogDescription: 'Levi? Eren? Mikasa? Find your Attack on Titan character with 12 questions!',
-        twitterTitle: 'Attack on Titan MBTI Test'
+        title: 'Attack on Titan Character Tests | MBTI, Romance Style, WorldCup',
+        description: 'MBTI personality test, Romance style test, Character tournament! Discover yourself through Attack on Titan characters.',
+        keywords: 'Attack on Titan, MBTI, personality test, romance style, tournament, psychology test, free test, anime, character, personality type, 進撃の巨人',
+        ogTitle: 'Attack on Titan Character Tests - Which Character Are You?',
+        ogDescription: 'MBTI test, Romance style test, Character tournament! Find your Attack on Titan character through various tests!',
+        twitterTitle: 'Attack on Titan Character Tests'
       },
       ja: {
         title: '進撃の巨人MBTIテスト | あなたはどのキャラクター？',

@@ -8,7 +8,7 @@ import {
   TrendingUp, Target, Heart, Sparkles, Swords 
 } from 'lucide-react';
 
-const StartScreen = ({ onStart, onWorldCup }) => {
+const StartScreen = ({ onStart, onWorldCup, onEgenTest }) => {
   const { t } = useTranslation();
   
   const stats = [
@@ -74,7 +74,7 @@ const StartScreen = ({ onStart, onWorldCup }) => {
             >
               <Badge className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 px-6 py-2">
                 <Sparkles className="w-4 h-4 mr-2 text-amber-400" />
-                <span className="text-amber-300 font-medium">{t('startScreen.badge')}</span>
+                <span className="text-amber-300 font-medium">2025년 인기 캐릭터 테스트</span>
               </Badge>
             </motion.div>
 
@@ -88,20 +88,21 @@ const StartScreen = ({ onStart, onWorldCup }) => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  <span className="text-white">{t('startScreen.title.line1')}</span>
+                  <span className="text-white">나와 닮은</span>
                   <br />
-                  <span className="text-amber-400">{t('startScreen.title.line2')}</span>
+                  <span className="text-amber-400">진격의 거인</span>
                   <br />
-                  <span className="text-white">{t('startScreen.title.line3')}</span>
+                  <span className="text-white">캐릭터 찾기</span>
                 </h1>
 
                 <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-1">
-                  <p>{t('startScreen.description.line1')}</p>
-                  <p>{t('startScreen.description.line2')}</p>
+                  <p>성격 테스트부터 이상형 월드컵까지!</p>
+                  <p>다양한 테스트로 나를 발견해보세요.</p>
                 </div>
 
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                {/* CTA Buttons - Grid layout for 3 buttons */}
+                <div className="grid gap-4 justify-center lg:justify-start">
+                  {/* MBTI Test Button */}
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -109,14 +110,38 @@ const StartScreen = ({ onStart, onWorldCup }) => {
                     <Button 
                       onClick={onStart}
                       size="lg"
-                      className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-8 py-6 text-lg font-semibold shadow-2xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 group"
+                      className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-6 py-5 text-base font-semibold shadow-2xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 group"
                     >
                       <Play className="mr-2 h-5 w-5" />
-                      {t('startScreen.buttons.start')}
+                      MBTI 테스트 시작
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </motion.div>
                   
+                  {/* Egen Test Button with Trending Badge */}
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="relative"
+                  >
+                    <div className="absolute -top-2 -right-2 z-10">
+                      <Badge className="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-xs px-2 py-1">
+                        <TrendingUp className="w-3 h-3 mr-1" />
+                        HOT
+                      </Badge>
+                    </div>
+                    <Button 
+                      onClick={onEgenTest}
+                      size="lg"
+                      className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-5 text-base font-semibold shadow-2xl shadow-pink-500/25 hover:shadow-pink-500/40 transition-all duration-300 group"
+                    >
+                      <Heart className="mr-2 h-5 w-5" />
+                      에겐남 테토녀 테스트
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </motion.div>
+                  
+                  {/* WorldCup Button */}
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -125,10 +150,10 @@ const StartScreen = ({ onStart, onWorldCup }) => {
                       onClick={onWorldCup}
                       size="lg"
                       variant="outline"
-                      className="border-amber-500/50 hover:bg-amber-500/10 hover:border-amber-500 text-white px-8 py-6 text-lg font-semibold transition-all duration-300 group"
+                      className="w-full border-amber-500/50 hover:bg-amber-500/10 hover:border-amber-500 text-white px-6 py-5 text-base font-semibold transition-all duration-300 group"
                     >
                       <Swords className="mr-2 h-5 w-5 text-amber-400" />
-                      {t('startScreen.buttons.worldcup')}
+                      이상형 월드컵
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </motion.div>
