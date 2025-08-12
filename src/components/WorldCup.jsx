@@ -117,17 +117,24 @@ const WorldCup = ({ onBack }) => {
   };
 
   // Handle Kakao share
-  const handleKakaoShare = (winner) => {
+  const handleKakaoShare = () => {
+    if (!finalWinner) {
+      console.error('No winner to share');
+      return;
+    }
+
+    console.log('Sharing winner:', finalWinner);
+    
     const currentUrl = window.location.origin;
-    const shareUrl = `${currentUrl}?worldcup=winner&character=${winner.mbtiType}`;
+    const shareUrl = `${currentUrl}?worldcup=winner&character=${finalWinner.mbtiType}`;
     
     const shareData = {
-      title: t('worldCup.sharing.kakaoTitle', { characterName: winner.name }),
+      title: t('worldCup.sharing.kakaoTitle', { characterName: finalWinner.name }),
       description: t('worldCup.sharing.kakaoDescription', { 
-        characterName: winner.name,
-        mbtiType: winner.mbtiType 
+        characterName: finalWinner.name,
+        mbtiType: finalWinner.mbtiType 
       }),
-      imageUrl: `${currentUrl}/images/characters/${winner.mbtiType}/profile.png`,
+      imageUrl: `${currentUrl}/images/characters/${finalWinner.mbtiType}/profile.png`,
       link: {
         mobileWebUrl: shareUrl,
         webUrl: shareUrl,
@@ -143,6 +150,7 @@ const WorldCup = ({ onBack }) => {
       ],
     };
 
+    console.log('Share data:', shareData);
     shareOnKakao(shareData);
   };
 
@@ -309,7 +317,7 @@ const WorldCup = ({ onBack }) => {
               <CardContent className="space-y-3">
                 <div className="grid grid-cols-2 gap-3">
                   <Button
-                    onClick={() => handleKakaoShare(finalWinner)}
+                    onClick={handleKakaoShare}
                     size="lg"
                     className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold"
                   >
