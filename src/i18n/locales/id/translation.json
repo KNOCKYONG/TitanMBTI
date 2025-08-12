@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "Tes MBTI Paling Populer 2025",
+    "yearBadge": "Tes Karakter Populer 2025",
     "title": {
       "line1": "Karakter",
       "line2": "Attack on Titan",
       "line3": "Mana Kamu?"
     },
+    "mainTitle": {
+      "line1": "Temukan Karakter",
+      "line2": "Attack on Titan",
+      "line3": "Yang Mirip Kamu"
+    },
     "description": {
       "line1": "Temukan karakter Anda melalui 12 pertanyaan psikologis.",
       "line2": "Temukan kepribadian tersembunyi Anda sekarang juga."
     },
+    "mainDescription": {
+      "line1": "Dari tes kepribadian hingga turnamen karakter!",
+      "line2": "Temukan diri Anda melalui berbagai tes."
+    },
+    "trendingBadge": "TRENDING",
     "stats": {
       "participants": "Peserta",
       "satisfaction": "Kepuasan",

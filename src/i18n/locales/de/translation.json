@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "Beliebtester MBTI-Test von 2025",
+    "yearBadge": "Beliebte Charaktertests 2025",
     "title": {
       "line1": "Welcher",
       "line2": "Attack on Titan",
       "line3": "Charakter bist du?"
     },
+    "mainTitle": {
+      "line1": "Finde deinen",
+      "line2": "Attack on Titan",
+      "line3": "Charakter-Match"
+    },
     "description": {
       "line1": "Entdecke deinen Charakter durch 12 psychologische Fragen.",
       "line2": "Finde deine verborgene Persönlichkeit jetzt heraus."
     },
+    "mainDescription": {
+      "line1": "Von Persönlichkeitstests bis zu Charakter-Turnieren!",
+      "line2": "Entdecke dich selbst durch verschiedene Tests."
+    },
+    "trendingBadge": "TREND",
     "stats": {
       "participants": "Teilnehmer",
       "satisfaction": "Zufriedenheit",

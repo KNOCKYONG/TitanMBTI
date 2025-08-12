@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "Bài Test MBTI Phổ Biến Nhất 2025",
+    "yearBadge": "Test Nhân Vật Phổ Biến 2025",
     "title": {
       "line1": "Bạn là",
       "line2": "Nhân vật nào trong",
       "line3": "Attack on Titan?"
     },
+    "mainTitle": {
+      "line1": "Tìm nhân vật",
+      "line2": "Attack on Titan",
+      "line3": "giống bạn"
+    },
     "description": {
       "line1": "Khám phá nhân vật của bạn qua 12 câu hỏi tâm lý học.",
       "line2": "Tìm ra tính cách ẩn giấu của bạn ngay bây giờ."
     },
+    "mainDescription": {
+      "line1": "Từ test tính cách đến giải đấu nhân vật!",
+      "line2": "Khám phá bản thân qua nhiều bài test khác nhau."
+    },
+    "trendingBadge": "ĐANG HOT",
     "stats": {
       "participants": "Người tham gia",
       "satisfaction": "Hài lòng",

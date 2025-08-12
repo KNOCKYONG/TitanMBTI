@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "اختبار MBTI الأكثر شعبية لعام 2025",
+    "yearBadge": "اختبارات الشخصيات الشهيرة 2025",
     "title": {
       "line1": "أي",
       "line2": "شخصية من",
       "line3": "Attack on Titan أنت؟"
     },
+    "mainTitle": {
+      "line1": "اكتشف شخصية",
+      "line2": "Attack on Titan",
+      "line3": "التي تشبهك"
+    },
     "description": {
       "line1": "اكتشف شخصيتك من خلال 12 سؤالاً نفسياً.",
       "line2": "اعثر على شخصيتك المخفية الآن."
     },
+    "mainDescription": {
+      "line1": "من اختبارات الشخصية إلى بطولات الشخصيات!",
+      "line2": "اكتشف نفسك من خلال اختبارات متنوعة."
+    },
+    "trendingBadge": "رائج",
     "stats": {
       "participants": "المشاركون",
       "satisfaction": "الرضا",

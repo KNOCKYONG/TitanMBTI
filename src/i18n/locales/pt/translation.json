@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "Teste MBTI Mais Popular de 2025",
+    "yearBadge": "Testes de Personagens Populares 2025",
     "title": {
       "line1": "Qual",
       "line2": "Personagem de",
       "line3": "Attack on Titan Você É?"
     },
+    "mainTitle": {
+      "line1": "Encontre seu",
+      "line2": "Attack on Titan",
+      "line3": "Personagem Correspondente"
+    },
     "description": {
       "line1": "Descubra seu personagem através de 12 perguntas psicológicas.",
       "line2": "Encontre sua personalidade oculta agora mesmo."
     },
+    "mainDescription": {
+      "line1": "De testes de personalidade a torneios de personagens!",
+      "line2": "Descubra-se através de vários testes."
+    },
+    "trendingBadge": "TENDÊNCIA",
     "stats": {
       "participants": "Participantes",
       "satisfaction": "Satisfação",
