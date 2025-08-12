@@ -38,7 +38,7 @@ const egenResults = {
       traits: ['순수함', '헌신적', '진실함', '따뜻함']
     },
     'teto': {
-      character: 'ISTP', // 애니 레온하트 (ISFP에서 변경)
+      character: 'ISFP', // 애니 레온하트
       type: 'teto',
       title: '테토녀',
       description: '독립적이고 신비로운 연애 스타일! 자신만의 매력을 가진 당신은 애니와 같은 타입입니다.',
@@ -183,10 +183,23 @@ const EgenTest = ({ onBack }) => {
   };
 
   const handleKakaoShare = () => {
-    if (!result) return;
+    if (!result || !gender) return;
 
+    // 캐릭터 정보 가져오기
     const character = characters[result.character];
+    if (!character) {
+      console.error('Character not found for:', result.character);
+      return;
+    }
+
     const shareUrl = `${window.location.origin}?egen=${result.type}&gender=${gender}`;
+    
+    // 디버깅용 로그
+    console.log('Sharing Egen Test:', {
+      title: result.title,
+      character: character.name,
+      url: shareUrl
+    });
     
     shareOnKakao({
       title: `나는 ${result.title}! ${character.name} 타입`,

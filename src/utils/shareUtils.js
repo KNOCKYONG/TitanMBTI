@@ -46,17 +46,31 @@ export const shareOnKakao = (shareData) => {
   }
 
   try {
+    // 디버깅 로그
+    console.log('Attempting Kakao share with data:', shareData);
+    
     window.Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
         title: shareData.title,
         description: shareData.description,
         imageUrl: shareData.imageUrl,
-        link: shareData.link,
+        link: {
+          mobileWebUrl: shareData.link,
+          webUrl: shareData.link,
+        },
       },
-      buttons: shareData.buttons,
+      buttons: [
+        {
+          title: shareData.buttonTitle || '나도 테스트하기',
+          link: {
+            mobileWebUrl: shareData.link,
+            webUrl: shareData.link,
+          },
+        },
+      ],
     });
-    console.log('Kakao share completed');
+    console.log('Kakao share completed successfully');
   } catch (error) {
     console.error('Kakao share failed:', error);
     alert(i18n.t('shareButtons.kakaoError', '카카오톡 공유 중 오류가 발생했습니다.'));
