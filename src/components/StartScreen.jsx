@@ -116,7 +116,7 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
                       >
                         <div className="flex flex-col items-center">
                           <Play className="h-5 w-5 mb-1" />
-                          <span>MBTI 테스트</span>
+                          <span>{t('startScreen.buttons.start')}</span>
                         </div>
                       </Button>
                     </motion.div>
@@ -133,7 +133,7 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
                       >
                         <div className="flex flex-col items-center">
                           <Heart className="h-5 w-5 mb-1" />
-                          <span>연애 스타일</span>
+                          <span>{t('startScreen.buttons.romance')}</span>
                         </div>
                       </Button>
                     </motion.div>
@@ -160,7 +160,7 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
                       >
                         <div className="flex flex-col items-center">
                           <Sparkles className="h-5 w-5 mb-1" />
-                          <span>에겐남 테토녀</span>
+                          <span>{t('startScreen.buttons.egen')}</span>
                         </div>
                       </Button>
                     </motion.div>
@@ -178,7 +178,7 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
                       >
                         <div className="flex flex-col items-center">
                           <Swords className="h-5 w-5 mb-1 text-amber-400" />
-                          <span>이상형 월드컵</span>
+                          <span>{t('startScreen.buttons.worldcup')}</span>
                         </div>
                       </Button>
                     </motion.div>

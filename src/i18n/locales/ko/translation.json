@@ -53,9 +53,11 @@
       }
     },
     "buttons": {
-      "start": "테스트 시작하기",
-      "learnMore": "자세히 알아보기",
-      "worldcup": "이상형 월드컵 시작"
+      "start": "MBTI 테스트",
+      "romance": "연애 스타일",
+      "egen": "에겐남 테토녀",
+      "worldcup": "이상형 월드컵",
+      "learnMore": "자세히 알아보기"
     },
     "trustIndicators": {
       "safe": "안전한 테스트",
