@@ -296,10 +296,32 @@ const RomanceStyleTest = ({ onBack }) => {
 
     const shareUrl = `${window.location.origin}?romance=${result.id}`;
     
+    // 대표 이미지 선택 (각 스타일에 맞는 이미지)
+    const imageMap = {
+      'eren-mikasa': '/images/eren.jpg',
+      'levi-petra': '/images/levi.jpg', 
+      'ymir-historia': '/images/historia.jpg',
+      'jean-pieck': '/images/jean.jpg',
+      'armin-annie': '/images/armin.jpg',
+      'sasha-niccolo': '/images/sasha.jpg',
+      'erwin-levi': '/images/erwin.jpg',
+      'bertholdt-annie': '/images/bertholdt.jpg',
+      'hange-moblit': '/images/hange.jpg'
+    };
+    
+    const imageUrl = `${window.location.origin}${imageMap[result.id] || '/images/eren.jpg'}`;
+    
+    // 디버깅 로그
+    console.log('Sharing Romance Style Test:', {
+      title: result.title,
+      url: shareUrl,
+      image: imageUrl
+    });
+    
     shareOnKakao({
       title: `나의 진격의 거인 연애 스타일은 ${result.title}!`,
       description: result.description,
-      imageUrl: `${window.location.origin}/images/romance-share.jpg`,
+      imageUrl: imageUrl,
       buttonTitle: '나도 테스트하기',
       link: shareUrl
     });
