@@ -53,7 +53,10 @@
       }
     },
     "buttons": {
-      "start": "テストを始める",
+      "start": "MBTIテスト",
+      "romance": "恋愛スタイル",
+      "egen": "エゲン男テト女",
+      "worldcup": "理想のワールドカップ",
       "learnMore": "詳しく見る"
     },
     "trustIndicators": {
@@ -345,5 +348,181 @@
       "traits": ["ユーモア", "社交的", "楽観的", "即興的"],
       "quote": "笑おう！笑えば全て解決する！"
     }
+  },
+  "worldCup": {
+    "title": "進撃の巨人キャラクタートーナメント",
+    "match": "対戦",
+    "rounds": {
+      "round16": "16強",
+      "quarterFinal": "準々決勝",
+      "semiFinal": "準決勝",
+      "final": "決勝"
+    },
+    "winner": {
+      "title": "優勝",
+      "place": "位",
+      "victories": "勝利",
+      "winRate": "勝率"
+    },
+    "actions": {
+      "restart": "もう一度",
+      "back": "戻る"
+    },
+    "sharing": {
+      "title": "優勝者をシェア",
+      "kakao": "カカオトークでシェア",
+      "copyLink": "リンクコピー",
+      "copied": "コピー完了！",
+      "kakaoTitle": "🏆 {{characterName}}が私のお気に入りキャラ！",
+      "kakaoDescription": "{{characterName}} ({{mbtiType}})が進撃の巨人トーナメントで優勝！",
+      "kakaoButton": "トーナメントに参加"
+    }
+  },
+  "egenTest": {
+    "title": "エゲン男テト女性格テスト",
+    "subtitle": "進撃の巨人キャラで見る恋愛スタイル",
+    "badge": "2025年トレンドテスト",
+    "genderSelection": {
+      "title": "性別を選択してください",
+      "description": "性別によって結果が異なります",
+      "male": "男性",
+      "female": "女性"
+    },
+    "questions": {
+      "q1": {
+        "question": "デートスタイルは？",
+        "option1": "特別なイベントとサプライズを計画する",
+        "option2": "自然で快適な時間を過ごす"
+      },
+      "q2": {
+        "question": "恋人に感情を表現する時",
+        "option1": "積極的に愛を表現する",
+        "option2": "行動で静かに示す"
+      },
+      "q3": {
+        "question": "恋人と衝突が起きた時",
+        "option1": "すぐに会話で解決しようとする",
+        "option2": "時間をかけて冷静に考える"
+      },
+      "q4": {
+        "question": "理想の関係は？",
+        "option1": "全てを捧げる情熱的な関係",
+        "option2": "独立的でありながら信頼する関係"
+      },
+      "q5": {
+        "question": "恋人の友達に会う時",
+        "option1": "積極的に仲良くなろうとする",
+        "option2": "自然に距離を保つ"
+      },
+      "q6": {
+        "question": "記念日のスタイルは？",
+        "option1": "すべての記念日を特別に祝う",
+        "option2": "重要な日だけシンプルに祝う"
+      },
+      "q7": {
+        "question": "恋人との未来計画は？",
+        "option1": "一緒に具体的な計画を立てる",
+        "option2": "自然に流れに任せる"
+      }
+    },
+    "results": {
+      "egenMale": {
+        "title": "エゲン男",
+        "description": "情熱的で直接的な恋愛スタイル！愛にオールインするエレンタイプです。",
+        "traits": ["情熱的", "直接的", "献身的", "正直"]
+      },
+      "tetoMale": {
+        "title": "テト男",
+        "description": "クールで独立的な恋愛スタイル！自分のペースを守るリヴァイタイプです。",
+        "traits": ["独立的", "冷静", "慎重", "プロフェッショナル"]
+      },
+      "egenFemale": {
+        "title": "エゲン女",
+        "description": "純粋で献身的な恋愛スタイル！心から愛するヒストリアタイプです。",
+        "traits": ["純粋", "献身的", "真実", "温かい"]
+      },
+      "tetoFemale": {
+        "title": "テト女",
+        "description": "独立的で神秘的な恋愛スタイル！独特の魅力を持つアニタイプです。",
+        "traits": ["独立的", "神秘的", "強い", "魅力的"]
+      }
+    },
+    "analyzing": "分析中...",
+    "yourStyle": "あなたの恋愛スタイル",
+    "shareResults": "結果をシェア",
+    "testAgain": "もう一度テスト",
+    "backToMain": "メインメニュー"
+  },
+  "romanceTest": {
+    "title": "進撃の巨人恋愛スタイルテスト",
+    "subtitle": "作中の関係に基づく",
+    "badge": "作品の関係性に基づく",
+    "questions": {
+      "q1": {
+        "question": "恋愛で最も重要なことは？",
+        "option1": "お互いを守り合うこと",
+        "option2": "深い信頼と尊敬",
+        "option3": "本当の自分を見せること",
+        "option4": "日常の幸せを共有すること"
+      },
+      "q2": {
+        "question": "衝突をどう解決する？",
+        "option1": "行動で気持ちを証明する",
+        "option2": "会話で冷静に解決する",
+        "option3": "お互いの立場を理解しようとする",
+        "option4": "時間をかけて静かに待つ"
+      },
+      "q3": {
+        "question": "理想のデートは？",
+        "option1": "目標に向かって一緒に取り組む",
+        "option2": "美味しい食事を一緒に楽しむ",
+        "option3": "静かな時間で深い会話",
+        "option4": "趣味を一緒に楽しむ"
+      },
+      "q4": {
+        "question": "愛をどう表現する？",
+        "option1": "守る行動",
+        "option2": "信頼できる存在として側にいる",
+        "option3": "全てを捧げる献身",
+        "option4": "後ろから静かに応援"
+      },
+      "q5": {
+        "question": "関係で求めるものは？",
+        "option1": "運命的なつながり",
+        "option2": "一緒に成長すること",
+        "option3": "同じ目標への旅",
+        "option4": "快適で自由な関係"
+      }
+    },
+    "styles": {
+      "erenMikasa": {
+        "title": "エレン・ミカサ型",
+        "subtitle": "運命の絆型",
+        "description": "深い絆と保護本能。お互いを守りたいが、時に感情表現が難しい。",
+        "traits": ["献身的", "保護的", "深い絆", "行動重視"],
+        "quote": "いつも君を守る"
+      },
+      "leviPetra": {
+        "title": "リヴァイ・ペトラ型",
+        "subtitle": "信頼と尊敬型",
+        "description": "深い信頼と尊敬。外は冷たく見えても内面は温かい。",
+        "traits": ["信頼", "尊敬", "プロ意識", "隠れた温かさ"],
+        "quote": "信じてついてこい"
+      },
+      "ymirHistoria": {
+        "title": "ユミル・ヒストリア型",
+        "subtitle": "自由な愛型",
+        "description": "本当の自分を見せて受け入れる。社会的偏見なく純粋に愛する。",
+        "traits": ["真実性", "自由", "犠牲", "純粋な愛"],
+        "quote": "君のために生きる"
+      }
+    },
+    "analyzingRomance": "恋愛スタイル分析中...",
+    "yourRomanceStyle": "あなたの恋愛スタイル",
+    "characteristics": "恋愛スタイルの特徴",
+    "compatibility": "相性の良い恋愛スタイル",
+    "shareResults": "結果をシェア",
+    "testAgain": "もう一度テスト",
+    "backToMain": "メインメニュー"
   }
 }

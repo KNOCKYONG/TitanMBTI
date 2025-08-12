@@ -53,7 +53,10 @@
       }
     },
     "buttons": {
-      "start": "开始测试",
+      "start": "MBTI测试",
+      "romance": "恋爱风格",
+      "egen": "艾格男特托女",
+      "worldcup": "理想型世界杯",
       "learnMore": "了解更多"
     },
     "trustIndicators": {
@@ -345,5 +348,258 @@
       "traits": ["幽默", "社交", "乐观", "即兴"],
       "quote": "笑吧！一笑就能解决一切！"
     }
+  },
+  "worldCup": {
+    "title": "进击的巨人角色锦标赛",
+    "match": "对战",
+    "rounds": {
+      "round16": "16强",
+      "quarterFinal": "四分之一决赛",
+      "semiFinal": "半决赛",
+      "final": "决赛"
+    },
+    "winner": {
+      "title": "冠军",
+      "place": "名次",
+      "victories": "胜利",
+      "winRate": "胜率"
+    },
+    "actions": {
+      "restart": "重新开始",
+      "back": "返回"
+    },
+    "sharing": {
+      "title": "分享你的冠军",
+      "kakao": "分享到KakaoTalk",
+      "copyLink": "复制链接",
+      "copied": "已复制！",
+      "kakaoTitle": "🏆 {{characterName}}是我最喜欢的角色！",
+      "kakaoDescription": "{{characterName}} ({{mbtiType}})赢得了进击的巨人角色锦标赛！",
+      "kakaoButton": "参加锦标赛"
+    }
+  },
+  "egenTest": {
+    "title": "艾格男特托女性格测试",
+    "subtitle": "通过进击的巨人角色看恋爱风格",
+    "badge": "2025流行测试",
+    "genderSelection": {
+      "title": "请选择你的性别",
+      "description": "结果因性别而异",
+      "male": "男性",
+      "female": "女性"
+    },
+    "questions": {
+      "q1": {
+        "question": "你的约会风格是？",
+        "option1": "策划特别活动和惊喜",
+        "option2": "一起度过自然舒适的时光"
+      },
+      "q2": {
+        "question": "向恋人表达感情时",
+        "option1": "积极表达爱意",
+        "option2": "通过行动默默表现"
+      },
+      "q3": {
+        "question": "与恋人发生冲突时",
+        "option1": "立即通过对话解决",
+        "option2": "花时间冷静思考"
+      },
+      "q4": {
+        "question": "你理想的关系是？",
+        "option1": "全身心投入的热情关系",
+        "option2": "独立又信任的关系"
+      },
+      "q5": {
+        "question": "见恋人的朋友时",
+        "option1": "积极努力成为朋友",
+        "option2": "自然保持距离"
+      },
+      "q6": {
+        "question": "你的纪念日风格是？",
+        "option1": "特别庆祝每个纪念日",
+        "option2": "只简单庆祝重要的日子"
+      },
+      "q7": {
+        "question": "与恋人的未来计划？",
+        "option1": "一起制定具体计划",
+        "option2": "顺其自然"
+      }
+    },
+    "results": {
+      "egenMale": {
+        "title": "艾格男",
+        "description": "热情直接的恋爱风格！像艾伦一样全力以赴的爱情。",
+        "traits": ["热情", "直接", "奉献", "诚实"]
+      },
+      "tetoMale": {
+        "title": "特托男",
+        "description": "冷静独立的恋爱风格！像利威尔一样保持自己的节奏。",
+        "traits": ["独立", "冷静", "谨慎", "专业"]
+      },
+      "egenFemale": {
+        "title": "艾格女",
+        "description": "纯粹奉献的恋爱风格！像希斯特利亚一样全心全意地爱。",
+        "traits": ["纯粹", "奉献", "真诚", "温暖"]
+      },
+      "tetoFemale": {
+        "title": "特托女",
+        "description": "独立神秘的恋爱风格！像阿尼一样拥有独特魅力。",
+        "traits": ["独立", "神秘", "坚强", "魅力"]
+      }
+    },
+    "analyzing": "分析中...",
+    "yourStyle": "你的恋爱风格",
+    "shareResults": "分享结果",
+    "testAgain": "重新测试",
+    "backToMain": "主菜单"
+  },
+  "romanceTest": {
+    "title": "进击的巨人恋爱风格测试",
+    "subtitle": "基于作品关系",
+    "badge": "基于系列关系",
+    "questions": {
+      "q1": {
+        "question": "恋爱中最重要的是什么？",
+        "option1": "相互保护",
+        "option2": "深度信任和尊重",
+        "option3": "展现真实的自己",
+        "option4": "分享日常的快乐"
+      },
+      "q2": {
+        "question": "如何解决冲突？",
+        "option1": "用行动证明感情",
+        "option2": "通过对话冷静解决",
+        "option3": "努力理解彼此的立场",
+        "option4": "静静等待时间"
+      },
+      "q3": {
+        "question": "你理想的约会？",
+        "option1": "一起朝着目标努力",
+        "option2": "一起享受美食",
+        "option3": "安静时光中的深度对话",
+        "option4": "一起享受爱好"
+      },
+      "q4": {
+        "question": "如何表达爱？",
+        "option1": "保护行动",
+        "option2": "可靠地陪在身边",
+        "option3": "奉献一切",
+        "option4": "默默支持"
+      },
+      "q5": {
+        "question": "在关系中寻求什么？",
+        "option1": "命运般的联系",
+        "option2": "共同成长",
+        "option3": "朝着同一目标的旅程",
+        "option4": "舒适自由的关系"
+      },
+      "q6": {
+        "question": "什么吸引你？",
+        "option1": "坚强的意志和决心",
+        "option2": "专业和能力",
+        "option3": "纯粹明亮的能量",
+        "option4": "热情独特的个性"
+      },
+      "q7": {
+        "question": "在远距离或困难情况下？",
+        "option1": "等待并保护到最后",
+        "option2": "耐心地努力理解",
+        "option3": "接受并尽力而为",
+        "option4": "在心中默默支持"
+      },
+      "q8": {
+        "question": "恋爱中最幸福的时刻？",
+        "option1": "相互保护时",
+        "option2": "确认深度信任时",
+        "option3": "真心被理解时",
+        "option4": "一起欢笑享受时"
+      },
+      "q9": {
+        "question": "如果分离来临？",
+        "option1": "努力挽留到最后",
+        "option2": "尊重对方的选择",
+        "option3": "牺牲一切也要保护",
+        "option4": "静静接受并记住"
+      },
+      "q10": {
+        "question": "你理想的爱情形式？",
+        "option1": "命运般绝对的爱",
+        "option2": "基于信任和尊重的爱",
+        "option3": "自由真诚的爱",
+        "option4": "共同成长的爱"
+      }
+    },
+    "styles": {
+      "erenMikasa": {
+        "title": "艾伦-三笠型",
+        "subtitle": "命运纽带型",
+        "description": "深厚的纽带和保护本能。想要保护彼此但有时难以表达感情。",
+        "traits": ["奉献", "保护", "深厚纽带", "行动胜于言语"],
+        "quote": "我会永远保护你"
+      },
+      "leviPetra": {
+        "title": "利威尔-佩特拉型",
+        "subtitle": "信任与尊重型",
+        "description": "深度信任和相互尊重。外表冷漠但内心温暖。",
+        "traits": ["信任", "尊重", "专业", "隐藏的温暖"],
+        "quote": "相信并跟随我"
+      },
+      "ymirHistoria": {
+        "title": "尤弥尔-希斯特利亚型",
+        "subtitle": "自由之爱型",
+        "description": "展现和接受真实的自己。纯粹地爱，不受社会偏见影响。",
+        "traits": ["真诚", "自由", "牺牲", "纯粹的爱"],
+        "quote": "我会为你而活"
+      },
+      "jeanPieck": {
+        "title": "让-皮克型",
+        "subtitle": "成熟理解型",
+        "description": "理解和尊重彼此的立场。即使在冲突中也努力理解。",
+        "traits": ["理解", "成熟", "尊重", "沟通"],
+        "quote": "我们能够理解彼此"
+      },
+      "arminAnnie": {
+        "title": "阿尔敏-阿尼型",
+        "subtitle": "智慧连接型",
+        "description": "通过对话和理解打开心扉。深度理解内心世界。",
+        "traits": ["智慧纽带", "耐心", "深度对话", "内心理解"],
+        "quote": "我想看到你真实的一面"
+      },
+      "sashaNiccolo": {
+        "title": "萨莎-尼科洛型",
+        "subtitle": "纯粹喜悦型",
+        "description": "分享日常的小幸福。带来喜悦和欢笑的明亮爱情。",
+        "traits": ["日常幸福", "纯粹", "共享喜悦", "温暖"],
+        "quote": "与你在一起的每一刻都是幸福"
+      },
+      "erwinLevi": {
+        "title": "埃尔文-利威尔型",
+        "subtitle": "战友纽带型",
+        "description": "朝着同一目标前进。无需言语的深度信任。",
+        "traits": ["战友情", "默契", "共同信念", "绝对信任"],
+        "quote": "让我们一起走到最后"
+      },
+      "bertholdtAnnie": {
+        "title": "贝尔托特-阿尼型",
+        "subtitle": "默默奉献型",
+        "description": "默默守护和支持。不外露但怀有深情。",
+        "traits": ["默默奉献", "耐心", "隐藏的感情", "安静支持"],
+        "quote": "即使无法说出口，我的心也不会改变"
+      },
+      "hangeMoblit": {
+        "title": "汉吉-莫布利特型",
+        "subtitle": "热情支持型",
+        "description": "一个人的热情由另一个人支持。完美互补彼此。",
+        "traits": ["互补", "支持", "共享热情", "平衡"],
+        "quote": "我会帮助你展翅飞翔"
+      }
+    },
+    "analyzingRomance": "分析恋爱风格中...",
+    "yourRomanceStyle": "你的恋爱风格",
+    "characteristics": "恋爱风格特征",
+    "compatibility": "相配的恋爱风格",
+    "shareResults": "分享结果",
+    "testAgain": "重新测试",
+    "backToMain": "主菜单"
   }
 }

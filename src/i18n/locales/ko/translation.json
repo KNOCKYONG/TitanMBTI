@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "2025년 가장 인기있는 MBTI 테스트",
+    "yearBadge": "2025년 인기 캐릭터 테스트",
     "title": {
       "line1": "당신의 성격은",
       "line2": "진격의 거인",
       "line3": "속 누구일까?"
     },
+    "mainTitle": {
+      "line1": "나와 닮은",
+      "line2": "진격의 거인",
+      "line3": "캐릭터 찾기"
+    },
     "description": {
       "line1": "12개의 심리학적 질문으로 찾아보는 나만의 캐릭터.",
       "line2": "지금 바로 당신의 숨겨진 성격을 발견하세요."
     },
+    "mainDescription": {
+      "line1": "성격 테스트부터 이상형 월드컵까지!",
+      "line2": "다양한 테스트로 나를 발견해보세요."
+    },
+    "trendingBadge": "HOT",
     "stats": {
       "participants": "참여자",
       "satisfaction": "만족도",

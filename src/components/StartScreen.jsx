@@ -74,7 +74,7 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
             >
               <Badge className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 px-6 py-2">
                 <Sparkles className="w-4 h-4 mr-2 text-amber-400" />
-                <span className="text-amber-300 font-medium">2025년 인기 캐릭터 테스트</span>
+                <span className="text-amber-300 font-medium">{t('startScreen.yearBadge')}</span>
               </Badge>
             </motion.div>
 
@@ -88,16 +88,16 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  <span className="text-white">나와 닮은</span>
+                  <span className="text-white">{t('startScreen.mainTitle.line1')}</span>
                   <br />
-                  <span className="text-amber-400">진격의 거인</span>
+                  <span className="text-amber-400">{t('startScreen.mainTitle.line2')}</span>
                   <br />
-                  <span className="text-white">캐릭터 찾기</span>
+                  <span className="text-white">{t('startScreen.mainTitle.line3')}</span>
                 </h1>
 
                 <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-1">
-                  <p>성격 테스트부터 이상형 월드컵까지!</p>
-                  <p>다양한 테스트로 나를 발견해보세요.</p>
+                  <p>{t('startScreen.mainDescription.line1')}</p>
+                  <p>{t('startScreen.mainDescription.line2')}</p>
                 </div>
 
                 {/* CTA Buttons - Grid layout for buttons */}
@@ -150,7 +150,7 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
                       <div className="absolute -top-2 -right-2 z-10">
                         <Badge className="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-xs px-2 py-1">
                           <TrendingUp className="w-3 h-3 mr-1" />
-                          HOT
+                          {t('startScreen.trendingBadge')}
                         </Badge>
                       </div>
                       <Button 

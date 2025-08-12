@@ -27,8 +27,67 @@
       "rating": "Calificación"
     },
     "buttons": {
-      "start": "Comenzar Test",
+      "start": "Test MBTI",
+      "romance": "Estilo Romántico",
+      "egen": "Test Egen/Teto",
+      "worldcup": "Copa Mundial Ideal",
       "learnMore": "Saber Más"
+    },
+    "features": {
+      "accurate": {
+        "title": "Análisis Preciso",
+        "description": "Análisis de personalidad basado en psicología"
+      },
+      "fast": {
+        "title": "Resultados Rápidos",
+        "description": "Informe detallado en solo 3 minutos"
+      },
+      "privacy": {
+        "title": "Privacidad Protegida",
+        "description": "Procesamiento seguro y anonimato garantizado"
+      }
+    },
+    "testimonials": {
+      "student": {
+        "name": "María García",
+        "role": "Estudiante",
+        "content": "¡Descubrí aspectos de mi personalidad que no conocía!"
+      },
+      "worker": {
+        "name": "Carlos López",
+        "role": "Profesional",
+        "content": "Coincidir con personajes de AoT lo hace más divertido"
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "step1": {
+        "title": "12 Preguntas",
+        "description": "Responde preguntas psicológicas"
+      },
+      "step2": {
+        "title": "Análisis Instantáneo",
+        "description": "IA analiza tu personalidad"
+      },
+      "step3": {
+        "title": "Coincidencia de Personaje",
+        "description": "Encuentra tu personaje de AoT"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿El test es gratuito?",
+        "answer": "Sí, es 100% gratuito."
+      },
+      "q2": {
+        "question": "¿Puedo compartir mis resultados?",
+        "answer": "Sí, fácilmente a través de redes sociales."
+      },
+      "q3": {
+        "question": "¿Mis datos están seguros?",
+        "answer": "Todos los datos se procesan de forma anónima y no se almacenan."
+      }
     },
     "trustIndicators": {
       "safe": "Test Seguro",
@@ -45,6 +104,68 @@
       "previous": "Anterior",
       "next": "Siguiente",
       "skip": "Omitir"
+    }
+  },
+  "questions": {
+    "q1": {
+      "question": "Cuando tienes tiempo libre los fines de semana, tú:",
+      "option1": "Conoces amigos o asistes a reuniones con gente nueva",
+      "option2": "Pasas tiempo tranquilo en casa leyendo o viendo películas"
+    },
+    "q2": {
+      "question": "En fiestas o reuniones, tú:",
+      "option1": "Hablas con muchas personas y haces nuevos amigos fácilmente",
+      "option2": "Tienes conversaciones profundas solo con pocas personas cercanas"
+    },
+    "q3": {
+      "question": "Para recargar tu energía, tú:",
+      "option1": "Pasas tiempo activo socializando con personas",
+      "option2": "Descansas tranquilamente en soledad"
+    },
+    "q4": {
+      "question": "Al aprender algo nuevo, prefieres:",
+      "option1": "Aprender a través de ejemplos concretos y práctica",
+      "option2": "Entender primero los conceptos generales y teorías"
+    },
+    "q5": {
+      "question": "En las conversaciones, hablas sobre:",
+      "option1": "Experiencias reales y hechos concretos",
+      "option2": "Posibilidades e ideas"
+    },
+    "q6": {
+      "question": "Al resolver problemas, tú:",
+      "option1": "Usas métodos probados y experiencias pasadas",
+      "option2": "Pruebas nuevos métodos y enfoques innovadores"
+    },
+    "q7": {
+      "question": "Al tomar decisiones, valoras:",
+      "option1": "Análisis lógico y hechos objetivos",
+      "option2": "Sentimientos y valores de las personas"
+    },
+    "q8": {
+      "question": "Cuando un amigo pide consejo, tú:",
+      "option1": "Analizas el problema y sugieres soluciones",
+      "option2": "Empatizas y brindas apoyo emocional"
+    },
+    "q9": {
+      "question": "Al recibir críticas, primero:",
+      "option1": "Evalúas la validez lógica de la crítica",
+      "option2": "Consideras la intención de la persona y tus sentimientos"
+    },
+    "q10": {
+      "question": "Al viajar, tú:",
+      "option1": "Haces planes detallados y horarios por adelantado",
+      "option2": "Haces planes aproximados y te mueves espontáneamente"
+    },
+    "q11": {
+      "question": "Al trabajar en tareas, prefieres:",
+      "option1": "Terminar antes de la fecha límite",
+      "option2": "Trabajar mejor bajo presión de fecha límite"
+    },
+    "q12": {
+      "question": "En la vida diaria, prefieres:",
+      "option1": "Ambiente organizado y rutinas regulares",
+      "option2": "Ambiente flexible y libre"
     }
   },
   "resultScreen": {

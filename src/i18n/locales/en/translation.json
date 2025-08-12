@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "Most Popular Character Tests 2025",
+    "yearBadge": "2025 Popular Character Tests",
     "title": {
       "line1": "Which",
       "line2": "Attack on Titan",
       "line3": "Character Are You?"
     },
+    "mainTitle": {
+      "line1": "Find Your",
+      "line2": "Attack on Titan",
+      "line3": "Character Match"
+    },
     "description": {
       "line1": "Discover your character through 12 psychological questions.",
       "line2": "Find your hidden personality right now."
     },
+    "mainDescription": {
+      "line1": "From personality tests to character tournaments!",
+      "line2": "Discover yourself through various tests."
+    },
+    "trendingBadge": "HOT",
     "stats": {
       "participants": "Participants",
       "satisfaction": "Satisfaction",
