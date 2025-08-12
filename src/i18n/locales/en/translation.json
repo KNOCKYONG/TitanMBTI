@@ -1,0 +1,321 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "complete": "Complete",
+    "share": "Share",
+    "restart": "Test Again"
+  },
+  "startScreen": {
+    "badge": "Most Popular MBTI Test of 2025",
+    "title": {
+      "line1": "Which",
+      "line2": "Attack on Titan",
+      "line3": "Character Are You?"
+    },
+    "description": {
+      "line1": "Discover your character through 12 psychological questions.",
+      "line2": "Find your hidden personality right now."
+    },
+    "stats": {
+      "participants": "Participants",
+      "satisfaction": "Satisfaction",
+      "duration": "Duration",
+      "rating": "Rating"
+    },
+    "features": {
+      "accurate": {
+        "title": "Accurate Analysis",
+        "description": "Psychology-based personality analysis"
+      },
+      "fast": {
+        "title": "Quick Results",
+        "description": "Detailed report in just 3 minutes"
+      },
+      "privacy": {
+        "title": "Privacy Protected",
+        "description": "Secure data processing and anonymity"
+      }
+    },
+    "testimonials": {
+      "student": {
+        "name": "Sarah Kim",
+        "role": "Student",
+        "content": "I discovered aspects of my personality I never knew!"
+      },
+      "worker": {
+        "name": "John Lee",
+        "role": "Professional",
+        "content": "Matching with AoT characters makes it more fun"
+      }
+    },
+    "buttons": {
+      "start": "Start Test",
+      "learnMore": "Learn More"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "12 Questions",
+        "description": "Answer psychology-based questions"
+      },
+      "step2": {
+        "title": "Instant Analysis",
+        "description": "AI analyzes your personality"
+      },
+      "step3": {
+        "title": "Character Match",
+        "description": "Match with AoT character"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "Is the test free?",
+        "answer": "Yes, it's 100% free."
+      },
+      "q2": {
+        "question": "Can I share my results?",
+        "answer": "Yes, easily share via social media."
+      },
+      "q3": {
+        "question": "Is my data safe?",
+        "answer": "All data is processed anonymously and not stored."
+      }
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "Step",
+      "complete": "Complete",
+      "question": "Question"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "skip": "Skip"
+    }
+  },
+  "questions": {
+    "q1": {
+      "question": "When you have free time on weekends, you:",
+      "option1": "Meet friends or join gatherings with new people",
+      "option2": "Spend time quietly at home reading or watching movies"
+    },
+    "q2": {
+      "question": "At parties or gatherings, you:",
+      "option1": "Chat with many people and easily make new friends",
+      "option2": "Have deep conversations only with a few close people"
+    },
+    "q3": {
+      "question": "To recharge your energy, you:",
+      "option1": "Spend active time socializing with people",
+      "option2": "Rest quietly in solitude"
+    },
+    "q4": {
+      "question": "When learning something new, you prefer:",
+      "option1": "Learning through concrete examples and practice",
+      "option2": "Understanding overall concepts and theories first"
+    },
+    "q5": {
+      "question": "In conversations, you talk about:",
+      "option1": "Real experiences and concrete facts",
+      "option2": "Possibilities and ideas"
+    },
+    "q6": {
+      "question": "When solving problems, you:",
+      "option1": "Use proven methods and past experience",
+      "option2": "Try new methods and innovative approaches"
+    },
+    "q7": {
+      "question": "When making decisions, you value:",
+      "option1": "Logical analysis and objective facts",
+      "option2": "People's feelings and values"
+    },
+    "q8": {
+      "question": "When a friend asks for advice, you:",
+      "option1": "Analyze the problem and suggest solutions",
+      "option2": "Empathize and provide emotional support"
+    },
+    "q9": {
+      "question": "When receiving criticism, you first:",
+      "option1": "Evaluate the logical validity of the criticism",
+      "option2": "Consider the person's intent and your feelings"
+    },
+    "q10": {
+      "question": "When traveling, you:",
+      "option1": "Make detailed plans and schedules in advance",
+      "option2": "Make rough plans and move spontaneously"
+    },
+    "q11": {
+      "question": "When working on tasks, you prefer:",
+      "option1": "Finishing before the deadline",
+      "option2": "Working best under deadline pressure"
+    },
+    "q12": {
+      "question": "In daily life, you prefer:",
+      "option1": "Organized environment and regular routines",
+      "option2": "Flexible and free environment"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "Analyzing...",
+      "description": "Finding your personality type"
+    },
+    "badge": "Analysis Complete",
+    "mbtiType": "MBTI Type",
+    "yourCharacter": "Your Character is",
+    "characterAnalysis": {
+      "title": "Personality Analysis",
+      "traits": "Key Traits",
+      "strengths": "Strengths",
+      "description": "Character Description"
+    },
+    "compatibility": {
+      "title": "Compatibility",
+      "bestMatch": "Best Match",
+      "goodMatch": "Good Match",
+      "description": "Relationships with other types"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "percentage": "of population",
+      "similar": "Similar types"
+    },
+    "shareSection": {
+      "title": "Share Your Results",
+      "subtitle": "Compare with your friends"
+    },
+    "buttons": {
+      "restart": "Test Again",
+      "saveImage": "Save as Image",
+      "viewDetails": "View Details"
+    }
+  },
+  "shareButtons": {
+    "kakao": "Share on KakaoTalk",
+    "copyLink": "Copy Link",
+    "copySuccess": "Copied",
+    "more": "More",
+    "shareTitle": "Share Results",
+    "compareWithFriends": "Compare results with friends"
+  },
+  "characters": {
+    "INTJ": {
+      "name": "Levi Ackerman",
+      "title": "The Architect",
+      "description": "Humanity's strongest soldier with exceptional combat skills and cold judgment. Values comrades despite not showing emotions.",
+      "traits": ["Strategic", "Independent", "Perfectionist", "Efficient"],
+      "quote": "Make a choice you won't regret"
+    },
+    "INTP": {
+      "name": "Hange Zoe",
+      "title": "The Thinker",
+      "description": "Survey Corps squad leader with infinite curiosity about Titans. Pursues truth despite dangers.",
+      "traits": ["Curious", "Analytical", "Creative", "Passionate"],
+      "quote": "Titans are so interesting!"
+    },
+    "ENTJ": {
+      "name": "Erwin Smith",
+      "title": "The Commander",
+      "description": "Survey Corps commander who risks everything for humanity's future. Sees the big picture and accepts sacrifice.",
+      "traits": ["Leadership", "Strategic", "Decisive", "Visionary"],
+      "quote": "Dedicate your hearts!"
+    },
+    "ENTP": {
+      "name": "Floch Forster",
+      "title": "The Debater",
+      "description": "Fearless in debate for his beliefs. Challenges the existing order.",
+      "traits": ["Argumentative", "Innovative", "Independent", "Challenging"],
+      "quote": "If we need a devil, I'll gladly become one"
+    },
+    "INFJ": {
+      "name": "Armin Arlert",
+      "title": "The Advocate",
+      "description": "Possesses brilliant strategic thinking and deep insight. Seeks peace but accepts sacrifice when necessary.",
+      "traits": ["Insightful", "Idealistic", "Strategic", "Empathetic"],
+      "quote": "To change something, you have to give up something"
+    },
+    "INFP": {
+      "name": "Historia Reiss",
+      "title": "The Mediator",
+      "description": "On a journey to find her true self. Cares for others while maintaining her beliefs.",
+      "traits": ["Idealistic", "Authentic", "Empathetic", "Growing"],
+      "quote": "I'm humanity's enemy, but I'm your ally"
+    },
+    "ENFJ": {
+      "name": "Marco Bott",
+      "title": "The Protagonist",
+      "description": "Passionate about helping and leading others. Has the power to unite everyone.",
+      "traits": ["Leadership", "Altruistic", "Charismatic", "Devoted"],
+      "quote": "If only everyone could understand each other"
+    },
+    "ENFP": {
+      "name": "Sasha Blouse",
+      "title": "The Campaigner",
+      "description": "Brightens surroundings with positive energy. A free spirit.",
+      "traits": ["Optimistic", "Free-spirited", "Friendly", "Spontaneous"],
+      "quote": "Meat... I want to eat meat"
+    },
+    "ISTJ": {
+      "name": "Mikasa Ackerman",
+      "title": "The Logistician",
+      "description": "Strong sense of duty and loyalty. Will do anything to protect loved ones.",
+      "traits": ["Loyal", "Responsible", "Practical", "Protective"],
+      "quote": "This world is cruel. But it's also beautiful"
+    },
+    "ISFJ": {
+      "name": "Petra Ral",
+      "title": "The Defender",
+      "description": "Dedicated person who cares for and supports teammates. Quietly backs up the team.",
+      "traits": ["Devoted", "Caring", "Trustworthy", "Supportive"],
+      "quote": "We have to trust each other"
+    },
+    "ESTJ": {
+      "name": "Jean Kirstein",
+      "title": "The Executive",
+      "description": "Grown into a realistic and responsible leader. Values principles and leads the team.",
+      "traits": ["Leadership", "Realistic", "Responsible", "Growing"],
+      "quote": "I'm joining the Survey Corps"
+    },
+    "ESFJ": {
+      "name": "Connie Springer",
+      "title": "The Consul",
+      "description": "Strong camaraderie and values teamwork. Never loses humor even in difficult situations.",
+      "traits": ["Friendly", "Loyal", "Humorous", "Team-player"],
+      "quote": "We're friends, aren't we?"
+    },
+    "ISTP": {
+      "name": "Annie Leonhart",
+      "title": "The Virtuoso",
+      "description": "Exceptional combat skills and cool judgment. Independent and practical.",
+      "traits": ["Independent", "Practical", "Cool", "Skilled"],
+      "quote": "I'm just a normal person"
+    },
+    "ISFP": {
+      "name": "Ymir",
+      "title": "The Adventurer",
+      "description": "Free and independent soul. Acts according to personal values.",
+      "traits": ["Free", "Independent", "Loyal", "Intuitive"],
+      "quote": "I'm going to live for myself"
+    },
+    "ESTP": {
+      "name": "Eren Yeager",
+      "title": "The Entrepreneur",
+      "description": "Exceptional action and determination. Fights with everything for freedom.",
+      "traits": ["Action-oriented", "Determined", "Freedom", "Passionate"],
+      "quote": "I was born free"
+    },
+    "ESFP": {
+      "name": "Connie Springer",
+      "title": "The Entertainer",
+      "description": "Brightens the atmosphere with cheerful personality. Lives in the moment.",
+      "traits": ["Humorous", "Social", "Optimistic", "Spontaneous"],
+      "quote": "Let's laugh! Everything works out when you laugh!"
+    }
+  }
+}

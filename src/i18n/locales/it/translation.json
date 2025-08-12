@@ -1,0 +1,89 @@
+{
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "retry": "Riprova",
+    "back": "Indietro",
+    "next": "Avanti",
+    "complete": "Completa",
+    "share": "Condividi",
+    "restart": "Ripeti Test"
+  },
+  "startScreen": {
+    "badge": "Test MBTI Più Popolare del 2025",
+    "title": {
+      "line1": "Quale",
+      "line2": "Personaggio di",
+      "line3": "Attack on Titan Sei?"
+    },
+    "description": {
+      "line1": "Scopri il tuo personaggio attraverso 12 domande psicologiche.",
+      "line2": "Trova la tua personalità nascosta adesso."
+    },
+    "stats": {
+      "participants": "Partecipanti",
+      "satisfaction": "Soddisfazione",
+      "duration": "Durata",
+      "rating": "Valutazione"
+    },
+    "buttons": {
+      "start": "Inizia Test",
+      "learnMore": "Scopri di Più"
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "Passo",
+      "complete": "Completa",
+      "question": "Domanda"
+    },
+    "navigation": {
+      "previous": "Precedente",
+      "next": "Avanti",
+      "skip": "Salta"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "Analizzando...",
+      "description": "Trovando il tuo tipo di personalità"
+    },
+    "badge": "Analisi Completata",
+    "mbtiType": "Tipo MBTI",
+    "yourCharacter": "Il Tuo Personaggio è",
+    "characterAnalysis": {
+      "title": "Analisi della Personalità",
+      "traits": "Tratti Chiave",
+      "strengths": "Punti di Forza",
+      "description": "Descrizione del Personaggio"
+    },
+    "compatibility": {
+      "title": "Compatibilità",
+      "bestMatch": "Migliore Compatibilità",
+      "goodMatch": "Buona Compatibilità",
+      "description": "Relazioni con altri tipi"
+    },
+    "statistics": {
+      "title": "Statistiche",
+      "percentage": "della popolazione",
+      "similar": "Tipi simili"
+    },
+    "shareSection": {
+      "title": "Condividi i Tuoi Risultati",
+      "subtitle": "Confronta con i tuoi amici"
+    },
+    "buttons": {
+      "restart": "Ripeti Test",
+      "saveImage": "Salva come Immagine",
+      "viewDetails": "Visualizza Dettagli"
+    }
+  },
+  "shareButtons": {
+    "kakao": "Condividi su KakaoTalk",
+    "copyLink": "Copia Link",
+    "copySuccess": "Copiato",
+    "more": "Altro",
+    "shareTitle": "Condividi Risultati",
+    "compareWithFriends": "Confronta risultati con gli amici"
+  }
+}

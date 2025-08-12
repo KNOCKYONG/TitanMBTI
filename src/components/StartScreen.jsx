@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
@@ -8,42 +9,44 @@ import {
 } from 'lucide-react';
 
 const StartScreen = ({ onStart }) => {
+  const { t } = useTranslation();
+  
   const stats = [
-    { value: "10만+", label: "참여자", icon: Users },
-    { value: "97%", label: "만족도", icon: Heart },
-    { value: "3분", label: "소요", icon: Clock },
-    { value: "4.9", label: "평점", icon: Star }
+    { value: "100K+", label: t('startScreen.stats.participants'), icon: Users },
+    { value: "97%", label: t('startScreen.stats.satisfaction'), icon: Heart },
+    { value: "3min", label: t('startScreen.stats.duration'), icon: Clock },
+    { value: "4.9", label: t('startScreen.stats.rating'), icon: Star }
   ];
 
   const features = [
     {
       icon: Target,
-      title: "정확한 분석",
-      description: "심리학 기반의 정확한 성격 분석"
+      title: t('startScreen.features.accurate.title'),
+      description: t('startScreen.features.accurate.description')
     },
     {
       icon: Zap,
-      title: "빠른 결과",
-      description: "단 3분만에 받는 상세한 리포트"
+      title: t('startScreen.features.fast.title'),
+      description: t('startScreen.features.fast.description')
     },
     {
       icon: Shield,
-      title: "개인정보 보호",
-      description: "안전한 데이터 처리와 익명성 보장"
+      title: t('startScreen.features.privacy.title'),
+      description: t('startScreen.features.privacy.description')
     }
   ];
 
   const testimonials = [
     {
-      name: "김민지",
-      role: "대학생",
-      content: "제가 몰랐던 저의 성격을 알게 되었어요!",
+      name: t('startScreen.testimonials.student.name'),
+      role: t('startScreen.testimonials.student.role'),
+      content: t('startScreen.testimonials.student.content'),
       rating: 5
     },
     {
-      name: "이준호",
-      role: "직장인",
-      content: "진격의 거인 캐릭터와 매칭되니 더 재밌네요",
+      name: t('startScreen.testimonials.worker.name'),
+      role: t('startScreen.testimonials.worker.role'),
+      content: t('startScreen.testimonials.worker.content'),
       rating: 5
     }
   ];
@@ -71,7 +74,7 @@ const StartScreen = ({ onStart }) => {
             >
               <Badge className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 px-6 py-2">
                 <Sparkles className="w-4 h-4 mr-2 text-amber-400" />
-                <span className="text-amber-300 font-medium">2025년 가장 인기있는 MBTI 테스트</span>
+                <span className="text-amber-300 font-medium">{t('startScreen.badge')}</span>
               </Badge>
             </motion.div>
 
@@ -85,16 +88,16 @@ const StartScreen = ({ onStart }) => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  <span className="text-white">당신의 성격은</span>
+                  <span className="text-white">{t('startScreen.title.line1')}</span>
                   <br />
-                  <span className="text-amber-400">진격의 거인</span>
+                  <span className="text-amber-400">{t('startScreen.title.line2')}</span>
                   <br />
-                  <span className="text-white">속 누구일까?</span>
+                  <span className="text-white">{t('startScreen.title.line3')}</span>
                 </h1>
 
                 <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-1">
-                  <p>12개의 심리학적 질문으로 찾아보는 나만의 캐릭터.</p>
-                  <p>지금 바로 당신의 숨겨진 성격을 발견하세요.</p>
+                  <p>{t('startScreen.description.line1')}</p>
+                  <p>{t('startScreen.description.line2')}</p>
                 </div>
 
                 {/* CTA Buttons */}
@@ -109,7 +112,7 @@ const StartScreen = ({ onStart }) => {
                       className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-8 py-6 text-lg font-semibold shadow-2xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 group"
                     >
                       <Play className="mr-2 h-5 w-5" />
-                      무료로 시작하기
+                      {t('startScreen.buttons.start')}
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </motion.div>

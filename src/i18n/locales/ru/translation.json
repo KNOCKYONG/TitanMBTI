@@ -1,0 +1,89 @@
+{
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Произошла ошибка",
+    "retry": "Попробовать снова",
+    "back": "Назад",
+    "next": "Далее",
+    "complete": "Завершить",
+    "share": "Поделиться",
+    "restart": "Пройти Тест Снова"
+  },
+  "startScreen": {
+    "badge": "Самый Популярный MBTI Тест 2025 года",
+    "title": {
+      "line1": "Какой ты",
+      "line2": "Персонаж из",
+      "line3": "Attack on Titan?"
+    },
+    "description": {
+      "line1": "Откройте своего персонажа через 12 психологических вопросов.",
+      "line2": "Найдите свою скрытую личность прямо сейчас."
+    },
+    "stats": {
+      "participants": "Участники",
+      "satisfaction": "Удовлетворенность",
+      "duration": "Продолжительность",
+      "rating": "Рейтинг"
+    },
+    "buttons": {
+      "start": "Начать Тест",
+      "learnMore": "Узнать Больше"
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "Шаг",
+      "complete": "Завершить",
+      "question": "Вопрос"
+    },
+    "navigation": {
+      "previous": "Предыдущий",
+      "next": "Далее",
+      "skip": "Пропустить"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "Анализирую...",
+      "description": "Определение вашего типа личности"
+    },
+    "badge": "Анализ Завершен",
+    "mbtiType": "Тип MBTI",
+    "yourCharacter": "Ваш Персонаж",
+    "characterAnalysis": {
+      "title": "Анализ Личности",
+      "traits": "Ключевые Черты",
+      "strengths": "Сильные Стороны",
+      "description": "Описание Персонажа"
+    },
+    "compatibility": {
+      "title": "Совместимость",
+      "bestMatch": "Лучшее Соответствие",
+      "goodMatch": "Хорошее Соответствие",
+      "description": "Отношения с другими типами"
+    },
+    "statistics": {
+      "title": "Статистика",
+      "percentage": "населения",
+      "similar": "Похожие типы"
+    },
+    "shareSection": {
+      "title": "Поделитесь Результатами",
+      "subtitle": "Сравните с друзьями"
+    },
+    "buttons": {
+      "restart": "Пройти Тест Снова",
+      "saveImage": "Сохранить как Изображение",
+      "viewDetails": "Посмотреть Детали"
+    }
+  },
+  "shareButtons": {
+    "kakao": "Поделиться в KakaoTalk",
+    "copyLink": "Копировать Ссылку",
+    "copySuccess": "Скопировано",
+    "more": "Еще",
+    "shareTitle": "Поделиться Результатами",
+    "compareWithFriends": "Сравните результаты с друзьями"
+  }
+}

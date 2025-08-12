@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
@@ -14,6 +15,7 @@ const QuestionCard = ({
   onBack,
   canGoBack 
 }) => {
+  const { t, i18n } = useTranslation();
   const [selectedOption, setSelectedOption] = useState(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -77,7 +79,7 @@ const QuestionCard = ({
                     <Hash className="w-3 h-3 mr-1 text-amber-400" />
                     <span className="text-amber-300 font-medium">{questionNumber} / {totalQuestions}</span>
                   </Badge>
-                  <span className="text-gray-400 text-sm">단계</span>
+                  <span className="text-gray-400 text-sm">{t('questionCard.progress.step')}</span>
                 </div>
                 
                 <motion.div 
@@ -87,7 +89,7 @@ const QuestionCard = ({
                   transition={{ delay: 0.3, type: "spring", stiffness: 500 }}
                 >
                   <span className="text-sm font-medium text-amber-400">{Math.round(progress)}%</span>
-                  <span className="text-xs text-gray-500">완료</span>
+                  <span className="text-xs text-gray-500">{t('questionCard.progress.complete')}</span>
                 </motion.div>
               </div>
 
@@ -130,7 +132,7 @@ const QuestionCard = ({
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.4 }}
                   >
-                    {question.question}
+                    {t(`questions.q${question.id}.question`)}
                   </motion.h2>
                 </div>
                 
@@ -184,7 +186,7 @@ const QuestionCard = ({
                               text-gray-300 group-hover:text-white
                               transition-colors duration-300
                             `}>
-                              {option.text}
+                              {t(`questions.q${question.id}.option${index + 1}`)}
                             </span>
                           </div>
                           
@@ -210,7 +212,7 @@ const QuestionCard = ({
                           className="text-gray-400 hover:text-white hover:bg-gray-800/50 transition-all duration-300"
                         >
                           <ChevronLeft className="w-5 h-5 mr-2" />
-                          이전 질문
+                          {t('questionCard.navigation.previous')}
                         </Button>
                       ) : (
                         <div className="w-24" /> // Spacer

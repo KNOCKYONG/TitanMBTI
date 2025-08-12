@@ -1,0 +1,89 @@
+{
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "error": "حدث خطأ",
+    "retry": "حاول مرة أخرى",
+    "back": "العودة",
+    "next": "التالي",
+    "complete": "إكمال",
+    "share": "مشاركة",
+    "restart": "إعادة الاختبار"
+  },
+  "startScreen": {
+    "badge": "اختبار MBTI الأكثر شعبية لعام 2025",
+    "title": {
+      "line1": "أي",
+      "line2": "شخصية من",
+      "line3": "Attack on Titan أنت؟"
+    },
+    "description": {
+      "line1": "اكتشف شخصيتك من خلال 12 سؤالاً نفسياً.",
+      "line2": "اعثر على شخصيتك المخفية الآن."
+    },
+    "stats": {
+      "participants": "المشاركون",
+      "satisfaction": "الرضا",
+      "duration": "المدة",
+      "rating": "التقييم"
+    },
+    "buttons": {
+      "start": "بدء الاختبار",
+      "learnMore": "تعلم المزيد"
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "خطوة",
+      "complete": "إكمال",
+      "question": "سؤال"
+    },
+    "navigation": {
+      "previous": "السابق",
+      "next": "التالي",
+      "skip": "تخطي"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "جارٍ التحليل...",
+      "description": "البحث عن نوع شخصيتك"
+    },
+    "badge": "اكتمل التحليل",
+    "mbtiType": "نوع MBTI",
+    "yourCharacter": "شخصيتك هي",
+    "characterAnalysis": {
+      "title": "تحليل الشخصية",
+      "traits": "السمات الرئيسية",
+      "strengths": "نقاط القوة",
+      "description": "وصف الشخصية"
+    },
+    "compatibility": {
+      "title": "التوافق",
+      "bestMatch": "أفضل توافق",
+      "goodMatch": "توافق جيد",
+      "description": "العلاقات مع الأنواع الأخرى"
+    },
+    "statistics": {
+      "title": "الإحصائيات",
+      "percentage": "من السكان",
+      "similar": "أنواع مشابهة"
+    },
+    "shareSection": {
+      "title": "شارك نتائجك",
+      "subtitle": "قارن مع أصدقائك"
+    },
+    "buttons": {
+      "restart": "إعادة الاختبار",
+      "saveImage": "حفظ كصورة",
+      "viewDetails": "عرض التفاصيل"
+    }
+  },
+  "shareButtons": {
+    "kakao": "مشاركة على KakaoTalk",
+    "copyLink": "نسخ الرابط",
+    "copySuccess": "تم النسخ",
+    "more": "المزيد",
+    "shareTitle": "مشاركة النتائج",
+    "compareWithFriends": "قارن النتائج مع الأصدقاء"
+  }
+}

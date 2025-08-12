@@ -1,0 +1,89 @@
+{
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Erneut versuchen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "complete": "Fertigstellen",
+    "share": "Teilen",
+    "restart": "Test wiederholen"
+  },
+  "startScreen": {
+    "badge": "Beliebtester MBTI-Test von 2025",
+    "title": {
+      "line1": "Welcher",
+      "line2": "Attack on Titan",
+      "line3": "Charakter bist du?"
+    },
+    "description": {
+      "line1": "Entdecke deinen Charakter durch 12 psychologische Fragen.",
+      "line2": "Finde deine verborgene Persönlichkeit jetzt heraus."
+    },
+    "stats": {
+      "participants": "Teilnehmer",
+      "satisfaction": "Zufriedenheit",
+      "duration": "Dauer",
+      "rating": "Bewertung"
+    },
+    "buttons": {
+      "start": "Test Starten",
+      "learnMore": "Mehr erfahren"
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "Schritt",
+      "complete": "Fertigstellen",
+      "question": "Frage"
+    },
+    "navigation": {
+      "previous": "Vorherige",
+      "next": "Weiter",
+      "skip": "Überspringen"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "Analysiere...",
+      "description": "Finde deinen Persönlichkeitstyp"
+    },
+    "badge": "Analyse Abgeschlossen",
+    "mbtiType": "MBTI-Typ",
+    "yourCharacter": "Dein Charakter ist",
+    "characterAnalysis": {
+      "title": "Persönlichkeitsanalyse",
+      "traits": "Hauptmerkmale",
+      "strengths": "Stärken",
+      "description": "Charakterbeschreibung"
+    },
+    "compatibility": {
+      "title": "Kompatibilität",
+      "bestMatch": "Beste Übereinstimmung",
+      "goodMatch": "Gute Übereinstimmung",
+      "description": "Beziehungen zu anderen Typen"
+    },
+    "statistics": {
+      "title": "Statistiken",
+      "percentage": "der Bevölkerung",
+      "similar": "Ähnliche Typen"
+    },
+    "shareSection": {
+      "title": "Teile Deine Ergebnisse",
+      "subtitle": "Vergleiche mit deinen Freunden"
+    },
+    "buttons": {
+      "restart": "Test wiederholen",
+      "saveImage": "Als Bild speichern",
+      "viewDetails": "Details anzeigen"
+    }
+  },
+  "shareButtons": {
+    "kakao": "Auf KakaoTalk teilen",
+    "copyLink": "Link kopieren",
+    "copySuccess": "Kopiert",
+    "more": "Mehr",
+    "shareTitle": "Ergebnisse teilen",
+    "compareWithFriends": "Ergebnisse mit Freunden vergleichen"
+  }
+}

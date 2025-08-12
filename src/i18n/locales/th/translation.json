@@ -1,0 +1,89 @@
+{
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "retry": "ลองใหม่อีกครั้ง",
+    "back": "กลับ",
+    "next": "ถัดไป",
+    "complete": "เสร็จสิ้น",
+    "share": "แบ่งปัน",
+    "restart": "ทำแบบทดสอบใหม่"
+  },
+  "startScreen": {
+    "badge": "แบบทดสอบ MBTI ยอดนิยมที่สุดปี 2025",
+    "title": {
+      "line1": "คุณเป็น",
+      "line2": "ตัวละครไหนใน",
+      "line3": "Attack on Titan?"
+    },
+    "description": {
+      "line1": "ค้นพบตัวละครของคุณผ่าน 12 คำถามทางจิตวิทยา",
+      "line2": "ค้นหาบุคลิกภาพที่ซ่อนอยู่ของคุณตอนนี้เลย"
+    },
+    "stats": {
+      "participants": "ผู้เข้าร่วม",
+      "satisfaction": "ความพึงพอใจ",
+      "duration": "ระยะเวลา",
+      "rating": "คะแนน"
+    },
+    "buttons": {
+      "start": "เริ่มทำแบบทดสอบ",
+      "learnMore": "เรียนรู้เพิ่มเติม"
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "ขั้นตอน",
+      "complete": "เสร็จสิ้น",
+      "question": "คำถาม"
+    },
+    "navigation": {
+      "previous": "ก่อนหน้า",
+      "next": "ถัดไป",
+      "skip": "ข้าม"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "กำลังวิเคราะห์...",
+      "description": "กำลังค้นหาประเภทบุคลิกภาพของคุณ"
+    },
+    "badge": "วิเคราะห์เสร็จสิ้น",
+    "mbtiType": "ประเภท MBTI",
+    "yourCharacter": "ตัวละครของคุณคือ",
+    "characterAnalysis": {
+      "title": "การวิเคราะห์บุคลิกภาพ",
+      "traits": "ลักษณะสำคัญ",
+      "strengths": "จุดแข็ง",
+      "description": "คำอธิบายตัวละคร"
+    },
+    "compatibility": {
+      "title": "ความเข้ากันได้",
+      "bestMatch": "เข้ากันได้ดีที่สุด",
+      "goodMatch": "เข้ากันได้ดี",
+      "description": "ความสัมพันธ์กับประเภทอื่น"
+    },
+    "statistics": {
+      "title": "สถิติ",
+      "percentage": "ของประชากร",
+      "similar": "ประเภทที่คล้ายกัน"
+    },
+    "shareSection": {
+      "title": "แบ่งปันผลลัพธ์",
+      "subtitle": "เปรียบเทียบกับเพื่อน"
+    },
+    "buttons": {
+      "restart": "ทำแบบทดสอบใหม่",
+      "saveImage": "บันทึกเป็นรูปภาพ",
+      "viewDetails": "ดูรายละเอียด"
+    }
+  },
+  "shareButtons": {
+    "kakao": "แบ่งปันใน KakaoTalk",
+    "copyLink": "คัดลอกลิงก์",
+    "copySuccess": "คัดลอกแล้ว",
+    "more": "เพิ่มเติม",
+    "shareTitle": "แบ่งปันผลลัพธ์",
+    "compareWithFriends": "เปรียบเทียบผลลัพธ์กับเพื่อน"
+  }
+}

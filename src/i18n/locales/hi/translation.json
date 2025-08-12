@@ -1,0 +1,89 @@
+{
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "एक त्रुटि हुई",
+    "retry": "फिर से कोशिश करें",
+    "back": "वापस",
+    "next": "अगला",
+    "complete": "पूर्ण करें",
+    "share": "साझा करें",
+    "restart": "फिर से टेस्ट करें"
+  },
+  "startScreen": {
+    "badge": "2025 का सबसे लोकप्रिय MBTI टेस्ट",
+    "title": {
+      "line1": "आप कौन से",
+      "line2": "Attack on Titan",
+      "line3": "चरित्र हैं?"
+    },
+    "description": {
+      "line1": "12 मनोवैज्ञानिक प्रश्नों के माध्यम से अपने चरित्र की खोज करें।",
+      "line2": "अभी अपने छिपे हुए व्यक्तित्व को खोजें।"
+    },
+    "stats": {
+      "participants": "प्रतिभागी",
+      "satisfaction": "संतुष्टि",
+      "duration": "अवधि",
+      "rating": "रेटिंग"
+    },
+    "buttons": {
+      "start": "टेस्ट शुरू करें",
+      "learnMore": "और जानें"
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "चरण",
+      "complete": "पूर्ण करें",
+      "question": "प्रश्न"
+    },
+    "navigation": {
+      "previous": "पिछला",
+      "next": "अगला",
+      "skip": "छोड़ें"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "विश्लेषण कर रहे हैं...",
+      "description": "आपके व्यक्तित्व प्रकार की खोज कर रहे हैं"
+    },
+    "badge": "विश्लेषण पूर्ण",
+    "mbtiType": "MBTI प्रकार",
+    "yourCharacter": "आपका चरित्र है",
+    "characterAnalysis": {
+      "title": "व्यक्तित्व विश्लेषण",
+      "traits": "मुख्य गुण",
+      "strengths": "शक्तियां",
+      "description": "चरित्र विवरण"
+    },
+    "compatibility": {
+      "title": "अनुकूलता",
+      "bestMatch": "सबसे अच्छा मैच",
+      "goodMatch": "अच्छा मैच",
+      "description": "अन्य प्रकारों के साथ संबंध"
+    },
+    "statistics": {
+      "title": "आंकड़े",
+      "percentage": "जनसंख्या का",
+      "similar": "समान प्रकार"
+    },
+    "shareSection": {
+      "title": "अपने परिणाम साझा करें",
+      "subtitle": "अपने दोस्तों के साथ तुलना करें"
+    },
+    "buttons": {
+      "restart": "फिर से टेस्ट करें",
+      "saveImage": "छवि के रूप में सहेजें",
+      "viewDetails": "विवरण देखें"
+    }
+  },
+  "shareButtons": {
+    "kakao": "KakaoTalk पर साझा करें",
+    "copyLink": "लिंक कॉपी करें",
+    "copySuccess": "कॉपी हो गया",
+    "more": "और",
+    "shareTitle": "परिणाम साझा करें",
+    "compareWithFriends": "दोस्तों के साथ परिणामों की तुलना करें"
+  }
+}

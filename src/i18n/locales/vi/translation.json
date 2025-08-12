@@ -1,0 +1,89 @@
+{
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "retry": "Thử lại",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "complete": "Hoàn thành",
+    "share": "Chia sẻ",
+    "restart": "Làm lại bài test"
+  },
+  "startScreen": {
+    "badge": "Bài Test MBTI Phổ Biến Nhất 2025",
+    "title": {
+      "line1": "Bạn là",
+      "line2": "Nhân vật nào trong",
+      "line3": "Attack on Titan?"
+    },
+    "description": {
+      "line1": "Khám phá nhân vật của bạn qua 12 câu hỏi tâm lý học.",
+      "line2": "Tìm ra tính cách ẩn giấu của bạn ngay bây giờ."
+    },
+    "stats": {
+      "participants": "Người tham gia",
+      "satisfaction": "Hài lòng",
+      "duration": "Thời gian",
+      "rating": "Đánh giá"
+    },
+    "buttons": {
+      "start": "Bắt đầu Test",
+      "learnMore": "Tìm hiểu thêm"
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "Bước",
+      "complete": "Hoàn thành",
+      "question": "Câu hỏi"
+    },
+    "navigation": {
+      "previous": "Trước",
+      "next": "Tiếp theo",
+      "skip": "Bỏ qua"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "Đang phân tích...",
+      "description": "Tìm kiếm loại tính cách của bạn"
+    },
+    "badge": "Phân tích Hoàn thành",
+    "mbtiType": "Loại MBTI",
+    "yourCharacter": "Nhân vật của bạn là",
+    "characterAnalysis": {
+      "title": "Phân tích Tính cách",
+      "traits": "Đặc điểm Chính",
+      "strengths": "Điểm mạnh",
+      "description": "Mô tả Nhân vật"
+    },
+    "compatibility": {
+      "title": "Khả năng Tương thích",
+      "bestMatch": "Hợp nhất",
+      "goodMatch": "Hợp tốt",
+      "description": "Mối quan hệ với các loại khác"
+    },
+    "statistics": {
+      "title": "Thống kê",
+      "percentage": "dân số",
+      "similar": "Loại tương tự"
+    },
+    "shareSection": {
+      "title": "Chia sẻ Kết quả",
+      "subtitle": "So sánh với bạn bè"
+    },
+    "buttons": {
+      "restart": "Làm lại Test",
+      "saveImage": "Lưu thành Hình ảnh",
+      "viewDetails": "Xem Chi tiết"
+    }
+  },
+  "shareButtons": {
+    "kakao": "Chia sẻ trên KakaoTalk",
+    "copyLink": "Sao chép Link",
+    "copySuccess": "Đã sao chép",
+    "more": "Thêm",
+    "shareTitle": "Chia sẻ Kết quả",
+    "compareWithFriends": "So sánh kết quả với bạn bè"
+  }
+}

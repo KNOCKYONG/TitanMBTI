@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
@@ -11,6 +12,7 @@ import { characters } from '../data/characters';
 import ShareButtons from './ShareButtons.jsx';
 
 const ResultScreen = ({ mbtiType, onRestart }) => {
+  const { t } = useTranslation();
   const character = characters[mbtiType];
   const [isRevealing, setIsRevealing] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -28,7 +30,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
   }, [mbtiType]);
   
   if (!character) {
-    return <div className="text-gray-400 text-center">결과를 찾을 수 없습니다.</div>;
+    return <div className="text-gray-400 text-center">{t('resultScreen.notFound')}</div>;
   }
 
   return (
@@ -76,11 +78,11 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                 animate={{ opacity: [1, 0.5, 1] }}
                 transition={{ repeat: Infinity, duration: 1.5 }}
               >
-                분석 중...
+                {t('resultScreen.analyzing.title')}
               </motion.h2>
               
               <motion.p className="text-gray-400">
-                당신의 성격 유형을 찾고 있습니다
+                {t('resultScreen.analyzing.description')}
               </motion.p>
             </div>
           </motion.div>
@@ -96,7 +98,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
               >
                 <Badge className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 px-6 py-2 mb-6">
                   <Trophy className="w-4 h-4 mr-2 text-amber-400" />
-                  <span className="text-amber-300 font-medium">분석 완료</span>
+                  <span className="text-amber-300 font-medium">{t('resultScreen.badge')}</span>
                 </Badge>
                 
                 <motion.h1 
@@ -105,11 +107,11 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 200 }}
                 >
-                  당신은 <span className="text-gradient animate-gradient">{character.name}</span>!
+                  {t('resultScreen.youAre')} <span className="text-gradient animate-gradient">{character.name}</span>!
                 </motion.h1>
                 
                 <p className="text-xl text-gray-300">
-                  MBTI 유형: <span className="text-amber-400 font-semibold">{mbtiType}</span>
+                  {t('resultScreen.mbtiType')}: <span className="text-amber-400 font-semibold">{mbtiType}</span>
                 </p>
               </motion.div>
 
@@ -174,12 +176,12 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                       <div className="grid grid-cols-2 gap-4 mt-6">
                         <div className="p-3 rounded-lg bg-gray-800/50 border border-gray-700/50">
                           <Award className="w-6 h-6 mx-auto mb-1 text-amber-400" />
-                          <p className="text-xs text-gray-400">타입</p>
+                          <p className="text-xs text-gray-400">{t('resultScreen.characterStats.type')}</p>
                           <p className="text-sm font-bold text-white">{mbtiType}</p>
                         </div>
                         <div className="p-3 rounded-lg bg-gray-800/50 border border-gray-700/50">
                           <Star className="w-6 h-6 mx-auto mb-1 text-yellow-400" />
-                          <p className="text-xs text-gray-400">희귀도</p>
+                          <p className="text-xs text-gray-400">{t('resultScreen.characterStats.rarity')}</p>
                           <p className="text-sm font-bold text-white">★★★★</p>
                         </div>
                       </div>
@@ -199,12 +201,12 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2 text-xl text-white">
                         <Target className="w-5 h-5 text-amber-400" />
-                        성격 분석
+                        {t('resultScreen.characterAnalysis.title')}
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-white leading-relaxed text-lg">
-                        {character.description}
+                        {t(`characters.${mbtiType}.description`)}
                       </p>
                     </CardContent>
                   </Card>
@@ -228,12 +230,12 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2 text-lg text-white">
                           <Sparkles className="w-5 h-5 text-amber-400" />
-                          핵심 특징
+                          {t('characters.coreTraits')}
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
                         <div className="flex flex-wrap gap-2">
-                          {character.traits.map((trait, index) => (
+                          {t(`characters.${mbtiType}.traits`, { returnObjects: true }).map((trait, index) => (
                             <motion.div
                               key={index}
                               initial={{ scale: 0 }}
@@ -257,7 +259,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2 text-lg text-white">
                           <Heart className="w-5 h-5 text-red-400" />
-                          최고의 궁합
+                          {t('characters.bestCompatibility')}
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
@@ -291,10 +293,10 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2 text-xl text-white">
                         <Share2 className="w-5 h-5 text-amber-400" />
-                        결과 공유하기
+                        {t('resultScreen.sharing.title')}
                       </CardTitle>
                       <CardDescription className="text-gray-300">
-                        친구들과 결과를 공유하고 서로의 성격 유형을 알아보세요
+                        {t('resultScreen.sharing.description')}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
@@ -307,7 +309,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                         className="w-full hover:bg-amber-500/10 hover:border-amber-500/50 text-white"
                       >
                         <RotateCcw className="w-5 h-5 mr-2" />
-                        다시 테스트
+                        {t('common.restart')}
                       </Button>
                     </CardContent>
                   </Card>
@@ -322,10 +324,10 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                 transition={{ delay: 0.8 }}
               >
                 {[
-                  { icon: Users, label: "같은 유형", value: "3.2%" },
-                  { icon: TrendingUp, label: "정확도", value: "95%" },
-                  { icon: Star, label: "평균 평점", value: "4.8" },
-                  { icon: Heart, label: "만족도", value: "98%" }
+                  { icon: Users, label: t('resultScreen.stats.sameType'), value: "3.2%" },
+                  { icon: TrendingUp, label: t('resultScreen.stats.accuracy'), value: "95%" },
+                  { icon: Star, label: t('resultScreen.stats.averageRating'), value: "4.8" },
+                  { icon: Heart, label: t('resultScreen.stats.satisfaction'), value: "98%" }
                 ].map((stat, index) => (
                   <Card key={index} className="glass border-gray-700/50 hover:border-amber-500/30 transition-colors">
                     <CardContent className="p-6 text-center">

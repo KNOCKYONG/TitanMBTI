@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import StartScreen from './components/StartScreen.jsx';
 import QuestionCard from './components/QuestionCard.jsx';
 import ResultScreen from './components/ResultScreen.jsx';
+import LanguageSelector from './components/LanguageSelector.jsx';
+import SEOMetaTags from './components/SEOMetaTags.jsx';
 import { questions } from './data/questions';
 import { calculateMBTI } from './utils/calculateMBTI';
 import { initKakao } from './utils/shareUtils';
@@ -101,6 +103,9 @@ function App() {
 
   return (
     <div className="min-h-screen">
+        <SEOMetaTags />
+        <LanguageSelector />
+        
         {gameState === 'start' && (
           <StartScreen onStart={startQuiz} />
         )}

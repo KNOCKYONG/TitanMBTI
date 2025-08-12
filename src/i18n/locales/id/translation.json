@@ -1,0 +1,89 @@
+{
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "retry": "Coba lagi",
+    "back": "Kembali",
+    "next": "Selanjutnya",
+    "complete": "Selesai",
+    "share": "Bagikan",
+    "restart": "Tes Lagi"
+  },
+  "startScreen": {
+    "badge": "Tes MBTI Paling Populer 2025",
+    "title": {
+      "line1": "Karakter",
+      "line2": "Attack on Titan",
+      "line3": "Mana Kamu?"
+    },
+    "description": {
+      "line1": "Temukan karakter Anda melalui 12 pertanyaan psikologis.",
+      "line2": "Temukan kepribadian tersembunyi Anda sekarang juga."
+    },
+    "stats": {
+      "participants": "Peserta",
+      "satisfaction": "Kepuasan",
+      "duration": "Durasi",
+      "rating": "Rating"
+    },
+    "buttons": {
+      "start": "Mulai Tes",
+      "learnMore": "Pelajari Lebih Lanjut"
+    }
+  },
+  "questionCard": {
+    "progress": {
+      "step": "Langkah",
+      "complete": "Selesai",
+      "question": "Pertanyaan"
+    },
+    "navigation": {
+      "previous": "Sebelumnya",
+      "next": "Selanjutnya",
+      "skip": "Lewati"
+    }
+  },
+  "resultScreen": {
+    "analyzing": {
+      "title": "Menganalisis...",
+      "description": "Mencari tipe kepribadian Anda"
+    },
+    "badge": "Analisis Selesai",
+    "mbtiType": "Tipe MBTI",
+    "yourCharacter": "Karakter Anda adalah",
+    "characterAnalysis": {
+      "title": "Analisis Kepribadian",
+      "traits": "Sifat Utama",
+      "strengths": "Kekuatan",
+      "description": "Deskripsi Karakter"
+    },
+    "compatibility": {
+      "title": "Kompatibilitas",
+      "bestMatch": "Cocok Terbaik",
+      "goodMatch": "Cocok Baik",
+      "description": "Hubungan dengan tipe lain"
+    },
+    "statistics": {
+      "title": "Statistik",
+      "percentage": "dari populasi",
+      "similar": "Tipe serupa"
+    },
+    "shareSection": {
+      "title": "Bagikan Hasil Anda",
+      "subtitle": "Bandingkan dengan teman"
+    },
+    "buttons": {
+      "restart": "Tes Lagi",
+      "saveImage": "Simpan sebagai Gambar",
+      "viewDetails": "Lihat Detail"
+    }
+  },
+  "shareButtons": {
+    "kakao": "Bagikan di KakaoTalk",
+    "copyLink": "Salin Link",
+    "copySuccess": "Tersalin",
+    "more": "Lainnya",
+    "shareTitle": "Bagikan Hasil",
+    "compareWithFriends": "Bandingkan hasil dengan teman"
+  }
+}
