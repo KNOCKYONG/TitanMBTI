@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "2025年最受欢迎的MBTI测试",
+    "yearBadge": "2025年热门角色测试",
     "title": {
       "line1": "你的性格是",
       "line2": "进击的巨人",
       "line3": "中的谁？"
     },
+    "mainTitle": {
+      "line1": "找到你的",
+      "line2": "进击的巨人",
+      "line3": "角色匹配"
+    },
     "description": {
       "line1": "通过12个心理学问题找到你的专属角色。",
       "line2": "立即发现你隐藏的性格特质。"
     },
+    "mainDescription": {
+      "line1": "从性格测试到理想型世界杯！",
+      "line2": "通过各种测试发现自己。"
+    },
+    "trendingBadge": "热门",
     "stats": {
       "participants": "参与者",
       "satisfaction": "满意度",

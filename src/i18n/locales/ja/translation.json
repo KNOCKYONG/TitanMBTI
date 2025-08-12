@@ -11,15 +11,26 @@
   },
   "startScreen": {
     "badge": "2025年最も人気のMBTIテスト",
+    "yearBadge": "2025年人気キャラクターテスト",
     "title": {
       "line1": "あなたの性格は",
       "line2": "進撃の巨人の",
       "line3": "誰に似ている？"
     },
+    "mainTitle": {
+      "line1": "あなたに似た",
+      "line2": "進撃の巨人",
+      "line3": "キャラクター診断"
+    },
     "description": {
       "line1": "12の心理学的質問で見つけるあなたのキャラクター。",
       "line2": "今すぐ隠れた性格を発見しましょう。"
     },
+    "mainDescription": {
+      "line1": "性格診断から理想のキャラクター選びまで！",
+      "line2": "様々なテストで自分を発見しよう。"
+    },
+    "trendingBadge": "HOT",
     "stats": {
       "participants": "参加者",
       "satisfaction": "満足度",
