@@ -402,8 +402,8 @@ const WorldCup = ({ onBack }) => {
         </div>
 
         {/* VS Section */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="max-w-6xl mx-auto relative">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-20 items-center">
             {/* Left candidate */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -452,25 +452,6 @@ const WorldCup = ({ onBack }) => {
               </Card>
             </motion.div>
 
-            {/* VS Badge */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 md:relative md:left-auto md:top-auto md:transform-none">
-              <motion.div
-                className="bg-gradient-to-br from-amber-500 to-orange-500 rounded-full p-4 shadow-2xl"
-                animate={{ 
-                  scale: [1, 1.2, 1],
-                  rotate: [0, 180, 360]
-                }}
-                transition={{ 
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              >
-                <Swords className="w-8 h-8 text-white" />
-              </motion.div>
-              <p className="text-white font-bold text-2xl mt-2 text-center">VS</p>
-            </div>
-
             {/* Right candidate */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -517,6 +498,44 @@ const WorldCup = ({ onBack }) => {
                   <p className="text-gray-400 mt-2">{pair[1].title}</p>
                 </CardContent>
               </Card>
+            </motion.div>
+          </div>
+
+          {/* VS Badge - Centered between cards */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+            <motion.div
+              className="flex flex-col items-center"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5, type: "spring" }}
+            >
+              <motion.div
+                className="bg-gradient-to-br from-amber-500 to-orange-500 rounded-full p-6 shadow-2xl border-4 border-white/20"
+                animate={{ 
+                  scale: [1, 1.1, 1],
+                  rotate: [0, 10, -10, 0]
+                }}
+                transition={{ 
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                <Swords className="w-10 h-10 text-white" />
+              </motion.div>
+              <motion.p 
+                className="text-white font-bold text-3xl mt-3 drop-shadow-lg"
+                animate={{
+                  scale: [1, 1.05, 1]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                VS
+              </motion.p>
             </motion.div>
           </div>
         </div>
