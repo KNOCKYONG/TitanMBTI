@@ -54,7 +54,8 @@
     },
     "buttons": {
       "start": "Start Test",
-      "learnMore": "Learn More"
+      "learnMore": "Learn More",
+      "worldcup": "Start WorldCup"
     },
     "trustIndicators": {
       "safe": "Safe Test",

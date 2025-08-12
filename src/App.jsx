@@ -113,7 +113,8 @@ function App() {
   };
 
   const handleWorldCupBack = () => {
-    setGameState('result');
+    // 결과 화면이 아닌 시작 화면으로 돌아가기
+    setGameState('start');
   };
 
 
@@ -123,7 +124,7 @@ function App() {
         <LanguageSelector />
         
         {gameState === 'start' && (
-          <StartScreen onStart={startQuiz} />
+          <StartScreen onStart={startQuiz} onWorldCup={startWorldCup} />
         )}
       
         {gameState === 'quiz' && (

@@ -5,10 +5,10 @@ import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { 
   Play, Users, Clock, Star, ArrowRight, Zap, Shield, Award,
-  TrendingUp, Target, Heart, Sparkles 
+  TrendingUp, Target, Heart, Sparkles, Swords 
 } from 'lucide-react';
 
-const StartScreen = ({ onStart }) => {
+const StartScreen = ({ onStart, onWorldCup }) => {
   const { t } = useTranslation();
   
   const stats = [
@@ -117,6 +117,21 @@ const StartScreen = ({ onStart }) => {
                     </Button>
                   </motion.div>
                   
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Button 
+                      onClick={onWorldCup}
+                      size="lg"
+                      variant="outline"
+                      className="border-amber-500/50 hover:bg-amber-500/10 hover:border-amber-500 text-white px-8 py-6 text-lg font-semibold transition-all duration-300 group"
+                    >
+                      <Swords className="mr-2 h-5 w-5 text-amber-400" />
+                      {t('startScreen.buttons.worldcup')}
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </motion.div>
                 </div>
 
                 {/* Trust Indicators */}
