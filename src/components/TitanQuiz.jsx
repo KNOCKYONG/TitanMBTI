@@ -12,13 +12,13 @@ import {
 } from 'lucide-react';
 import { shareOnKakao } from '../utils/shareUtils';
 import { 
-  titanQuizQuestions, 
+  getQuizQuestions,
   shuffleQuestions, 
   saveRanking, 
   getRankings, 
   getTopScore,
   getUserRank 
-} from '../data/titanQuizQuestions';
+} from '../data/titanQuizQuestions/index';
 
 const TitanQuiz = ({ onBack }) => {
   const { t, i18n } = useTranslation();
@@ -38,11 +38,12 @@ const TitanQuiz = ({ onBack }) => {
 
   // 퀴즈 초기화
   useEffect(() => {
-    const shuffled = shuffleQuestions(titanQuizQuestions);
+    const currentLangQuestions = getQuizQuestions(i18n.language);
+    const shuffled = shuffleQuestions(currentLangQuestions);
     setQuestions(shuffled);
     setTopScore(getTopScore());
     setRankings(getRankings());
-  }, []);
+  }, [i18n.language]);
 
   // 답변 선택 처리
   const handleAnswer = (answerIndex) => {
@@ -109,7 +110,8 @@ const TitanQuiz = ({ onBack }) => {
 
   // 퀴즈 재시작
   const restartQuiz = () => {
-    const shuffled = shuffleQuestions(titanQuizQuestions);
+    const currentLangQuestions = getQuizQuestions(i18n.language);
+    const shuffled = shuffleQuestions(currentLangQuestions);
     setQuestions(shuffled);
     setCurrentQuestion(0);
     setAnswers([]);

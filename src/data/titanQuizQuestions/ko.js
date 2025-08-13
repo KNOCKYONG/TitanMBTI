@@ -1,6 +1,4 @@
-// 이 파일은 더 이상 사용되지 않습니다.
-// 다국어 지원을 위해 titanQuizQuestions/index.js를 참조하세요.
-export const titanQuizQuestions = [
+export const titanQuizQuestionsKo = [
   // 캐릭터 관련 (15문제)
   {
     id: 1,
@@ -96,8 +94,8 @@ export const titanQuizQuestions = [
   {
     id: 14,
     question: "그리샤 예거의 직업은?",
-    options: ["의사", "군인"],
-    correctAnswer: 1,
+    options: ["군인", "의사"],
+    correctAnswer: 2,
     category: "character"
   },
   {
@@ -359,48 +357,3 @@ export const titanQuizQuestions = [
     category: "world"
   }
 ];
-
-// 문제 섞기 함수
-export const shuffleQuestions = (questions) => {
-  const shuffled = [...questions];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-};
-
-// 랭킹 관리 함수들
-export const getRankings = () => {
-  const rankings = localStorage.getItem('titanQuizRankings');
-  return rankings ? JSON.parse(rankings) : [];
-};
-
-export const saveRanking = (score) => {
-  const rankings = getRankings();
-  const newEntry = {
-    score,
-    date: new Date().toISOString(),
-    timestamp: Date.now()
-  };
-  
-  rankings.push(newEntry);
-  rankings.sort((a, b) => b.score - a.score);
-  
-  // 상위 10개만 유지
-  const top10 = rankings.slice(0, 10);
-  localStorage.setItem('titanQuizRankings', JSON.stringify(top10));
-  
-  return top10;
-};
-
-export const getTopScore = () => {
-  const rankings = getRankings();
-  return rankings.length > 0 ? rankings[0].score : 0;
-};
-
-export const getUserRank = (score) => {
-  const rankings = getRankings();
-  const betterScores = rankings.filter(r => r.score > score).length;
-  return betterScores + 1;
-};
