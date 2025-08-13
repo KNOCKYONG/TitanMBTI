@@ -10,7 +10,14 @@
       "Bash(git remote:*)",
       "Bash(npm run dev:*)",
       "Bash(node:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(grep:*)",
+      "Bash(for lang in ar hi id it pt ru th vi)",
+      "Bash(do)",
+      "Bash(echo:*)",
+      "Bash(sed:*)",
+      "Bash(done)",
+      "Bash(for lang in ar hi id it pt th vi)"
     ],
     "deny": [],
     "ask": []

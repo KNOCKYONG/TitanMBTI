@@ -69,12 +69,12 @@ const TitanQuiz = ({ onBack }) => {
           setCurrentQuestion(prev => prev + 1);
           setSelectedAnswer(null);
           setIsTransitioning(false);
-        }, 300);
+        }, 100);
       } else {
         // 퀴즈 완료
         finishQuiz();
       }
-    }, 1000);
+    }, 300);
   };
 
   // 퀴즈 완료 처리
@@ -133,7 +133,7 @@ const TitanQuiz = ({ onBack }) => {
     const shareData = {
       title: `진격의 거인 퀴즈 도전 결과!`,
       description: `50문제 중 ${score}개 정답! 나는 진정한 조사병단인가? 당신도 도전해보세요!`,
-      imageUrl: `${window.location.origin}/images/characters/ENTJ/profile.png`, // 에렌 이미지
+      imageUrl: `${window.location.origin}/images/characters/ISFJ/profile.png`, // 히스토리아 이미지
       link: window.location.origin,
       buttonTitle: '퀴즈 도전하기',
       score: score,

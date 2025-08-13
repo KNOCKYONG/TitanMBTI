@@ -121,7 +121,7 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest, onTitanQu
                     >
                       <Brain className="h-6 w-6 mr-2" />
                       <span>{t('startScreen.buttons.titanquiz')}</span>
-                      <span className="ml-2 text-sm opacity-90">50문제</span>
+                      <span className="ml-2 text-sm opacity-90">{t('startScreen.buttons.quizQuestions')}</span>
                     </Button>
                   </motion.div>
 

@@ -68,7 +68,8 @@
       "romance": "연애 스타일",
       "egen": "에겐남 테토녀",
       "worldcup": "이상형 월드컵",
-      "titanquiz": "타이탄 퀴즈",
+      "titanquiz": "진격거 퀴즈",
+      "quizQuestions": "50문제",
       "learnMore": "자세히 알아보기"
     },
     "trustIndicators": {
@@ -418,7 +419,7 @@
     "category": {
       "character": "캐릭터",
       "story": "스토리",
-      "titan": "타이탄",
+      "titan": "거인",
       "world": "세계관"
     }
   }
