@@ -26,11 +26,14 @@
       "line1": "Khám phá nhân vật của bạn qua 12 câu hỏi tâm lý học.",
       "line2": "Tìm ra tính cách ẩn giấu của bạn ngay bây giờ."
     },
-    "mainDescription": {
       "line1": "Từ test tính cách đến giải đấu nhân vật!",
       "line2": "Khám phá bản thân qua nhiều bài test khác nhau."
     },
-    "trendingBadge": "ĐANG HOT",
+    "characterTypes": "16 loại nhân vật",
+    "findCharacter": "Tìm nhân vật giống bạn",
+    "mainDescription": {
+    "trendingBadge": "ĐANG HOT"
+    },
     "stats": {
       "participants": "Người tham gia",
       "satisfaction": "Hài lòng",
@@ -56,7 +59,6 @@
       "step": "Bước",
       "complete": "Hoàn thành",
       "question": "Câu hỏi"
-    },
     "navigation": {
       "previous": "Trước",
       "next": "Tiếp theo",
@@ -67,7 +69,6 @@
     "analyzing": {
       "title": "Đang phân tích...",
       "description": "Tìm kiếm loại tính cách của bạn"
-    },
     "badge": "Phân tích Hoàn thành",
     "mbtiType": "Loại MBTI",
     "yourCharacter": "Nhân vật của bạn là",
@@ -78,22 +79,18 @@
       "traits": "Đặc điểm Chính",
       "strengths": "Điểm mạnh",
       "description": "Mô tả Nhân vật"
-    },
     "characterStats": {
       "type": "Loại",
       "rarity": "Độ hiếm"
-    },
     "compatibility": {
       "title": "Khả năng Tương thích",
       "bestMatch": "Hợp nhất",
       "goodMatch": "Hợp tốt",
       "description": "Mối quan hệ với các loại khác"
-    },
     "statistics": {
       "title": "Thống kê",
       "percentage": "dân số",
       "similar": "Loại tương tự"
-    },
     "sharing": {
       "title": "Chia sẻ Kết quả",
       "description": "Chia sẻ và so sánh kết quả với bạn bè"

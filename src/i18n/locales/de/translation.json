@@ -30,6 +30,8 @@
       "line1": "Von Persönlichkeitstests bis zu Charakter-Turnieren!",
       "line2": "Entdecke dich selbst durch verschiedene Tests."
     },
+    "characterTypes": "16 Charaktertypen",
+    "findCharacter": "Finde den Charakter, der dir ähnelt",
     "trendingBadge": "TREND",
     "stats": {
       "participants": "Teilnehmer",
@@ -45,7 +47,6 @@
       "titanquiz": "AoT Quiz",
       "quizQuestions": "50 Fragen",
       "learnMore": "Mehr erfahren"
-    },
     "features": {
       "accurate": {
         "title": "Präzise Analyse",
@@ -59,7 +60,6 @@
         "title": "Datenschutz",
         "description": "Sichere Datenverarbeitung und Anonymität"
       }
-    },
     "testimonials": {
       "student": {
         "name": "Anna Müller",
@@ -71,7 +71,6 @@
         "role": "Berufstätiger",
         "content": "Die Übereinstimmung mit AoT-Charakteren macht es unterhaltsamer"
       }
-    },
     "howItWorks": {
       "title": "So funktioniert's",
       "step1": {
@@ -86,7 +85,6 @@
         "title": "Charakter-Match",
         "description": "Finde deinen AoT-Charakter"
       }
-    },
     "faq": {
       "title": "Häufige Fragen",
       "q1": {
@@ -101,7 +99,6 @@
         "question": "Sind meine Daten sicher?",
         "answer": "Alle Daten werden anonym verarbeitet und nicht gespeichert."
       }
-    },
     "trustIndicators": {
       "safe": "Sicherer Test",
       "scientific": "Wissenschaftliche Analyse"
@@ -112,7 +109,6 @@
       "step": "Schritt",
       "complete": "Fertigstellen",
       "question": "Frage"
-    },
     "navigation": {
       "previous": "Vorherige",
       "next": "Weiter",
@@ -124,57 +120,46 @@
       "question": "Wenn du am Wochenende Freizeit hast, würdest du:",
       "option1": "Freunde treffen oder an Treffen mit neuen Leuten teilnehmen",
       "option2": "Ruhig zu Hause Zeit verbringen, lesen oder Filme schauen"
-    },
     "q2": {
       "question": "Bei Partys oder Treffen:",
       "option1": "Sprichst du mit vielen Leuten und schließt leicht neue Freundschaften",
       "option2": "Führst du tiefe Gespräche nur mit wenigen vertrauten Menschen"
-    },
     "q3": {
       "question": "Um deine Energie aufzuladen:",
       "option1": "Verbringst du aktive Zeit mit Menschen",
       "option2": "Ruhst du dich in Einsamkeit aus"
-    },
     "q4": {
       "question": "Beim Lernen von etwas Neuem bevorzugst du:",
       "option1": "Durch konkrete Beispiele und Praxis zu lernen",
       "option2": "Zuerst die allgemeinen Konzepte und Theorien zu verstehen"
-    },
     "q5": {
       "question": "In Gesprächen sprichst du über:",
       "option1": "Reale Erfahrungen und konkrete Fakten",
       "option2": "Möglichkeiten und Ideen"
-    },
     "q6": {
       "question": "Bei der Problemlösung:",
       "option1": "Nutzt du bewährte Methoden und vergangene Erfahrungen",
       "option2": "Probierst du neue Methoden und innovative Ansätze"
-    },
     "q7": {
       "question": "Bei Entscheidungen schätzt du:",
       "option1": "Logische Analyse und objektive Fakten",
       "option2": "Gefühle und Werte der Menschen"
-    },
     "q8": {
       "question": "Wenn ein Freund um Rat bittet:",
       "option1": "Analysierst du das Problem und schlägst Lösungen vor",
       "option2": "Zeigst du Mitgefühl und bietest emotionale Unterstützung"
-    },
     "q9": {
       "question": "Bei Kritik:",
       "option1": "Bewertest du zuerst die logische Gültigkeit der Kritik",
       "option2": "Berücksichtigst du die Absicht der Person und deine Gefühle"
-    },
     "q10": {
       "question": "Auf Reisen:",
       "option1": "Machst du detaillierte Pläne und Zeitpläne im Voraus",
       "option2": "Machst du grobe Pläne und handelst spontan"
-    },
     "q11": {
       "question": "Bei Aufgaben bevorzugst du:",
       "option1": "Vor der Deadline fertig zu werden",
       "option2": "Unter Termindruck am besten zu arbeiten"
-    },
     "q12": {
       "question": "Im täglichen Leben bevorzugst du:",
       "option1": "Eine organisierte Umgebung und regelmäßige Routinen",
@@ -185,7 +170,6 @@
     "analyzing": {
       "title": "Analysiere...",
       "description": "Finde deinen Persönlichkeitstyp"
-    },
     "badge": "Analyse Abgeschlossen",
     "mbtiType": "MBTI-Typ",
     "yourCharacter": "Dein Charakter ist",
@@ -196,32 +180,26 @@
       "traits": "Hauptmerkmale",
       "strengths": "Stärken",
       "description": "Charakterbeschreibung"
-    },
     "characterStats": {
       "type": "Typ",
       "rarity": "Seltenheit"
-    },
     "compatibility": {
       "title": "Kompatibilität",
       "bestMatch": "Beste Übereinstimmung",
       "goodMatch": "Gute Übereinstimmung",
       "description": "Beziehungen zu anderen Typen"
-    },
     "statistics": {
       "title": "Statistiken",
       "percentage": "der Bevölkerung",
       "similar": "Ähnliche Typen"
-    },
     "sharing": {
       "title": "Ergebnisse Teilen",
       "description": "Teile und vergleiche Ergebnisse mit deinen Freunden"
-    },
     "stats": {
       "sameType": "Gleicher Typ",
       "accuracy": "Genauigkeit",
       "averageRating": "Durchschnittsbewertung",
       "satisfaction": "Zufriedenheit"
-    },
     "buttons": {
       "restart": "Test wiederholen",
       "saveImage": "Als Bild speichern",
@@ -255,105 +233,90 @@
       "description": "Der stärkste Soldat der Menschheit mit außergewöhnlichen Kampffähigkeiten und kaltem Urteilsvermögen. Schätzt Kameraden, obwohl er keine Emotionen zeigt.",
       "traits": ["Strategisch", "Unabhängig", "Perfektionist", "Effizient"],
       "quote": "Triff eine Entscheidung, die du nicht bereuen wirst"
-    },
     "INTP": {
       "name": "Hange Zoe",
       "title": "Der Denker",
       "description": "Truppführer des Aufklärungstrupps mit unendlicher Neugier auf Titanen. Verfolgt die Wahrheit trotz Gefahren.",
       "traits": ["Neugierig", "Analytisch", "Kreativ", "Leidenschaftlich"],
       "quote": "Titanen sind so interessant!"
-    },
     "ENTJ": {
       "name": "Erwin Smith",
       "title": "Der Kommandant",
       "description": "Kommandant des Aufklärungstrupps, der alles für die Zukunft der Menschheit riskiert. Sieht das große Ganze und akzeptiert Opfer.",
       "traits": ["Führung", "Strategisch", "Entschlossen", "Visionär"],
       "quote": "Widmet eure Herzen!"
-    },
     "ENTP": {
       "name": "Floch Forster",
       "title": "Der Debattierer",
       "description": "Furchtlos in der Debatte für seine Überzeugungen. Fordert die bestehende Ordnung heraus.",
       "traits": ["Argumentativ", "Innovativ", "Unabhängig", "Herausfordernd"],
       "quote": "Wenn wir einen Teufel brauchen, werde ich gerne einer"
-    },
     "INFJ": {
       "name": "Armin Arlert",
       "title": "Der Anwalt",
       "description": "Besitzt brillantes strategisches Denken und tiefe Einsicht. Sucht Frieden, akzeptiert aber bei Bedarf Opfer.",
       "traits": ["Einsichtig", "Idealistisch", "Strategisch", "Empathisch"],
       "quote": "Um etwas zu ändern, muss man etwas aufgeben"
-    },
     "INFP": {
       "name": "Historia Reiss",
       "title": "Der Vermittler",
       "description": "Auf einer Reise, ihr wahres Ich zu finden. Kümmert sich um andere, während sie ihre Überzeugungen bewahrt.",
       "traits": ["Idealistisch", "Authentisch", "Empathisch", "Wachsend"],
       "quote": "Ich bin der Feind der Menschheit, aber ich bin dein Verbündeter"
-    },
     "ENFJ": {
       "name": "Marco Bott",
       "title": "Der Protagonist",
       "description": "Leidenschaftlich daran interessiert, anderen zu helfen und sie zu führen. Hat die Kraft, alle zu vereinen.",
       "traits": ["Führung", "Altruistisch", "Charismatisch", "Engagiert"],
       "quote": "Wenn nur jeder sich verstehen könnte"
-    },
     "ENFP": {
       "name": "Sasha Blouse",
       "title": "Der Aktivist",
       "description": "Erhellt die Umgebung mit positiver Energie. Ein freier Geist.",
       "traits": ["Optimistisch", "Freiheitsliebend", "Freundlich", "Spontan"],
       "quote": "Fleisch... ich will Fleisch essen"
-    },
     "ISTJ": {
       "name": "Mikasa Ackerman",
       "title": "Der Logistiker",
       "description": "Starkes Pflichtgefühl und Loyalität. Wird alles tun, um geliebte Menschen zu schützen.",
       "traits": ["Loyal", "Verantwortungsbewusst", "Praktisch", "Beschützend"],
       "quote": "Diese Welt ist grausam. Aber sie ist auch schön"
-    },
     "ISFJ": {
       "name": "Petra Ral",
       "title": "Der Verteidiger",
       "description": "Engagierte Person, die sich um Teamkollegen kümmert und sie unterstützt. Unterstützt das Team im Stillen.",
       "traits": ["Engagiert", "Fürsorglich", "Vertrauenswürdig", "Unterstützend"],
       "quote": "Wir müssen einander vertrauen"
-    },
     "ESTJ": {
       "name": "Jean Kirstein",
       "title": "Der Exekutive",
       "description": "Zu einem realistischen und verantwortungsbewussten Anführer herangewachsen. Schätzt Prinzipien und führt das Team.",
       "traits": ["Führung", "Realistisch", "Verantwortungsbewusst", "Wachsend"],
       "quote": "Ich trete dem Aufklärungstrupp bei"
-    },
     "ESFJ": {
       "name": "Connie Springer",
       "title": "Der Konsul",
       "description": "Starke Kameradschaft und schätzt Teamarbeit. Verliert niemals den Humor, auch in schwierigen Situationen.",
       "traits": ["Freundlich", "Loyal", "Humorvoll", "Teamplayer"],
       "quote": "Wir sind Freunde, oder?"
-    },
     "ISTP": {
       "name": "Annie Leonhart",
       "title": "Der Virtuose",
       "description": "Außergewöhnliche Kampffähigkeiten und kühles Urteilsvermögen. Unabhängig und praktisch.",
       "traits": ["Unabhängig", "Praktisch", "Kühl", "Geschickt"],
       "quote": "Ich bin nur ein normaler Mensch"
-    },
     "ISFP": {
       "name": "Ymir",
       "title": "Der Abenteurer",
       "description": "Freie und unabhängige Seele. Handelt nach persönlichen Werten.",
       "traits": ["Frei", "Unabhängig", "Loyal", "Intuitiv"],
       "quote": "Ich werde für mich selbst leben"
-    },
     "ESTP": {
       "name": "Eren Yeager",
       "title": "Der Unternehmer",
       "description": "Außergewöhnliche Handlung und Entschlossenheit. Kämpft mit allem für die Freiheit.",
       "traits": ["Handlungsorientiert", "Entschlossen", "Freiheit", "Leidenschaftlich"],
       "quote": "Ich wurde frei geboren"
-    },
     "ESFP": {
       "name": "Connie Springer",
       "title": "Der Entertainer",
@@ -370,17 +333,14 @@
       "quarterFinal": "Viertelfinale",
       "semiFinal": "Halbfinale",
       "final": "Finale"
-    },
     "winner": {
       "title": "Champion",
       "place": "Platz",
       "victories": "Siege",
       "winRate": "Siegesrate"
-    },
     "actions": {
       "restart": "Neustart",
       "back": "Zurück"
-    },
     "sharing": {
       "title": "Teile deinen Champion",
       "kakao": "Auf KakaoTalk teilen",
@@ -400,7 +360,6 @@
       "description": "Ergebnisse variieren je nach Geschlecht",
       "male": "Männlich",
       "female": "Weiblich"
-    },
     "questions": {
       "q1": {
         "question": "Dein Dating-Stil ist?",
@@ -437,7 +396,6 @@
         "option1": "Konkrete Pläne zusammen machen",
         "option2": "Die Dinge natürlich fließen lassen"
       }
-    },
     "results": {
       "egenMale": {
         "title": "Egen-Mann",
@@ -459,7 +417,6 @@
         "description": "Unabhängiger und geheimnisvoller Dating-Stil! Wie Annie, mit deinem einzigartigen Charme.",
         "traits": ["Unabhängig", "Geheimnisvoll", "Stark", "Attraktiv"]
       }
-    },
     "analyzing": "Analysiere...",
     "yourStyle": "Dein Dating-Stil",
     "shareResults": "Ergebnisse teilen",
@@ -541,7 +498,6 @@
         "option3": "Freie und echte Liebe",
         "option4": "Liebe, die gemeinsam wächst"
       }
-    },
     "styles": {
       "erenMikasa": {
         "title": "Eren-Mikasa Typ",
@@ -606,7 +562,6 @@
         "traits": ["Ergänzend", "Unterstützung", "Geteilte Leidenschaft", "Balance"],
         "quote": "Ich werde dir helfen, deine Flügel auszubreiten"
       }
-    },
     "analyzingRomance": "Analysiere Romantik-Stil...",
     "yourRomanceStyle": "Dein Romantik-Stil",
     "characteristics": "Romantik-Stil Eigenschaften",

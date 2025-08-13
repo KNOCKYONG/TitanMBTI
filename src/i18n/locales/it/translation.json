@@ -26,11 +26,14 @@
       "line1": "Scopri il tuo personaggio attraverso 12 domande psicologiche.",
       "line2": "Trova la tua personalità nascosta adesso."
     },
-    "mainDescription": {
       "line1": "Dai test di personalità ai tornei di personaggi!",
       "line2": "Scopri te stesso attraverso vari test."
     },
-    "trendingBadge": "TREND",
+    "characterTypes": "16 Tipi di Personaggi",
+    "findCharacter": "Trova il personaggio che ti assomiglia",
+    "mainDescription": {
+    "trendingBadge": "TREND"
+    },
     "stats": {
       "participants": "Partecipanti",
       "satisfaction": "Soddisfazione",
@@ -56,7 +59,6 @@
       "step": "Passo",
       "complete": "Completa",
       "question": "Domanda"
-    },
     "navigation": {
       "previous": "Precedente",
       "next": "Avanti",
@@ -67,7 +69,6 @@
     "analyzing": {
       "title": "Analizzando...",
       "description": "Trovando il tuo tipo di personalità"
-    },
     "badge": "Analisi Completata",
     "mbtiType": "Tipo MBTI",
     "yourCharacter": "Il Tuo Personaggio è",
@@ -78,22 +79,18 @@
       "traits": "Tratti Chiave",
       "strengths": "Punti di Forza",
       "description": "Descrizione del Personaggio"
-    },
     "characterStats": {
       "type": "Tipo",
       "rarity": "Rarità"
-    },
     "compatibility": {
       "title": "Compatibilità",
       "bestMatch": "Migliore Compatibilità",
       "goodMatch": "Buona Compatibilità",
       "description": "Relazioni con altri tipi"
-    },
     "statistics": {
       "title": "Statistiche",
       "percentage": "della popolazione",
       "similar": "Tipi simili"
-    },
     "sharing": {
       "title": "Condividi Risultati",
       "description": "Condividi e confronta risultati con i tuoi amici"

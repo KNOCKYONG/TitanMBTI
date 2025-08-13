@@ -26,11 +26,14 @@
       "line1": "Temukan karakter Anda melalui 12 pertanyaan psikologis.",
       "line2": "Temukan kepribadian tersembunyi Anda sekarang juga."
     },
-    "mainDescription": {
       "line1": "Dari tes kepribadian hingga turnamen karakter!",
       "line2": "Temukan diri Anda melalui berbagai tes."
     },
-    "trendingBadge": "TRENDING",
+    "characterTypes": "16 Tipe Karakter",
+    "findCharacter": "Temukan karakter yang mirip dengan Anda",
+    "mainDescription": {
+    "trendingBadge": "TRENDING"
+    },
     "stats": {
       "participants": "Peserta",
       "satisfaction": "Kepuasan",
@@ -56,7 +59,6 @@
       "step": "Langkah",
       "complete": "Selesai",
       "question": "Pertanyaan"
-    },
     "navigation": {
       "previous": "Sebelumnya",
       "next": "Selanjutnya",
@@ -67,7 +69,6 @@
     "analyzing": {
       "title": "Menganalisis...",
       "description": "Mencari tipe kepribadian Anda"
-    },
     "badge": "Analisis Selesai",
     "mbtiType": "Tipe MBTI",
     "yourCharacter": "Karakter Anda adalah",
@@ -78,22 +79,18 @@
       "traits": "Sifat Utama",
       "strengths": "Kekuatan",
       "description": "Deskripsi Karakter"
-    },
     "characterStats": {
       "type": "Tipe",
       "rarity": "Kelangkaan"
-    },
     "compatibility": {
       "title": "Kompatibilitas",
       "bestMatch": "Cocok Terbaik",
       "goodMatch": "Cocok Baik",
       "description": "Hubungan dengan tipe lain"
-    },
     "statistics": {
       "title": "Statistik",
       "percentage": "dari populasi",
       "similar": "Tipe serupa"
-    },
     "sharing": {
       "title": "Bagikan Hasil",
       "description": "Bagikan dan bandingkan hasil dengan teman Anda"

@@ -30,6 +30,8 @@
       "line1": "¡Desde tests de personalidad hasta torneos de personajes!",
       "line2": "Descúbrete a través de varios tests."
     },
+    "characterTypes": "16 Tipos de Personajes",
+    "findCharacter": "Encuentra el personaje que se parece a ti",
     "trendingBadge": "TENDENCIA",
     "stats": {
       "participants": "Participantes",
@@ -45,7 +47,6 @@
       "titanquiz": "Quiz SNK",
       "quizQuestions": "50 Preguntas",
       "learnMore": "Saber Más"
-    },
     "features": {
       "accurate": {
         "title": "Análisis Preciso",
@@ -59,7 +60,6 @@
         "title": "Privacidad Protegida",
         "description": "Procesamiento seguro y anonimato garantizado"
       }
-    },
     "testimonials": {
       "student": {
         "name": "María García",
@@ -71,7 +71,6 @@
         "role": "Profesional",
         "content": "Coincidir con personajes de AoT lo hace más divertido"
       }
-    },
     "howItWorks": {
       "title": "Cómo funciona",
       "step1": {
@@ -86,7 +85,6 @@
         "title": "Coincidencia de Personaje",
         "description": "Encuentra tu personaje de AoT"
       }
-    },
     "faq": {
       "title": "Preguntas Frecuentes",
       "q1": {
@@ -101,7 +99,6 @@
         "question": "¿Mis datos están seguros?",
         "answer": "Todos los datos se procesan de forma anónima y no se almacenan."
       }
-    },
     "trustIndicators": {
       "safe": "Test Seguro",
       "scientific": "Análisis Científico"
@@ -112,7 +109,6 @@
       "step": "Paso",
       "complete": "Completar",
       "question": "Pregunta"
-    },
     "navigation": {
       "previous": "Anterior",
       "next": "Siguiente",
@@ -124,57 +120,46 @@
       "question": "Cuando tienes tiempo libre los fines de semana, tú:",
       "option1": "Conoces amigos o asistes a reuniones con gente nueva",
       "option2": "Pasas tiempo tranquilo en casa leyendo o viendo películas"
-    },
     "q2": {
       "question": "En fiestas o reuniones, tú:",
       "option1": "Hablas con muchas personas y haces nuevos amigos fácilmente",
       "option2": "Tienes conversaciones profundas solo con pocas personas cercanas"
-    },
     "q3": {
       "question": "Para recargar tu energía, tú:",
       "option1": "Pasas tiempo activo socializando con personas",
       "option2": "Descansas tranquilamente en soledad"
-    },
     "q4": {
       "question": "Al aprender algo nuevo, prefieres:",
       "option1": "Aprender a través de ejemplos concretos y práctica",
       "option2": "Entender primero los conceptos generales y teorías"
-    },
     "q5": {
       "question": "En las conversaciones, hablas sobre:",
       "option1": "Experiencias reales y hechos concretos",
       "option2": "Posibilidades e ideas"
-    },
     "q6": {
       "question": "Al resolver problemas, tú:",
       "option1": "Usas métodos probados y experiencias pasadas",
       "option2": "Pruebas nuevos métodos y enfoques innovadores"
-    },
     "q7": {
       "question": "Al tomar decisiones, valoras:",
       "option1": "Análisis lógico y hechos objetivos",
       "option2": "Sentimientos y valores de las personas"
-    },
     "q8": {
       "question": "Cuando un amigo pide consejo, tú:",
       "option1": "Analizas el problema y sugieres soluciones",
       "option2": "Empatizas y brindas apoyo emocional"
-    },
     "q9": {
       "question": "Al recibir críticas, primero:",
       "option1": "Evalúas la validez lógica de la crítica",
       "option2": "Consideras la intención de la persona y tus sentimientos"
-    },
     "q10": {
       "question": "Al viajar, tú:",
       "option1": "Haces planes detallados y horarios por adelantado",
       "option2": "Haces planes aproximados y te mueves espontáneamente"
-    },
     "q11": {
       "question": "Al trabajar en tareas, prefieres:",
       "option1": "Terminar antes de la fecha límite",
       "option2": "Trabajar mejor bajo presión de fecha límite"
-    },
     "q12": {
       "question": "En la vida diaria, prefieres:",
       "option1": "Ambiente organizado y rutinas regulares",
@@ -185,7 +170,6 @@
     "analyzing": {
       "title": "Analizando...",
       "description": "Encontrando tu tipo de personalidad"
-    },
     "badge": "Análisis Completado",
     "mbtiType": "Tipo MBTI",
     "yourCharacter": "Tu Personaje es",
@@ -196,32 +180,26 @@
       "traits": "Rasgos Clave",
       "strengths": "Fortalezas",
       "description": "Descripción del Personaje"
-    },
     "characterStats": {
       "type": "Tipo",
       "rarity": "Rareza"
-    },
     "compatibility": {
       "title": "Compatibilidad",
       "bestMatch": "Mejor Compatibilidad",
       "goodMatch": "Buena Compatibilidad",
       "description": "Relaciones con otros tipos"
-    },
     "statistics": {
       "title": "Estadísticas",
       "percentage": "de la población",
       "similar": "Tipos similares"
-    },
     "sharing": {
       "title": "Compartir Resultados",
       "description": "Comparte y compara resultados con tus amigos"
-    },
     "stats": {
       "sameType": "Mismo Tipo",
       "accuracy": "Precisión",
       "averageRating": "Calificación Promedio",
       "satisfaction": "Satisfacción"
-    },
     "buttons": {
       "restart": "Hacer Test de Nuevo",
       "saveImage": "Guardar como Imagen",
@@ -255,105 +233,90 @@
       "description": "El soldado más fuerte de la humanidad con habilidades de combate excepcionales y juicio frío. Valora a los camaradas aunque no muestra emociones.",
       "traits": ["Estratégico", "Independiente", "Perfeccionista", "Eficiente"],
       "quote": "Toma una decisión de la que no te arrepentirás"
-    },
     "INTP": {
       "name": "Hange Zoe",
       "title": "El Pensador",
       "description": "Líder de escuadrón del Cuerpo de Exploración con curiosidad infinita sobre los Titanes. Persigue la verdad a pesar de los peligros.",
       "traits": ["Curioso", "Analítico", "Creativo", "Apasionado"],
       "quote": "¡Los Titanes son tan interesantes!"
-    },
     "ENTJ": {
       "name": "Erwin Smith",
       "title": "El Comandante",
       "description": "Comandante del Cuerpo de Exploración que lo arriesga todo por el futuro de la humanidad. Ve el panorama general y acepta el sacrificio.",
       "traits": ["Liderazgo", "Estratégico", "Decisivo", "Visionario"],
       "quote": "¡Dediquen sus corazones!"
-    },
     "ENTP": {
       "name": "Floch Forster",
       "title": "El Debatidor",
       "description": "Sin miedo al debate por sus creencias. Desafía el orden existente.",
       "traits": ["Argumentativo", "Innovador", "Independiente", "Desafiante"],
       "quote": "Si necesitamos un demonio, con gusto me convertiré en uno"
-    },
     "INFJ": {
       "name": "Armin Arlert",
       "title": "El Defensor",
       "description": "Posee un pensamiento estratégico brillante y una visión profunda. Busca la paz pero acepta el sacrificio cuando es necesario.",
       "traits": ["Perspicaz", "Idealista", "Estratégico", "Empático"],
       "quote": "Para cambiar algo, tienes que renunciar a algo"
-    },
     "INFP": {
       "name": "Historia Reiss",
       "title": "El Mediador",
       "description": "En un viaje para encontrar su verdadero yo. Se preocupa por los demás mientras mantiene sus creencias.",
       "traits": ["Idealista", "Auténtico", "Empático", "En crecimiento"],
       "quote": "Soy enemiga de la humanidad, pero soy tu aliada"
-    },
     "ENFJ": {
       "name": "Marco Bott",
       "title": "El Protagonista",
       "description": "Apasionado por ayudar y liderar a otros. Tiene el poder de unir a todos.",
       "traits": ["Liderazgo", "Altruista", "Carismático", "Devoto"],
       "quote": "Si tan solo todos pudieran entenderse"
-    },
     "ENFP": {
       "name": "Sasha Blouse",
       "title": "El Activista",
       "description": "Ilumina el entorno con energía positiva. Un espíritu libre.",
       "traits": ["Optimista", "Espíritu libre", "Amigable", "Espontáneo"],
       "quote": "Carne... quiero comer carne"
-    },
     "ISTJ": {
       "name": "Mikasa Ackerman",
       "title": "El Logístico",
       "description": "Fuerte sentido del deber y lealtad. Hará cualquier cosa para proteger a sus seres queridos.",
       "traits": ["Leal", "Responsable", "Práctico", "Protector"],
       "quote": "Este mundo es cruel. Pero también es hermoso"
-    },
     "ISFJ": {
       "name": "Petra Ral",
       "title": "El Defensor",
       "description": "Persona dedicada que cuida y apoya a sus compañeros. Respalda silenciosamente al equipo.",
       "traits": ["Devoto", "Cariñoso", "Confiable", "Solidario"],
       "quote": "Tenemos que confiar el uno en el otro"
-    },
     "ESTJ": {
       "name": "Jean Kirstein",
       "title": "El Ejecutivo",
       "description": "Creció hasta convertirse en un líder realista y responsable. Valora los principios y lidera el equipo.",
       "traits": ["Liderazgo", "Realista", "Responsable", "En crecimiento"],
       "quote": "Me uniré al Cuerpo de Exploración"
-    },
     "ESFJ": {
       "name": "Connie Springer",
       "title": "El Cónsul",
       "description": "Fuerte camaradería y valora el trabajo en equipo. Nunca pierde el humor incluso en situaciones difíciles.",
       "traits": ["Amigable", "Leal", "Humorístico", "Jugador de equipo"],
       "quote": "Somos amigos, ¿no?"
-    },
     "ISTP": {
       "name": "Annie Leonhart",
       "title": "El Virtuoso",
       "description": "Habilidades de combate excepcionales y juicio frío. Independiente y práctica.",
       "traits": ["Independiente", "Práctico", "Tranquilo", "Hábil"],
       "quote": "Solo soy una persona normal"
-    },
     "ISFP": {
       "name": "Ymir",
       "title": "El Aventurero",
       "description": "Alma libre e independiente. Actúa según valores personales.",
       "traits": ["Libre", "Independiente", "Leal", "Intuitivo"],
       "quote": "Voy a vivir para mí misma"
-    },
     "ESTP": {
       "name": "Eren Yeager",
       "title": "El Emprendedor",
       "description": "Acción y determinación excepcionales. Lucha con todo por la libertad.",
       "traits": ["Orientado a la acción", "Determinado", "Libertad", "Apasionado"],
       "quote": "Nací libre"
-    },
     "ESFP": {
       "name": "Connie Springer",
       "title": "El Animador",
@@ -370,17 +333,14 @@
       "quarterFinal": "Cuartos de Final",
       "semiFinal": "Semifinales",
       "final": "Final"
-    },
     "winner": {
       "title": "Campeón",
       "place": "Lugar",
       "victories": "Victorias",
       "winRate": "Tasa de Victoria"
-    },
     "actions": {
       "restart": "Reiniciar",
       "back": "Volver"
-    },
     "sharing": {
       "title": "Comparte tu Campeón",
       "kakao": "Compartir en KakaoTalk",
@@ -400,7 +360,6 @@
       "description": "Los resultados varían según el género",
       "male": "Masculino",
       "female": "Femenino"
-    },
     "questions": {
       "q1": {
         "question": "¿Tu estilo de citas es?",
@@ -437,7 +396,6 @@
         "option1": "Hacer planes concretos juntos",
         "option2": "Dejar que las cosas fluyan naturalmente"
       }
-    },
     "results": {
       "egenMale": {
         "title": "Hombre Egen",
@@ -459,7 +417,6 @@
         "description": "¡Estilo de citas independiente y misterioso! Como Annie, con tu encanto único.",
         "traits": ["Independiente", "Misterioso", "Fuerte", "Atractivo"]
       }
-    },
     "analyzing": "Analizando...",
     "yourStyle": "Tu Estilo de Citas",
     "shareResults": "Compartir Resultados",
@@ -541,7 +498,6 @@
         "option3": "Amor libre y genuino",
         "option4": "Amor que crece junto"
       }
-    },
     "styles": {
       "erenMikasa": {
         "title": "Tipo Eren-Mikasa",
@@ -606,7 +562,6 @@
         "traits": ["Complementario", "Apoyo", "Pasión Compartida", "Balance"],
         "quote": "Te ayudaré a desplegar tus alas"
       }
-    },
     "analyzingRomance": "Analizando Estilo Romántico...",
     "yourRomanceStyle": "Tu Estilo Romántico",
     "characteristics": "Características del Estilo Romántico",

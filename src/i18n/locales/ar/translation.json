@@ -26,11 +26,14 @@
       "line1": "اكتشف شخصيتك من خلال 12 سؤالاً نفسياً.",
       "line2": "اعثر على شخصيتك المخفية الآن."
     },
-    "mainDescription": {
       "line1": "من اختبارات الشخصية إلى بطولات الشخصيات!",
       "line2": "اكتشف نفسك من خلال اختبارات متنوعة."
     },
-    "trendingBadge": "رائج",
+    "characterTypes": "16 نوع شخصية",
+    "findCharacter": "اعثر على الشخصية التي تشبهك",
+    "mainDescription": {
+    "trendingBadge": "رائج"
+    },
     "stats": {
       "participants": "المشاركون",
       "satisfaction": "الرضا",
@@ -56,7 +59,6 @@
       "step": "خطوة",
       "complete": "إكمال",
       "question": "سؤال"
-    },
     "navigation": {
       "previous": "السابق",
       "next": "التالي",
@@ -67,7 +69,6 @@
     "analyzing": {
       "title": "جارٍ التحليل...",
       "description": "البحث عن نوع شخصيتك"
-    },
     "badge": "اكتمل التحليل",
     "mbtiType": "نوع MBTI",
     "yourCharacter": "شخصيتك هي",
@@ -78,22 +79,18 @@
       "traits": "السمات الرئيسية",
       "strengths": "نقاط القوة",
       "description": "وصف الشخصية"
-    },
     "characterStats": {
       "type": "النوع",
       "rarity": "الندرة"
-    },
     "compatibility": {
       "title": "التوافق",
       "bestMatch": "أفضل توافق",
       "goodMatch": "توافق جيد",
       "description": "العلاقات مع الأنواع الأخرى"
-    },
     "statistics": {
       "title": "الإحصائيات",
       "percentage": "من السكان",
       "similar": "أنواع مشابهة"
-    },
     "sharing": {
       "title": "مشاركة النتائج",
       "description": "شارك وقارن النتائج مع أصدقائك"

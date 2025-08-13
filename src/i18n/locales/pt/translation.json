@@ -30,6 +30,8 @@
       "line1": "De testes de personalidade a torneios de personagens!",
       "line2": "Descubra-se através de vários testes."
     },
+    "characterTypes": "16 Tipos de Personagens",
+    "findCharacter": "Encontre o personagem que se parece com você",
     "trendingBadge": "TENDÊNCIA",
     "stats": {
       "participants": "Participantes",
@@ -45,7 +47,6 @@
       "titanquiz": "Quiz Titã",
       "quizQuestions": "50",
       "learnMore": "Saiba Mais"
-    },
     "trustIndicators": {
       "safe": "Teste Seguro",
       "scientific": "Análise Científica"
@@ -56,7 +57,6 @@
       "step": "Passo",
       "complete": "Concluir",
       "question": "Pergunta"
-    },
     "navigation": {
       "previous": "Anterior",
       "next": "Próximo",
@@ -67,7 +67,6 @@
     "analyzing": {
       "title": "Analisando...",
       "description": "Encontrando seu tipo de personalidade"
-    },
     "badge": "Análise Completa",
     "mbtiType": "Tipo MBTI",
     "yourCharacter": "Seu Personagem é",
@@ -78,32 +77,26 @@
       "traits": "Características Principais",
       "strengths": "Pontos Fortes",
       "description": "Descrição do Personagem"
-    },
     "characterStats": {
       "type": "Tipo",
       "rarity": "Raridade"
-    },
     "compatibility": {
       "title": "Compatibilidade",
       "bestMatch": "Melhor Combinação",
       "goodMatch": "Boa Combinação",
       "description": "Relacionamentos com outros tipos"
-    },
     "statistics": {
       "title": "Estatísticas",
       "percentage": "da população",
       "similar": "Tipos similares"
-    },
     "sharing": {
       "title": "Compartilhar Resultados",
       "description": "Compartilhe e compare resultados com seus amigos"
-    },
     "stats": {
       "sameType": "Mesmo Tipo",
       "accuracy": "Precisão",
       "averageRating": "Avaliação Média",
       "satisfaction": "Satisfação"
-    },
     "buttons": {
       "restart": "Fazer Teste Novamente",
       "saveImage": "Salvar como Imagem",

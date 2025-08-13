@@ -30,6 +30,8 @@
       "line1": "从性格测试到理想型世界杯！",
       "line2": "通过各种测试发现自己。"
     },
+    "characterTypes": "16种角色类型",
+    "findCharacter": "找到与你相似的角色",
     "trendingBadge": "热门",
     "stats": {
       "participants": "参与者",
@@ -50,7 +52,6 @@
         "title": "隐私保护",
         "description": "安全的数据处理和匿名保证"
       }
-    },
     "testimonials": {
       "student": {
         "name": "李美玲",
@@ -62,7 +63,6 @@
         "role": "上班族",
         "content": "与进击的巨人角色匹配让测试更有趣"
       }
-    },
     "buttons": {
       "start": "MBTI测试",
       "romance": "恋爱风格",
@@ -71,11 +71,9 @@
       "titanquiz": "进击问答",
       "quizQuestions": "50题",
       "learnMore": "了解更多"
-    },
     "trustIndicators": {
       "safe": "安全测试",
       "scientific": "科学分析"
-    },
     "howItWorks": {
       "title": "测试流程",
       "step1": {
@@ -90,7 +88,6 @@
         "title": "角色匹配",
         "description": "匹配进击的巨人角色"
       }
-    },
     "faq": {
       "title": "常见问题",
       "q1": {
@@ -112,7 +109,6 @@
       "step": "步骤",
       "complete": "完成",
       "question": "问题"
-    },
     "navigation": {
       "previous": "上一题",
       "next": "下一题",
@@ -124,57 +120,46 @@
       "question": "周末有空闲时间时，你会：",
       "option1": "与朋友见面或参加有新朋友的聚会",
       "option2": "独自在家看书或看电影，安静地度过"
-    },
     "q2": {
       "question": "在派对或聚会上，你会：",
       "option1": "与很多人交谈，轻松结交新朋友",
       "option2": "只与少数熟悉的人深入交谈"
-    },
     "q3": {
       "question": "充电的方式是：",
       "option1": "与人交往，积极地度过时间",
       "option2": "独处，安静地休息"
-    },
     "q4": {
       "question": "学习新事物时，你更喜欢：",
       "option1": "通过具体例子和实践学习",
       "option2": "先理解整体概念和理论"
-    },
     "q5": {
       "question": "交谈时，你会谈论：",
       "option1": "实际经历和具体事实",
       "option2": "可能性和想法"
-    },
     "q6": {
       "question": "解决问题时，你会：",
       "option1": "使用经过验证的方法和过去的经验",
       "option2": "尝试新方法和创新的方式"
-    },
     "q7": {
       "question": "做决定时，你重视：",
       "option1": "逻辑分析和客观事实",
       "option2": "人们的感受和价值观"
-    },
     "q8": {
       "question": "朋友寻求建议时，你会：",
       "option1": "分析问题并提出解决方案",
       "option2": "同情并提供情感支持"
-    },
     "q9": {
       "question": "受到批评时，你会：",
       "option1": "首先评估批评的逻辑合理性",
       "option2": "首先考虑对方的意图和自己的感受"
-    },
     "q10": {
       "question": "旅行时，你会：",
       "option1": "提前制定详细的行程和计划",
       "option2": "只做粗略计划，随性而动"
-    },
     "q11": {
       "question": "处理工作时，你更喜欢：",
       "option1": "在截止日期前完成",
       "option2": "在截止日期临近时发挥集中力"
-    },
     "q12": {
       "question": "在日常生活中，你更喜欢：",
       "option1": "整洁有序的环境和规律的作息",
@@ -185,7 +170,6 @@
     "analyzing": {
       "title": "分析中...",
       "description": "正在寻找你的性格类型"
-    },
     "badge": "分析完成",
     "mbtiType": "MBTI类型",
     "yourCharacter": "你的角色是",
@@ -196,32 +180,26 @@
       "traits": "主要特征",
       "strengths": "优势",
       "description": "角色描述"
-    },
     "characterStats": {
       "type": "类型",
       "rarity": "稀有度"
-    },
     "compatibility": {
       "title": "相性",
       "bestMatch": "最佳匹配",
       "goodMatch": "良好匹配",
       "description": "与其他类型的关系"
-    },
     "statistics": {
       "title": "统计",
       "percentage": "占总人口",
       "similar": "相似类型"
-    },
     "sharing": {
       "title": "分享结果",
       "description": "与朋友分享并比较结果"
-    },
     "stats": {
       "sameType": "相同类型",
       "accuracy": "准确度",
       "averageRating": "平均评分",
       "satisfaction": "满意度"
-    },
     "buttons": {
       "restart": "重新测试",
       "saveImage": "保存为图片",
@@ -255,105 +233,90 @@
       "description": "拥有卓越战斗能力和冷静判断力的人类最强士兵。虽不表露情感但重视同伴。",
       "traits": ["战略性", "独立", "完美主义", "高效"],
       "quote": "做出不会后悔的选择"
-    },
     "INTP": {
       "name": "韩吉·佐耶",
       "title": "思考者",
       "description": "对巨人有着无限好奇心和研究热情的调查兵团分队长。不畏危险追求真相。",
       "traits": ["好奇心", "分析性", "创造性", "热情"],
       "quote": "巨人真的很有趣！"
-    },
     "ENTJ": {
       "name": "埃尔文·史密斯",
       "title": "指挥官",
       "description": "为人类未来能够赌上一切的调查兵团团长。看大局并接受牺牲。",
       "traits": ["领导力", "战略性", "决断力", "远见"],
       "quote": "献出心脏！"
-    },
     "ENTP": {
       "name": "弗洛克·福斯特",
       "title": "辩论家",
       "description": "为自己的信念不惧争论的人物。挑战现有秩序。",
       "traits": ["好辩", "创新", "独立", "挑战"],
       "quote": "如果需要恶魔，我愿意成为恶魔"
-    },
     "INFJ": {
       "name": "阿尔敏·阿诺德",
       "title": "倡导者",
       "description": "拥有出色战略思维和深刻洞察力的人物。追求和平但必要时接受牺牲。",
       "traits": ["洞察力", "理想主义", "战略性", "同理心"],
       "quote": "要改变什么就必须放弃什么"
-    },
     "INFP": {
       "name": "希斯特利亚·雷斯",
       "title": "调停者",
       "description": "经历寻找真我之旅的人物。关心他人同时坚守信念。",
       "traits": ["理想主义", "真诚", "同理心", "成长"],
       "quote": "我是人类的敌人，但我是你的同伴"
-    },
     "ENFJ": {
       "name": "马可·博特",
       "title": "主人公",
       "description": "热衷于帮助和领导他人的人物。有将大家团结在一起的力量。",
       "traits": ["领导力", "利他", "魅力", "奉献"],
       "quote": "如果大家能够相互理解"
-    },
     "ENFP": {
       "name": "萨莎·布劳斯",
       "title": "活动家",
       "description": "用明亮积极的能量点亮周围的人物。自由的灵魂。",
       "traits": ["乐观", "自由", "亲和力", "即兴"],
       "quote": "肉...我想吃肉"
-    },
     "ISTJ": {
       "name": "三笠·阿克曼",
       "title": "物流师",
       "description": "有强烈责任感和忠诚度的人物。为保护重要的人不惜一切。",
       "traits": ["忠诚", "责任感", "实用", "保护"],
       "quote": "这个世界很残酷。但也很美丽"
-    },
     "ISFJ": {
       "name": "佩特拉·拉尔",
       "title": "守护者",
       "description": "关心和支持队友的奉献型人物。默默支撑团队。",
       "traits": ["奉献", "关怀", "可靠", "支持"],
       "quote": "我们必须相互信任"
-    },
     "ESTJ": {
       "name": "让·基尔希斯坦",
       "title": "总经理",
       "description": "成长为现实且负责任的领导者。重视原则并领导团队。",
       "traits": ["领导力", "现实", "责任感", "成长"],
       "quote": "我要加入调查兵团"
-    },
     "ESFJ": {
       "name": "康尼·斯普林格",
       "title": "执政官",
       "description": "团队意识强，重视团队合作的人物。即使在困难时也不失幽默。",
       "traits": ["亲和力", "忠诚", "幽默", "团队合作"],
       "quote": "我们是朋友吧"
-    },
     "ISTP": {
       "name": "阿尼·莱恩哈特",
       "title": "鉴赏家",
       "description": "拥有出色格斗技术和冷静判断力的人物。独立且实用。",
       "traits": ["独立", "实用", "冷静", "技术"],
       "quote": "我只是个普通人"
-    },
     "ISFP": {
       "name": "尤弥尔",
       "title": "探险家",
       "description": "自由独立的灵魂。按照自己的价值观行动。",
       "traits": ["自由", "独立", "忠实", "直觉"],
       "quote": "我要为自己而活"
-    },
     "ESTP": {
       "name": "艾伦·耶格尔",
       "title": "企业家",
       "description": "行动力和决断力出色的人物。为自由赌上一切战斗。",
       "traits": ["行动力", "决断力", "自由", "热情"],
       "quote": "我从出生起就是自由的"
-    },
     "ESFP": {
       "name": "康尼·斯普林格",
       "title": "表演者",
@@ -370,17 +333,14 @@
       "quarterFinal": "四分之一决赛",
       "semiFinal": "半决赛",
       "final": "决赛"
-    },
     "winner": {
       "title": "冠军",
       "place": "名次",
       "victories": "胜利",
       "winRate": "胜率"
-    },
     "actions": {
       "restart": "重新开始",
       "back": "返回"
-    },
     "sharing": {
       "title": "分享你的冠军",
       "kakao": "分享到KakaoTalk",
@@ -400,7 +360,6 @@
       "description": "结果因性别而异",
       "male": "男性",
       "female": "女性"
-    },
     "questions": {
       "q1": {
         "question": "你的约会风格是？",
@@ -437,7 +396,6 @@
         "option1": "一起制定具体计划",
         "option2": "顺其自然"
       }
-    },
     "results": {
       "egenMale": {
         "title": "艾格男",
@@ -459,7 +417,6 @@
         "description": "独立神秘的恋爱风格！像阿尼一样拥有独特魅力。",
         "traits": ["独立", "神秘", "坚强", "魅力"]
       }
-    },
     "analyzing": "分析中...",
     "yourStyle": "你的恋爱风格",
     "shareResults": "分享结果",
@@ -541,7 +498,6 @@
         "option3": "自由真诚的爱",
         "option4": "共同成长的爱"
       }
-    },
     "styles": {
       "erenMikasa": {
         "title": "艾伦-三笠型",
@@ -606,7 +562,6 @@
         "traits": ["互补", "支持", "共享热情", "平衡"],
         "quote": "我会帮助你展翅飞翔"
       }
-    },
     "analyzingRomance": "分析恋爱风格中...",
     "yourRomanceStyle": "你的恋爱风格",
     "characteristics": "恋爱风格特征",
