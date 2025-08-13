@@ -42,6 +42,7 @@
       "romance": "Stile Romantico",
       "egen": "Test Egen/Teto",
       "worldcup": "Coppa del Mondo Ideale",
+      "titanquiz": "Quiz Titani",
       "learnMore": "Scopri di Più"
     },
     "trustIndicators": {
@@ -129,5 +130,27 @@
   "characters": {
     "coreTraits": "Tratti Principali",
     "bestCompatibility": "Migliore Compatibilità"
+  },
+  "titanQuiz": {
+    "complete": "Quiz Completato!",
+    "yourScore": "Il Tuo Punteggio",
+    "accuracy": "Precisione",
+    "ranking": "Classifica",
+    "topScore": "Punteggio Massimo",
+    "newRecord": "Nuovo Record!",
+    "topRankings": "Migliori Classifiche",
+    "retry": "Riprova",
+    "share": "Condividi",
+    "shareKakao": "Condividi su KakaoTalk",
+    "copyLink": "Copia Link",
+    "copied": "Copiato!",
+    "backToMain": "Torna al Menu",
+    "currentTop": "Attuale Primo",
+    "category": {
+      "character": "Personaggio",
+      "story": "Storia",
+      "titan": "Titano",
+      "world": "Mondo"
+    }
   }
 }

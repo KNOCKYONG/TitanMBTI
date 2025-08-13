@@ -42,6 +42,7 @@
       "romance": "أسلوب الرومانسية",
       "egen": "اختبار إيجين/تيتو",
       "worldcup": "كأس العالم المثالية",
+      "titanquiz": "مسابقة التايتان",
       "learnMore": "تعلم المزيد"
     },
     "trustIndicators": {
@@ -129,5 +130,27 @@
   "characters": {
     "coreTraits": "السمات الأساسية",
     "bestCompatibility": "أفضل توافق"
+  },
+  "titanQuiz": {
+    "complete": "اكتملت المسابقة!",
+    "yourScore": "نقاطك",
+    "accuracy": "الدقة",
+    "ranking": "الترتيب",
+    "topScore": "أعلى نقاط",
+    "newRecord": "رقم قياسي جديد!",
+    "topRankings": "أفضل الترتيبات",
+    "retry": "حاول مرة أخرى",
+    "share": "مشاركة",
+    "shareKakao": "مشاركة عبر KakaoTalk",
+    "copyLink": "نسخ الرابط",
+    "copied": "تم النسخ!",
+    "backToMain": "عودة للرئيسية",
+    "currentTop": "القائد الحالي",
+    "category": {
+      "character": "شخصية",
+      "story": "قصة",
+      "titan": "تايتان",
+      "world": "عالم"
+    }
   }
 }

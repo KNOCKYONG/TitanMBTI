@@ -5,10 +5,10 @@ import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { 
   Play, Users, Clock, Star, ArrowRight, Zap, Shield, Award,
-  TrendingUp, Target, Heart, Sparkles, Swords 
+  TrendingUp, Target, Heart, Sparkles, Swords, Brain 
 } from 'lucide-react';
 
-const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
+const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest, onTitanQuiz }) => {
   const { t } = useTranslation();
   
   const stats = [
@@ -102,7 +102,30 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
 
                 {/* CTA Buttons - Grid layout for buttons */}
                 <div className="grid gap-4 justify-center lg:justify-start">
-                  {/* Top Row - 2 columns */}
+                  {/* Titan Quiz Button - PRIMARY POSITION */}
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="relative"
+                  >
+                    <div className="absolute -top-2 -right-2 z-10">
+                      <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white text-xs px-2 py-1">
+                        <Sparkles className="w-3 h-3 mr-1" />
+                        NEW
+                      </Badge>
+                    </div>
+                    <Button 
+                      onClick={onTitanQuiz}
+                      size="lg"
+                      className="w-full bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white px-6 py-5 text-lg font-bold shadow-2xl shadow-red-500/25 hover:shadow-red-500/40 transition-all duration-300 group"
+                    >
+                      <Brain className="h-6 w-6 mr-2" />
+                      <span>{t('startScreen.buttons.titanquiz')}</span>
+                      <span className="ml-2 text-sm opacity-90">50문제</span>
+                    </Button>
+                  </motion.div>
+
+                  {/* Second Row - 2 columns */}
                   <div className="grid grid-cols-2 gap-4">
                     {/* MBTI Test Button */}
                     <motion.div
@@ -121,7 +144,7 @@ const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest }) => {
                       </Button>
                     </motion.div>
                     
-                    {/* Romance Style Test Button - NEW */}
+                    {/* Romance Style Test Button */}
                     <motion.div
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}

@@ -42,6 +42,7 @@
       "romance": "Phong cách Lãng mạn",
       "egen": "Test Egen/Teto",
       "worldcup": "World Cup Lý tưởng",
+      "titanquiz": "Quiz Titan",
       "learnMore": "Tìm hiểu thêm"
     },
     "trustIndicators": {
@@ -129,5 +130,27 @@
   "characters": {
     "coreTraits": "Đặc điểm Cốt lõi",
     "bestCompatibility": "Tương thích Tốt nhất"
+  },
+  "titanQuiz": {
+    "complete": "Hoàn thành Quiz!",
+    "yourScore": "Điểm của bạn",
+    "accuracy": "Độ chính xác",
+    "ranking": "Xếp hạng",
+    "topScore": "Điểm cao nhất",
+    "newRecord": "Kỷ lục mới!",
+    "topRankings": "Bảng xếp hạng",
+    "retry": "Thử lại",
+    "share": "Chia sẻ",
+    "shareKakao": "Chia sẻ trên KakaoTalk",
+    "copyLink": "Sao chép liên kết",
+    "copied": "Đã sao chép!",
+    "backToMain": "Trở về trang chính",
+    "currentTop": "Hàng đầu hiện tại",
+    "category": {
+      "character": "Nhân vật",
+      "story": "Câu chuyện",
+      "titan": "Titan",
+      "world": "Thế giới"
+    }
   }
 }

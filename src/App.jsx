@@ -5,6 +5,7 @@ import ResultScreen from './components/ResultScreen.jsx';
 import WorldCup from './components/WorldCup.jsx';
 import EgenTest from './components/EgenTest.jsx';
 import RomanceStyleTest from './components/RomanceStyleTest.jsx';
+import TitanQuiz from './components/TitanQuiz.jsx';
 import LanguageSelector from './components/LanguageSelector.jsx';
 import SEOMetaTags from './components/SEOMetaTags.jsx';
 import { questions } from './data/questions';
@@ -12,7 +13,7 @@ import { calculateMBTI } from './utils/calculateMBTI';
 import { initKakao } from './utils/shareUtils';
 
 function App() {
-  const [gameState, setGameState] = useState('start'); // start, quiz, result, worldcup, egen, romance
+  const [gameState, setGameState] = useState('start'); // start, quiz, result, worldcup, egen, romance, titanquiz
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [mbtiResult, setMbtiResult] = useState(null);
@@ -63,6 +64,7 @@ function App() {
     const sharedResult = params.get('result');
     const worldcupMode = params.get('worldcup');
     const worldcupCharacter = params.get('character');
+    const titanquizMode = params.get('titanquiz');
     
     if (sharedResult && sharedResult.length === 4) {
       setMbtiResult(sharedResult);
@@ -70,6 +72,11 @@ function App() {
     } else if (worldcupMode === 'winner' && worldcupCharacter) {
       // 월드컵 우승자 공유 링크로 접근한 경우
       setGameState('worldcup');
+      // URL 파라미터 제거
+      window.history.replaceState({}, '', '/');
+    } else if (titanquizMode === 'true') {
+      // 진격의 거인 퀴즈 공유 링크로 접근한 경우
+      setGameState('titanquiz');
       // URL 파라미터 제거
       window.history.replaceState({}, '', '/');
     }
@@ -135,6 +142,14 @@ function App() {
     setGameState('start');
   };
 
+  const startTitanQuiz = () => {
+    setGameState('titanquiz');
+  };
+
+  const handleTitanQuizBack = () => {
+    setGameState('start');
+  };
+
 
   return (
     <div className="min-h-screen">
@@ -147,6 +162,7 @@ function App() {
             onWorldCup={startWorldCup} 
             onEgenTest={startEgenTest}
             onRomanceTest={startRomanceTest}
+            onTitanQuiz={startTitanQuiz}
           />
         )}
       
@@ -179,6 +195,10 @@ function App() {
         
         {gameState === 'romance' && (
           <RomanceStyleTest onBack={handleRomanceBack} />
+        )}
+        
+        {gameState === 'titanquiz' && (
+          <TitanQuiz onBack={handleTitanQuizBack} />
         )}
     </div>
   );

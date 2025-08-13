@@ -42,6 +42,7 @@
       "romance": "Style Romantique",
       "egen": "Test Egen/Teto",
       "worldcup": "Coupe du Monde Idéale",
+      "titanquiz": "Quiz Titan",
       "learnMore": "En Savoir Plus"
     },
     "features": {
@@ -612,5 +613,34 @@
     "shareResults": "Partager les Résultats",
     "testAgain": "Refaire le Test",
     "backToMain": "Menu Principal"
+  },
+  "titanQuiz": {
+    "complete": "Quiz Terminé !",
+    "yourScore": "Votre Score",
+    "accuracy": "Précision",
+    "ranking": "Classement",
+    "topScore": "Meilleur Score",
+    "newRecord": "Nouveau Record !",
+    "topRankings": "Meilleurs Classements",
+    "retry": "Réessayer",
+    "share": "Partager",
+    "shareKakao": "Partager sur KakaoTalk",
+    "copyLink": "Copier le Lien",
+    "copied": "Copié !",
+    "backToMain": "Retour à l'Accueil",
+    "currentTop": "Actuel Meilleur",
+    "quit": "Quitter",
+    "quitConfirm": "Quitter le Quiz ?",
+    "quitMessage": "Votre progrès actuel sera sauvegardé et vous pourrez voir vos résultats.",
+    "currentProgress": "Progrès Actuel",
+    "correct": "correctes",
+    "quitAndSee": "Quitter et Voir les Résultats",
+    "continue": "Continuer",
+    "category": {
+      "character": "Personnage",
+      "story": "Histoire",
+      "titan": "Titan",
+      "world": "Monde"
+    }
   }
 }

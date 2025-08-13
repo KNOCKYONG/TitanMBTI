@@ -42,6 +42,7 @@
       "romance": "Gaya Romantis",
       "egen": "Tes Egen/Teto",
       "worldcup": "Piala Dunia Ideal",
+      "titanquiz": "Kuis Titan",
       "learnMore": "Pelajari Lebih Lanjut"
     },
     "trustIndicators": {
@@ -129,5 +130,27 @@
   "characters": {
     "coreTraits": "Sifat Inti",
     "bestCompatibility": "Kompatibilitas Terbaik"
+  },
+  "titanQuiz": {
+    "complete": "Kuis Selesai!",
+    "yourScore": "Skor Anda",
+    "accuracy": "Akurasi",
+    "ranking": "Peringkat",
+    "topScore": "Skor Tertinggi",
+    "newRecord": "Rekor Baru!",
+    "topRankings": "Peringkat Teratas",
+    "retry": "Coba Lagi",
+    "share": "Bagikan",
+    "shareKakao": "Bagikan di KakaoTalk",
+    "copyLink": "Salin Link",
+    "copied": "Tersalin!",
+    "backToMain": "Kembali ke Menu",
+    "currentTop": "Teratas Saat Ini",
+    "category": {
+      "character": "Karakter",
+      "story": "Cerita",
+      "titan": "Titan",
+      "world": "Dunia"
+    }
   }
 }

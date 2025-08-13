@@ -42,6 +42,7 @@
       "romance": "สไตล์โรแมนติก",
       "egen": "ทดสอบเอเกน/เทโต",
       "worldcup": "เวิลด์คัพในอุดมคติ",
+      "titanquiz": "ควิซไทตัน",
       "learnMore": "เรียนรู้เพิ่มเติม"
     },
     "trustIndicators": {
@@ -129,5 +130,27 @@
   "characters": {
     "coreTraits": "ลักษณะหลัก",
     "bestCompatibility": "ความเข้ากันได้ดีที่สุด"
+  },
+  "titanQuiz": {
+    "complete": "ควิซเสร็จแล้ว!",
+    "yourScore": "คะแนนของคุณ",
+    "accuracy": "ความแม่นยำ",
+    "ranking": "อันดับ",
+    "topScore": "คะแนนสูงสุด",
+    "newRecord": "สถิติใหม่!",
+    "topRankings": "อันดับสูงสุด",
+    "retry": "ลองอีกครั้ง",
+    "share": "แชร์",
+    "shareKakao": "แชร์ใน KakaoTalk",
+    "copyLink": "คัดลอกลิงค์",
+    "copied": "คัดลอกแล้ว!",
+    "backToMain": "กลับไปหน้าหลัก",
+    "currentTop": "อันดับหนึ่งปัจจุบัน",
+    "category": {
+      "character": "ตัวละคร",
+      "story": "เรื่องราว",
+      "titan": "ไทตัน",
+      "world": "โลก"
+    }
   }
 }

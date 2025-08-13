@@ -68,6 +68,7 @@
       "romance": "恋爱风格",
       "egen": "艾格男特托女",
       "worldcup": "理想型世界杯",
+      "titanquiz": "泰坦问答",
       "learnMore": "了解更多"
     },
     "trustIndicators": {
@@ -612,5 +613,34 @@
     "shareResults": "分享结果",
     "testAgain": "重新测试",
     "backToMain": "主菜单"
+  },
+  "titanQuiz": {
+    "complete": "测验完成！",
+    "yourScore": "你的分数",
+    "accuracy": "准确率",
+    "ranking": "排名",
+    "topScore": "最高分",
+    "newRecord": "新记录！",
+    "topRankings": "排行榜",
+    "retry": "再试一次",
+    "share": "分享",
+    "shareKakao": "KakaoTalk分享",
+    "copyLink": "复制链接",
+    "copied": "已复制！",
+    "backToMain": "返回主页",
+    "currentTop": "当前第一",
+    "quit": "退出",
+    "quitConfirm": "退出测验？",
+    "quitMessage": "您当前的进度将被保存，您可以查看结果。",
+    "currentProgress": "当前进度",
+    "correct": "正确",
+    "quitAndSee": "退出并查看结果",
+    "continue": "继续",
+    "category": {
+      "character": "角色",
+      "story": "剧情",
+      "titan": "巨人",
+      "world": "世界观"
+    }
   }
 }

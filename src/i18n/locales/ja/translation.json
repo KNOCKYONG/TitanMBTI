@@ -68,6 +68,7 @@
       "romance": "恋愛スタイル",
       "egen": "エゲン男テト女",
       "worldcup": "理想のワールドカップ",
+      "titanquiz": "タイタンクイズ",
       "learnMore": "詳しく見る"
     },
     "trustIndicators": {
@@ -535,5 +536,34 @@
     "shareResults": "結果をシェア",
     "testAgain": "もう一度テスト",
     "backToMain": "メインメニュー"
+  },
+  "titanQuiz": {
+    "complete": "クイズ完了！",
+    "yourScore": "あなたのスコア",
+    "accuracy": "正確率",
+    "ranking": "ランキング",
+    "topScore": "トップスコア",
+    "newRecord": "新記録！",
+    "topRankings": "上位ランキング",
+    "retry": "もう一度挑戦",
+    "share": "シェア",
+    "shareKakao": "KakaoTalkでシェア",
+    "copyLink": "リンクをコピー",
+    "copied": "コピー完了！",
+    "backToMain": "メインに戻る",
+    "currentTop": "現在のトップ",
+    "quit": "終了",
+    "quitConfirm": "クイズを終了しますか？",
+    "quitMessage": "現在の進行状況が保存され、結果を確認できます。",
+    "currentProgress": "現在の進行状況",
+    "correct": "正解",
+    "quitAndSee": "終了して結果を見る",
+    "continue": "続ける",
+    "category": {
+      "character": "キャラクター",
+      "story": "ストーリー",
+      "titan": "タイタン",
+      "world": "世界観"
+    }
   }
 }

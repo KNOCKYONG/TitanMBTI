@@ -42,6 +42,7 @@
       "romance": "Романтический Стиль",
       "egen": "Тест Эген/Тето",
       "worldcup": "Идеальный Чемпионат",
+      "titanquiz": "Квиз Титан",
       "learnMore": "Узнать Больше"
     },
     "trustIndicators": {
@@ -129,5 +130,34 @@
   "characters": {
     "coreTraits": "Основные Черты",
     "bestCompatibility": "Лучшая Совместимость"
+  },
+  "titanQuiz": {
+    "complete": "Квиз Завершён!",
+    "yourScore": "Ваш Счёт",
+    "accuracy": "Точность",
+    "ranking": "Рейтинг",
+    "topScore": "Лучший Счёт",
+    "newRecord": "Новый Рекорд!",
+    "topRankings": "Лучшие Рейтинги",
+    "retry": "Попробовать Снова",
+    "share": "Поделиться",
+    "shareKakao": "Поделиться в KakaoTalk",
+    "copyLink": "Копировать Ссылку",
+    "copied": "Скопировано!",
+    "backToMain": "Назад к Основному",
+    "currentTop": "Текущий Лидер",
+    "quit": "Выход",
+    "quitConfirm": "Выйти из квиза?",
+    "quitMessage": "Ваш текущий прогресс будет сохранён, и вы сможете посмотреть свои результаты.",
+    "currentProgress": "Текущий Прогресс",
+    "correct": "правильных",
+    "quitAndSee": "Выйти и Посмотреть Результаты",
+    "continue": "Продолжить",
+    "category": {
+      "character": "Персонаж",
+      "story": "История",
+      "titan": "Титан",
+      "world": "Мир"
+    }
   }
 }

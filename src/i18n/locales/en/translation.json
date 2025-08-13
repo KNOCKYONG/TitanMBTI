@@ -68,6 +68,7 @@
       "romance": "Romance Style",
       "egen": "Egen/Teto Test",
       "worldcup": "Ideal WorldCup",
+      "titanquiz": "Titan Quiz",
       "learnMore": "Learn More"
     },
     "trustIndicators": {
@@ -615,5 +616,34 @@
     "shareResults": "Share Results",
     "testAgain": "Test Again",
     "backToMain": "Main Menu"
+  },
+  "titanQuiz": {
+    "complete": "Quiz Complete!",
+    "yourScore": "Your Score",
+    "accuracy": "Accuracy",
+    "ranking": "Ranking",
+    "topScore": "Top Score",
+    "newRecord": "New Record!",
+    "topRankings": "Top Rankings",
+    "retry": "Try Again",
+    "share": "Share",
+    "shareKakao": "Share on KakaoTalk",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "backToMain": "Back to Main",
+    "currentTop": "Current Top",
+    "quit": "Quit",
+    "quitConfirm": "Quit Quiz?",
+    "quitMessage": "Your current progress will be saved and you can see your results.",
+    "currentProgress": "Current Progress",
+    "correct": "correct",
+    "quitAndSee": "Quit & See Results",
+    "continue": "Continue",
+    "category": {
+      "character": "Character",
+      "story": "Story",
+      "titan": "Titan",
+      "world": "World"
+    }
   }
 }

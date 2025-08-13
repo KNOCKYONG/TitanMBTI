@@ -42,6 +42,7 @@
       "romance": "Romantik-Stil",
       "egen": "Egen/Teto Test",
       "worldcup": "Ideal-Weltmeisterschaft",
+      "titanquiz": "Titan Quiz",
       "learnMore": "Mehr erfahren"
     },
     "features": {
@@ -612,5 +613,34 @@
     "shareResults": "Ergebnisse teilen",
     "testAgain": "Nochmal testen",
     "backToMain": "Hauptmenü"
+  },
+  "titanQuiz": {
+    "complete": "Quiz Abgeschlossen!",
+    "yourScore": "Deine Punktzahl",
+    "accuracy": "Genauigkeit",
+    "ranking": "Ranking",
+    "topScore": "Beste Punktzahl",
+    "newRecord": "Neuer Rekord!",
+    "topRankings": "Top Rankings",
+    "retry": "Nochmal versuchen",
+    "share": "Teilen",
+    "shareKakao": "Auf KakaoTalk teilen",
+    "copyLink": "Link kopieren",
+    "copied": "Kopiert!",
+    "backToMain": "Zurück zum Hauptmenü",
+    "currentTop": "Aktuelle Spitze",
+    "quit": "Beenden",
+    "quitConfirm": "Quiz beenden?",
+    "quitMessage": "Dein aktueller Fortschritt wird gespeichert und du kannst deine Ergebnisse einsehen.",
+    "currentProgress": "Aktueller Fortschritt",
+    "correct": "richtig",
+    "quitAndSee": "Beenden und Ergebnisse anzeigen",
+    "continue": "Fortfahren",
+    "category": {
+      "character": "Charakter",
+      "story": "Geschichte",
+      "titan": "Titan",
+      "world": "Welt"
+    }
   }
 }

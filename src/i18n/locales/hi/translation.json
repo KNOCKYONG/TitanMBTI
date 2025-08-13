@@ -42,6 +42,7 @@
       "romance": "रोमांटिक स्टाइल",
       "egen": "एगेन/टेटो टेस्ट",
       "worldcup": "आदर्श विश्व कप",
+      "titanquiz": "टाइटन क्विज",
       "learnMore": "और जानें"
     },
     "trustIndicators": {
@@ -129,5 +130,27 @@
   "characters": {
     "coreTraits": "मुख्य गुण",
     "bestCompatibility": "सर्वोत्तम अनुकूलता"
+  },
+  "titanQuiz": {
+    "complete": "क्विज पूरी!",
+    "yourScore": "आपका स्कोर",
+    "accuracy": "सटीकता",
+    "ranking": "रैंकिंग",
+    "topScore": "सर्वोच्च स्कोर",
+    "newRecord": "नया रिकॉर्ड!",
+    "topRankings": "शीर्ष रैंकिंग",
+    "retry": "फिर कोशिश करें",
+    "share": "साझा करें",
+    "shareKakao": "KakaoTalk पर साझा करें",
+    "copyLink": "लिंक कॉपी करें",
+    "copied": "कॉपी हो गया!",
+    "backToMain": "मुख्य पेज पर वापस",
+    "currentTop": "वर्तमान शीर्ष",
+    "category": {
+      "character": "चरित्र",
+      "story": "कहानी",
+      "titan": "टाइटन",
+      "world": "दुनिया"
+    }
   }
 }
