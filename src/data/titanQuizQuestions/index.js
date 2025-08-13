@@ -2,6 +2,17 @@ import { titanQuizQuestionsKo } from './ko';
 import { titanQuizQuestionsEn } from './en';
 import { titanQuizQuestionsJa } from './ja';
 import { titanQuizQuestionsZh } from './zh';
+import { titanQuizQuestionsEs } from './es';
+import { titanQuizQuestionsFr } from './fr';
+import { titanQuizQuestionsDe } from './de';
+import { titanQuizQuestionsPt } from './pt';
+import { titanQuizQuestionsRu } from './ru';
+import { titanQuizQuestionsIt } from './it';
+import { titanQuizQuestionsAr } from './ar';
+import { titanQuizQuestionsHi } from './hi';
+import { titanQuizQuestionsTh } from './th';
+import { titanQuizQuestionsVi } from './vi';
+import { titanQuizQuestionsId } from './id';
 
 // 언어별 퀴즈 데이터 매핑
 const questionsByLanguage = {
@@ -9,18 +20,17 @@ const questionsByLanguage = {
   en: titanQuizQuestionsEn,
   ja: titanQuizQuestionsJa,
   zh: titanQuizQuestionsZh,
-  // 다른 언어들은 영어를 기본값으로 사용
-  es: titanQuizQuestionsEn,
-  fr: titanQuizQuestionsEn,
-  de: titanQuizQuestionsEn,
-  pt: titanQuizQuestionsEn,
-  ru: titanQuizQuestionsEn,
-  it: titanQuizQuestionsEn,
-  ar: titanQuizQuestionsEn,
-  hi: titanQuizQuestionsEn,
-  th: titanQuizQuestionsEn,
-  vi: titanQuizQuestionsEn,
-  id: titanQuizQuestionsEn
+  es: titanQuizQuestionsEs,
+  fr: titanQuizQuestionsFr,
+  de: titanQuizQuestionsDe,
+  pt: titanQuizQuestionsPt,
+  ru: titanQuizQuestionsRu,
+  it: titanQuizQuestionsIt,
+  ar: titanQuizQuestionsAr,
+  hi: titanQuizQuestionsHi,
+  th: titanQuizQuestionsTh,
+  vi: titanQuizQuestionsVi,
+  id: titanQuizQuestionsId
 };
 
 // 현재 언어에 맞는 퀴즈 문제 가져오기
