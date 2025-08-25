@@ -11,14 +11,28 @@
   },
   "startScreen": {
     "badge": "แบบทดสอบ MBTI ยอดนิยมที่สุดปี 2025",
+    "yearBadge": "แบบทดสอบตัวละครยอดนิยม 2025",
     "title": {
       "line1": "คุณเป็น",
       "line2": "ตัวละครไหนใน",
       "line3": "Attack on Titan?"
     },
+    "mainTitle": {
+      "line1": "ค้นหาตัวละคร",
+      "line2": "Attack on Titan",
+      "line3": "ที่เหมือนคุณ"
+    },
     "description": {
       "line1": "ค้นพบตัวละครของคุณผ่าน 12 คำถามทางจิตวิทยา",
       "line2": "ค้นหาบุคลิกภาพที่ซ่อนอยู่ของคุณตอนนี้เลย"
+    },
+      "line1": "ตั้งแต่แบบทดสอบบุคลิกภาพไปจนถึงการแข่งขันตัวละคร!"
+    },
+    "characterTypes": "16 ประเภทตัวละคร",
+    "findCharacter": "ค้นหาตัวละครที่เหมือนคุณ",
+    "mainDescription": {
+    },
+    "trendingBadge": "กำลังฮิต"
     },
     "stats": {
       "participants": "ผู้เข้าร่วม",
@@ -28,6 +42,11 @@
     },
     "buttons": {
       "start": "เริ่มทำแบบทดสอบ",
+      "romance": "สไตล์โรแมนติก",
+      "egen": "ทดสอบเอเกน/เทโต",
+      "worldcup": "เวิลด์คัพในอุดมคติ",
+      "titanquiz": "ควิซไทตัน",
+      "quizQuestions": "50",
       "learnMore": "เรียนรู้เพิ่มเติม"
     },
     "trustIndicators": {
@@ -40,7 +59,6 @@
       "step": "ขั้นตอน",
       "complete": "เสร็จสิ้น",
       "question": "คำถาม"
-    },
     "navigation": {
       "previous": "ก่อนหน้า",
       "next": "ถัดไป",
@@ -51,7 +69,6 @@
     "analyzing": {
       "title": "กำลังวิเคราะห์...",
       "description": "กำลังค้นหาประเภทบุคลิกภาพของคุณ"
-    },
     "badge": "วิเคราะห์เสร็จสิ้น",
     "mbtiType": "ประเภท MBTI",
     "yourCharacter": "ตัวละครของคุณคือ",
@@ -62,22 +79,18 @@
       "traits": "ลักษณะสำคัญ",
       "strengths": "จุดแข็ง",
       "description": "คำอธิบายตัวละคร"
-    },
     "characterStats": {
       "type": "ประเภท",
       "rarity": "ความหายาก"
-    },
     "compatibility": {
       "title": "ความเข้ากันได้",
       "bestMatch": "เข้ากันได้ดีที่สุด",
       "goodMatch": "เข้ากันได้ดี",
       "description": "ความสัมพันธ์กับประเภทอื่น"
-    },
     "statistics": {
       "title": "สถิติ",
       "percentage": "ของประชากร",
       "similar": "ประเภทที่คล้ายกัน"
-    },
     "sharing": {
       "title": "แบ่งปันผลลัพธ์",
       "description": "แบ่งปันและเปรียบเทียบผลลัพธ์กับเพื่อน"
@@ -115,5 +128,27 @@
   "characters": {
     "coreTraits": "ลักษณะหลัก",
     "bestCompatibility": "ความเข้ากันได้ดีที่สุด"
+  },
+  "titanQuiz": {
+    "complete": "ควิซเสร็จแล้ว!",
+    "yourScore": "คะแนนของคุณ",
+    "accuracy": "ความแม่นยำ",
+    "ranking": "อันดับ",
+    "topScore": "คะแนนสูงสุด",
+    "newRecord": "สถิติใหม่!",
+    "topRankings": "อันดับสูงสุด",
+    "retry": "ลองอีกครั้ง",
+    "share": "แชร์",
+    "shareKakao": "แชร์ใน KakaoTalk",
+    "copyLink": "คัดลอกลิงค์",
+    "copied": "คัดลอกแล้ว!",
+    "backToMain": "กลับไปหน้าหลัก",
+    "currentTop": "อันดับหนึ่งปัจจุบัน",
+    "category": {
+      "character": "ตัวละคร",
+      "story": "เรื่องราว",
+      "titan": "ไทตัน",
+      "world": "โลก"
+    }
   }
 }

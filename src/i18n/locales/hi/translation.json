@@ -11,14 +11,28 @@
   },
   "startScreen": {
     "badge": "2025 का सबसे लोकप्रिय MBTI टेस्ट",
+    "yearBadge": "2025 लोकप्रिय चरित्र टेस्ट",
     "title": {
       "line1": "आप कौन से",
       "line2": "Attack on Titan",
       "line3": "चरित्र हैं?"
     },
+    "mainTitle": {
+      "line1": "अपना समान",
+      "line2": "Attack on Titan",
+      "line3": "चरित्र खोजें"
+    },
     "description": {
       "line1": "12 मनोवैज्ञानिक प्रश्नों के माध्यम से अपने चरित्र की खोज करें।",
       "line2": "अभी अपने छिपे हुए व्यक्तित्व को खोजें।"
+    },
+      "line1": "व्यक्तित्व परीक्षण से लेकर चरित्र टूर्नामेंट तक!"
+    },
+    "characterTypes": "16 चरित्र प्रकार",
+    "findCharacter": "अपने जैसा चरित्र खोजें",
+    "mainDescription": {
+    },
+    "trendingBadge": "ट्रेंडिंग"
     },
     "stats": {
       "participants": "प्रतिभागी",
@@ -28,6 +42,11 @@
     },
     "buttons": {
       "start": "टेस्ट शुरू करें",
+      "romance": "रोमांटिक स्टाइल",
+      "egen": "एगेन/टेटो टेस्ट",
+      "worldcup": "आदर्श विश्व कप",
+      "titanquiz": "टाइटन क्विज",
+      "quizQuestions": "50",
       "learnMore": "और जानें"
     },
     "trustIndicators": {
@@ -40,7 +59,6 @@
       "step": "चरण",
       "complete": "पूर्ण करें",
       "question": "प्रश्न"
-    },
     "navigation": {
       "previous": "पिछला",
       "next": "अगला",
@@ -51,7 +69,6 @@
     "analyzing": {
       "title": "विश्लेषण कर रहे हैं...",
       "description": "आपके व्यक्तित्व प्रकार की खोज कर रहे हैं"
-    },
     "badge": "विश्लेषण पूर्ण",
     "mbtiType": "MBTI प्रकार",
     "yourCharacter": "आपका चरित्र है",
@@ -62,22 +79,18 @@
       "traits": "मुख्य गुण",
       "strengths": "शक्तियां",
       "description": "चरित्र विवरण"
-    },
     "characterStats": {
       "type": "प्रकार",
       "rarity": "दुर्लभता"
-    },
     "compatibility": {
       "title": "अनुकूलता",
       "bestMatch": "सबसे अच्छा मैच",
       "goodMatch": "अच्छा मैच",
       "description": "अन्य प्रकारों के साथ संबंध"
-    },
     "statistics": {
       "title": "आंकड़े",
       "percentage": "जनसंख्या का",
       "similar": "समान प्रकार"
-    },
     "sharing": {
       "title": "परिणाम साझा करें",
       "description": "अपने दोस्तों के साथ परिणामों को साझा और तुलना करें"
@@ -115,5 +128,27 @@
   "characters": {
     "coreTraits": "मुख्य गुण",
     "bestCompatibility": "सर्वोत्तम अनुकूलता"
+  },
+  "titanQuiz": {
+    "complete": "क्विज पूरी!",
+    "yourScore": "आपका स्कोर",
+    "accuracy": "सटीकता",
+    "ranking": "रैंकिंग",
+    "topScore": "सर्वोच्च स्कोर",
+    "newRecord": "नया रिकॉर्ड!",
+    "topRankings": "शीर्ष रैंकिंग",
+    "retry": "फिर कोशिश करें",
+    "share": "साझा करें",
+    "shareKakao": "KakaoTalk पर साझा करें",
+    "copyLink": "लिंक कॉपी करें",
+    "copied": "कॉपी हो गया!",
+    "backToMain": "मुख्य पेज पर वापस",
+    "currentTop": "वर्तमान शीर्ष",
+    "category": {
+      "character": "चरित्र",
+      "story": "कहानी",
+      "titan": "टाइटन",
+      "world": "दुनिया"
+    }
   }
 }

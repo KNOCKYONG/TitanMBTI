@@ -11,6 +11,10 @@ import AboutPage from '../pages/About/AboutPage';
 import ContactPage from '../pages/Contact/ContactPage';
 import PrivacyPage from '../pages/Privacy/PrivacyPage';
 import TermsPage from '../pages/Terms/TermsPage';
+import WorldCupPage from '../pages/Games/WorldCupPage';
+import EgenTestPage from '../pages/Games/EgenTestPage';
+import RomanceStylePage from '../pages/Games/RomanceStylePage';
+import TitanQuizPage from '../pages/Games/TitanQuizPage';
 
 const AppRouter = () => {
   return (
@@ -18,6 +22,10 @@ const AppRouter = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="test" element={<TestPage />} />
+        <Route path="worldcup" element={<WorldCupPage />} />
+        <Route path="egen" element={<EgenTestPage />} />
+        <Route path="romance" element={<RomanceStylePage />} />
+        <Route path="titanquiz" element={<TitanQuizPage />} />
         <Route path="types" element={<TypesListPage />} />
         <Route path="types/:mbtiType" element={<TypeDetailPage />} />
         <Route path="blog" element={<BlogListPage />} />

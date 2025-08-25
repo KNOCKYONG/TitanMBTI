@@ -11,14 +11,28 @@
   },
   "startScreen": {
     "badge": "Самый Популярный MBTI Тест 2025 года",
+    "yearBadge": "Популярные Тесты Персонажей 2025",
     "title": {
       "line1": "Какой ты",
       "line2": "Персонаж из",
       "line3": "Attack on Titan?"
     },
+    "mainTitle": {
+      "line1": "Найди своего",
+      "line2": "Attack on Titan",
+      "line3": "Персонажа"
+    },
     "description": {
       "line1": "Откройте своего персонажа через 12 психологических вопросов.",
       "line2": "Найдите свою скрытую личность прямо сейчас."
+    },
+      "line1": "От тестов личности до турниров персонажей!",
+      "line2": "Откройте себя через различные тесты."
+    },
+    "characterTypes": "16 типов персонажей",
+    "findCharacter": "Найдите персонажа, похожего на вас",
+    "mainDescription": {
+    "trendingBadge": "ТРЕНД"
     },
     "stats": {
       "participants": "Участники",
@@ -28,6 +42,11 @@
     },
     "buttons": {
       "start": "Начать Тест",
+      "romance": "Романтический Стиль",
+      "egen": "Тест Эген/Тето",
+      "worldcup": "Идеальный Чемпионат",
+      "titanquiz": "Квиз Титан",
+      "quizQuestions": "50",
       "learnMore": "Узнать Больше"
     },
     "trustIndicators": {
@@ -40,7 +59,6 @@
       "step": "Шаг",
       "complete": "Завершить",
       "question": "Вопрос"
-    },
     "navigation": {
       "previous": "Предыдущий",
       "next": "Далее",
@@ -51,7 +69,6 @@
     "analyzing": {
       "title": "Анализирую...",
       "description": "Определение вашего типа личности"
-    },
     "badge": "Анализ Завершен",
     "mbtiType": "Тип MBTI",
     "yourCharacter": "Ваш Персонаж",
@@ -62,22 +79,18 @@
       "traits": "Ключевые Черты",
       "strengths": "Сильные Стороны",
       "description": "Описание Персонажа"
-    },
     "characterStats": {
       "type": "Тип",
       "rarity": "Редкость"
-    },
     "compatibility": {
       "title": "Совместимость",
       "bestMatch": "Лучшее Соответствие",
       "goodMatch": "Хорошее Соответствие",
       "description": "Отношения с другими типами"
-    },
     "statistics": {
       "title": "Статистика",
       "percentage": "населения",
       "similar": "Похожие типы"
-    },
     "sharing": {
       "title": "Поделиться Результатами",
       "description": "Поделитесь и сравните результаты с друзьями"
@@ -115,5 +128,34 @@
   "characters": {
     "coreTraits": "Основные Черты",
     "bestCompatibility": "Лучшая Совместимость"
+  },
+  "titanQuiz": {
+    "complete": "Квиз Завершён!",
+    "yourScore": "Ваш Счёт",
+    "accuracy": "Точность",
+    "ranking": "Рейтинг",
+    "topScore": "Лучший Счёт",
+    "newRecord": "Новый Рекорд!",
+    "topRankings": "Лучшие Рейтинги",
+    "retry": "Попробовать Снова",
+    "share": "Поделиться",
+    "shareKakao": "Поделиться в KakaoTalk",
+    "copyLink": "Копировать Ссылку",
+    "copied": "Скопировано!",
+    "backToMain": "Назад к Основному",
+    "currentTop": "Текущий Лидер",
+    "quit": "Выход",
+    "quitConfirm": "Выйти из квиза?",
+    "quitMessage": "Ваш текущий прогресс будет сохранён, и вы сможете посмотреть свои результаты.",
+    "currentProgress": "Текущий Прогресс",
+    "correct": "правильных",
+    "quitAndSee": "Выйти и Посмотреть Результаты",
+    "continue": "Продолжить",
+    "category": {
+      "character": "Персонаж",
+      "story": "История",
+      "titan": "Титан",
+      "world": "Мир"
+    }
   }
 }

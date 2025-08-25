@@ -11,14 +11,28 @@
   },
   "startScreen": {
     "badge": "Test MBTI Più Popolare del 2025",
+    "yearBadge": "Test Personaggi Popolari 2025",
     "title": {
       "line1": "Quale",
       "line2": "Personaggio di",
       "line3": "Attack on Titan Sei?"
     },
+    "mainTitle": {
+      "line1": "Trova il tuo",
+      "line2": "Attack on Titan",
+      "line3": "Personaggio simile"
+    },
     "description": {
       "line1": "Scopri il tuo personaggio attraverso 12 domande psicologiche.",
       "line2": "Trova la tua personalità nascosta adesso."
+    },
+      "line1": "Dai test di personalità ai tornei di personaggi!",
+      "line2": "Scopri te stesso attraverso vari test."
+    },
+    "characterTypes": "16 Tipi di Personaggi",
+    "findCharacter": "Trova il personaggio che ti assomiglia",
+    "mainDescription": {
+    "trendingBadge": "TREND"
     },
     "stats": {
       "participants": "Partecipanti",
@@ -28,6 +42,11 @@
     },
     "buttons": {
       "start": "Inizia Test",
+      "romance": "Stile Romantico",
+      "egen": "Test Egen/Teto",
+      "worldcup": "Coppa del Mondo Ideale",
+      "titanquiz": "Quiz Titani",
+      "quizQuestions": "50",
       "learnMore": "Scopri di Più"
     },
     "trustIndicators": {
@@ -40,7 +59,6 @@
       "step": "Passo",
       "complete": "Completa",
       "question": "Domanda"
-    },
     "navigation": {
       "previous": "Precedente",
       "next": "Avanti",
@@ -51,7 +69,6 @@
     "analyzing": {
       "title": "Analizzando...",
       "description": "Trovando il tuo tipo di personalità"
-    },
     "badge": "Analisi Completata",
     "mbtiType": "Tipo MBTI",
     "yourCharacter": "Il Tuo Personaggio è",
@@ -62,22 +79,18 @@
       "traits": "Tratti Chiave",
       "strengths": "Punti di Forza",
       "description": "Descrizione del Personaggio"
-    },
     "characterStats": {
       "type": "Tipo",
       "rarity": "Rarità"
-    },
     "compatibility": {
       "title": "Compatibilità",
       "bestMatch": "Migliore Compatibilità",
       "goodMatch": "Buona Compatibilità",
       "description": "Relazioni con altri tipi"
-    },
     "statistics": {
       "title": "Statistiche",
       "percentage": "della popolazione",
       "similar": "Tipi simili"
-    },
     "sharing": {
       "title": "Condividi Risultati",
       "description": "Condividi e confronta risultati con i tuoi amici"
@@ -115,5 +128,27 @@
   "characters": {
     "coreTraits": "Tratti Principali",
     "bestCompatibility": "Migliore Compatibilità"
+  },
+  "titanQuiz": {
+    "complete": "Quiz Completato!",
+    "yourScore": "Il Tuo Punteggio",
+    "accuracy": "Precisione",
+    "ranking": "Classifica",
+    "topScore": "Punteggio Massimo",
+    "newRecord": "Nuovo Record!",
+    "topRankings": "Migliori Classifiche",
+    "retry": "Riprova",
+    "share": "Condividi",
+    "shareKakao": "Condividi su KakaoTalk",
+    "copyLink": "Copia Link",
+    "copied": "Copiato!",
+    "backToMain": "Torna al Menu",
+    "currentTop": "Attuale Primo",
+    "category": {
+      "character": "Personaggio",
+      "story": "Storia",
+      "titan": "Titano",
+      "world": "Mondo"
+    }
   }
 }

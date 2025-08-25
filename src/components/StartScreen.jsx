@@ -4,12 +4,18 @@ import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { 
+<<<<<<< HEAD
   FaPlay, FaUsers, FaClock, FaStar, FaArrowRight, FaBolt, FaShieldAlt, FaAward,
   FaChartLine, FaBullseye, FaHeart 
 } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
+=======
+  Play, Users, Clock, Star, ArrowRight, Zap, Shield, Award,
+  TrendingUp, Target, Heart, Sparkles, Swords, Brain 
+} from 'lucide-react';
+>>>>>>> fbe4959b5491671c7c8ab56eabf5ac9f9c92a091
 
-const StartScreen = ({ onStart }) => {
+const StartScreen = ({ onStart, onWorldCup, onEgenTest, onRomanceTest, onTitanQuiz }) => {
   const { t } = useTranslation();
   
   const stats = [
@@ -74,8 +80,13 @@ const StartScreen = ({ onStart }) => {
               transition={{ duration: 0.6 }}
             >
               <Badge className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 px-6 py-2">
+<<<<<<< HEAD
                 <HiSparkles className="w-4 h-4 mr-2 text-amber-400" />
                 <span className="text-amber-300 font-medium">{t('startScreen.badge')}</span>
+=======
+                <Sparkles className="w-4 h-4 mr-2 text-amber-400" />
+                <span className="text-amber-300 font-medium">{t('startScreen.yearBadge')}</span>
+>>>>>>> fbe4959b5491671c7c8ab56eabf5ac9f9c92a091
               </Badge>
             </motion.div>
 
@@ -89,35 +100,130 @@ const StartScreen = ({ onStart }) => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  <span className="text-white">{t('startScreen.title.line1')}</span>
+                  <span className="text-white">{t('startScreen.mainTitle.line1')}</span>
                   <br />
-                  <span className="text-amber-400">{t('startScreen.title.line2')}</span>
+                  <span className="text-amber-400">{t('startScreen.mainTitle.line2')}</span>
                   <br />
-                  <span className="text-white">{t('startScreen.title.line3')}</span>
+                  <span className="text-white">{t('startScreen.mainTitle.line3')}</span>
                 </h1>
 
                 <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-1">
-                  <p>{t('startScreen.description.line1')}</p>
-                  <p>{t('startScreen.description.line2')}</p>
+                  <p>{t('startScreen.mainDescription.line1')}</p>
+                  <p>{t('startScreen.mainDescription.line2')}</p>
                 </div>
 
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                {/* CTA Buttons - Grid layout for buttons */}
+                <div className="grid gap-4 justify-center lg:justify-start">
+                  {/* Titan Quiz Button - PRIMARY POSITION */}
                   <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="relative"
                   >
+                    <div className="absolute -top-2 -right-2 z-10">
+                      <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white text-xs px-2 py-1">
+                        <Sparkles className="w-3 h-3 mr-1" />
+                        NEW
+                      </Badge>
+                    </div>
                     <Button 
-                      onClick={onStart}
+                      onClick={onTitanQuiz}
                       size="lg"
-                      className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-8 py-6 text-lg font-semibold shadow-2xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 group"
+                      className="w-full bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white px-6 py-5 text-lg font-bold shadow-2xl shadow-red-500/25 hover:shadow-red-500/40 transition-all duration-300 group"
                     >
+<<<<<<< HEAD
                       <FaPlay className="mr-2 h-5 w-5" />
                       {t('startScreen.buttons.start')}
                       <FaArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+=======
+                      <Brain className="h-6 w-6 mr-2" />
+                      <span>{t('startScreen.buttons.titanquiz')}</span>
+                      <span className="ml-2 text-sm opacity-90">{t('startScreen.buttons.quizQuestions')}</span>
+>>>>>>> fbe4959b5491671c7c8ab56eabf5ac9f9c92a091
                     </Button>
                   </motion.div>
-                  
+
+                  {/* Second Row - 2 columns */}
+                  <div className="grid grid-cols-2 gap-4">
+                    {/* MBTI Test Button */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Button 
+                        onClick={onStart}
+                        size="lg"
+                        className="w-full h-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-4 py-4 text-sm font-semibold shadow-2xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 group"
+                      >
+                        <div className="flex flex-col items-center">
+                          <Play className="h-5 w-5 mb-1" />
+                          <span>{t('startScreen.buttons.start')}</span>
+                        </div>
+                      </Button>
+                    </motion.div>
+                    
+                    {/* Romance Style Test Button */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Button 
+                        onClick={onRomanceTest}
+                        size="lg"
+                        className="w-full h-full bg-gradient-to-r from-rose-500 to-red-600 hover:from-rose-600 hover:to-red-700 text-white px-4 py-4 text-sm font-semibold shadow-2xl shadow-rose-500/25 hover:shadow-rose-500/40 transition-all duration-300 group"
+                      >
+                        <div className="flex flex-col items-center">
+                          <Heart className="h-5 w-5 mb-1" />
+                          <span>{t('startScreen.buttons.romance')}</span>
+                        </div>
+                      </Button>
+                    </motion.div>
+                  </div>
+
+                  {/* Bottom Row - 2 columns */}
+                  <div className="grid grid-cols-2 gap-4">
+                    {/* Egen Test Button with Trending Badge */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="relative"
+                    >
+                      <div className="absolute -top-2 -right-2 z-10">
+                        <Badge className="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-xs px-2 py-1">
+                          <TrendingUp className="w-3 h-3 mr-1" />
+                          {t('startScreen.trendingBadge')}
+                        </Badge>
+                      </div>
+                      <Button 
+                        onClick={onEgenTest}
+                        size="lg"
+                        className="w-full h-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-4 py-4 text-sm font-semibold shadow-2xl shadow-pink-500/25 hover:shadow-pink-500/40 transition-all duration-300 group"
+                      >
+                        <div className="flex flex-col items-center">
+                          <Sparkles className="h-5 w-5 mb-1" />
+                          <span>{t('startScreen.buttons.egen')}</span>
+                        </div>
+                      </Button>
+                    </motion.div>
+                    
+                    {/* WorldCup Button */}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Button 
+                        onClick={onWorldCup}
+                        size="lg"
+                        variant="outline"
+                        className="w-full h-full border-amber-500/50 hover:bg-amber-500/10 hover:border-amber-500 text-white px-4 py-4 text-sm font-semibold transition-all duration-300 group"
+                      >
+                        <div className="flex flex-col items-center">
+                          <Swords className="h-5 w-5 mb-1 text-amber-400" />
+                          <span>{t('startScreen.buttons.worldcup')}</span>
+                        </div>
+                      </Button>
+                    </motion.div>
+                  </div>
                 </div>
 
                 {/* Trust Indicators */}
@@ -161,8 +267,8 @@ const StartScreen = ({ onStart }) => {
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-600/20 flex items-center justify-center animate-pulse-glow">
                           <FaUsers className="w-16 h-16 text-amber-400" />
                         </div>
-                        <h3 className="text-2xl font-bold text-white mb-2">16가지 캐릭터</h3>
-                        <p className="text-gray-400">당신과 닮은 캐릭터를 찾아보세요</p>
+                        <h3 className="text-2xl font-bold text-white mb-2">{t('startScreen.characterTypes')}</h3>
+                        <p className="text-gray-400">{t('startScreen.findCharacter')}</p>
                       </div>
 
                       {/* Stats Grid */}

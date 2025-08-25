@@ -11,14 +11,28 @@
   },
   "startScreen": {
     "badge": "اختبار MBTI الأكثر شعبية لعام 2025",
+    "yearBadge": "اختبارات الشخصيات الشهيرة 2025",
     "title": {
       "line1": "أي",
       "line2": "شخصية من",
       "line3": "Attack on Titan أنت؟"
     },
+    "mainTitle": {
+      "line1": "اكتشف شخصية",
+      "line2": "Attack on Titan",
+      "line3": "التي تشبهك"
+    },
     "description": {
       "line1": "اكتشف شخصيتك من خلال 12 سؤالاً نفسياً.",
       "line2": "اعثر على شخصيتك المخفية الآن."
+    },
+      "line1": "من اختبارات الشخصية إلى بطولات الشخصيات!",
+      "line2": "اكتشف نفسك من خلال اختبارات متنوعة."
+    },
+    "characterTypes": "16 نوع شخصية",
+    "findCharacter": "اعثر على الشخصية التي تشبهك",
+    "mainDescription": {
+    "trendingBadge": "رائج"
     },
     "stats": {
       "participants": "المشاركون",
@@ -28,6 +42,11 @@
     },
     "buttons": {
       "start": "بدء الاختبار",
+      "romance": "أسلوب الرومانسية",
+      "egen": "اختبار إيجين/تيتو",
+      "worldcup": "كأس العالم المثالية",
+      "titanquiz": "مسابقة التايتان",
+      "quizQuestions": "50",
       "learnMore": "تعلم المزيد"
     },
     "trustIndicators": {
@@ -40,7 +59,6 @@
       "step": "خطوة",
       "complete": "إكمال",
       "question": "سؤال"
-    },
     "navigation": {
       "previous": "السابق",
       "next": "التالي",
@@ -51,7 +69,6 @@
     "analyzing": {
       "title": "جارٍ التحليل...",
       "description": "البحث عن نوع شخصيتك"
-    },
     "badge": "اكتمل التحليل",
     "mbtiType": "نوع MBTI",
     "yourCharacter": "شخصيتك هي",
@@ -62,22 +79,18 @@
       "traits": "السمات الرئيسية",
       "strengths": "نقاط القوة",
       "description": "وصف الشخصية"
-    },
     "characterStats": {
       "type": "النوع",
       "rarity": "الندرة"
-    },
     "compatibility": {
       "title": "التوافق",
       "bestMatch": "أفضل توافق",
       "goodMatch": "توافق جيد",
       "description": "العلاقات مع الأنواع الأخرى"
-    },
     "statistics": {
       "title": "الإحصائيات",
       "percentage": "من السكان",
       "similar": "أنواع مشابهة"
-    },
     "sharing": {
       "title": "مشاركة النتائج",
       "description": "شارك وقارن النتائج مع أصدقائك"
@@ -115,5 +128,27 @@
   "characters": {
     "coreTraits": "السمات الأساسية",
     "bestCompatibility": "أفضل توافق"
+  },
+  "titanQuiz": {
+    "complete": "اكتملت المسابقة!",
+    "yourScore": "نقاطك",
+    "accuracy": "الدقة",
+    "ranking": "الترتيب",
+    "topScore": "أعلى نقاط",
+    "newRecord": "رقم قياسي جديد!",
+    "topRankings": "أفضل الترتيبات",
+    "retry": "حاول مرة أخرى",
+    "share": "مشاركة",
+    "shareKakao": "مشاركة عبر KakaoTalk",
+    "copyLink": "نسخ الرابط",
+    "copied": "تم النسخ!",
+    "backToMain": "عودة للرئيسية",
+    "currentTop": "القائد الحالي",
+    "category": {
+      "character": "شخصية",
+      "story": "قصة",
+      "titan": "تايتان",
+      "world": "عالم"
+    }
   }
 }

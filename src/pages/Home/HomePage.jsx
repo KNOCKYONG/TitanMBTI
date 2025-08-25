@@ -63,6 +63,48 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Game Modes Section */}
+      <section className="py-16 px-4 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            다양한 테스트 모드
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link to="/test" className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-6 text-center hover:from-red-500 hover:to-red-700 transition-all transform hover:scale-105">
+              <div className="text-4xl mb-4">🧠</div>
+              <h3 className="text-xl font-bold text-white mb-2">MBTI 테스트</h3>
+              <p className="text-gray-200">12개 질문으로 찾는 나의 캐릭터</p>
+            </Link>
+            <Link to="/worldcup" className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg p-6 text-center hover:from-purple-500 hover:to-purple-700 transition-all transform hover:scale-105">
+              <div className="text-4xl mb-4">🏆</div>
+              <h3 className="text-xl font-bold text-white mb-2">이상형 월드컵</h3>
+              <p className="text-gray-200">최애 캐릭터 찾기</p>
+            </Link>
+            <Link to="/egen" className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg p-6 text-center hover:from-blue-500 hover:to-blue-700 transition-all transform hover:scale-105">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-xl font-bold text-white mb-2">에겐남 테토녀</h3>
+              <p className="text-gray-200">나는 어떤 타입?</p>
+            </Link>
+            <Link to="/romance" className="bg-gradient-to-br from-pink-600 to-pink-800 rounded-lg p-6 text-center hover:from-pink-500 hover:to-pink-700 transition-all transform hover:scale-105">
+              <div className="text-4xl mb-4">💕</div>
+              <h3 className="text-xl font-bold text-white mb-2">연애 스타일</h3>
+              <p className="text-gray-200">나의 연애 유형은?</p>
+            </Link>
+          </div>
+          <div className="flex justify-center mt-6">
+            <Link to="/titanquiz" className="bg-gradient-to-br from-green-600 to-green-800 rounded-lg px-8 py-4 text-center hover:from-green-500 hover:to-green-700 transition-all transform hover:scale-105">
+              <div className="flex items-center gap-3">
+                <span className="text-3xl">🎯</span>
+                <div className="text-left">
+                  <h3 className="text-xl font-bold text-white">진격의 거인 퀴즈</h3>
+                  <p className="text-gray-200">당신은 진정한 팬인가?</p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-16 px-4 bg-black/30">
         <div className="max-w-6xl mx-auto">

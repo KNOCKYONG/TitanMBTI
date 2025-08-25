@@ -11,15 +11,28 @@
   },
   "startScreen": {
     "badge": "Test MBTI Más Popular de 2025",
+    "yearBadge": "Tests de Personajes Populares 2025",
     "title": {
       "line1": "¿Qué",
       "line2": "Personaje de",
       "line3": "Attack on Titan Eres?"
     },
+    "mainTitle": {
+      "line1": "Encuentra tu",
+      "line2": "Attack on Titan",
+      "line3": "Personaje Similar"
+    },
     "description": {
       "line1": "Descubre tu personaje a través de 12 preguntas psicológicas.",
       "line2": "Encuentra tu personalidad oculta ahora mismo."
     },
+    "mainDescription": {
+      "line1": "¡Desde tests de personalidad hasta torneos de personajes!",
+      "line2": "Descúbrete a través de varios tests."
+    },
+    "characterTypes": "16 Tipos de Personajes",
+    "findCharacter": "Encuentra el personaje que se parece a ti",
+    "trendingBadge": "TENDENCIA",
     "stats": {
       "participants": "Participantes",
       "satisfaction": "Satisfacción",
@@ -27,9 +40,65 @@
       "rating": "Calificación"
     },
     "buttons": {
-      "start": "Comenzar Test",
+      "start": "Test MBTI",
+      "romance": "Estilo Romántico",
+      "egen": "Test Egen/Teto",
+      "worldcup": "Copa Mundial Ideal",
+      "titanquiz": "Quiz SNK",
+      "quizQuestions": "50 Preguntas",
       "learnMore": "Saber Más"
-    },
+    "features": {
+      "accurate": {
+        "title": "Análisis Preciso",
+        "description": "Análisis de personalidad basado en psicología"
+      },
+      "fast": {
+        "title": "Resultados Rápidos",
+        "description": "Informe detallado en solo 3 minutos"
+      },
+      "privacy": {
+        "title": "Privacidad Protegida",
+        "description": "Procesamiento seguro y anonimato garantizado"
+      }
+    "testimonials": {
+      "student": {
+        "name": "María García",
+        "role": "Estudiante",
+        "content": "¡Descubrí aspectos de mi personalidad que no conocía!"
+      },
+      "worker": {
+        "name": "Carlos López",
+        "role": "Profesional",
+        "content": "Coincidir con personajes de AoT lo hace más divertido"
+      }
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "step1": {
+        "title": "12 Preguntas",
+        "description": "Responde preguntas psicológicas"
+      },
+      "step2": {
+        "title": "Análisis Instantáneo",
+        "description": "IA analiza tu personalidad"
+      },
+      "step3": {
+        "title": "Coincidencia de Personaje",
+        "description": "Encuentra tu personaje de AoT"
+      }
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿El test es gratuito?",
+        "answer": "Sí, es 100% gratuito."
+      },
+      "q2": {
+        "question": "¿Puedo compartir mis resultados?",
+        "answer": "Sí, fácilmente a través de redes sociales."
+      },
+      "q3": {
+        "question": "¿Mis datos están seguros?",
+        "answer": "Todos los datos se procesan de forma anónima y no se almacenan."
+      }
     "trustIndicators": {
       "safe": "Test Seguro",
       "scientific": "Análisis Científico"
@@ -40,18 +109,67 @@
       "step": "Paso",
       "complete": "Completar",
       "question": "Pregunta"
-    },
     "navigation": {
       "previous": "Anterior",
       "next": "Siguiente",
       "skip": "Omitir"
     }
   },
+  "questions": {
+    "q1": {
+      "question": "Cuando tienes tiempo libre los fines de semana, tú:",
+      "option1": "Conoces amigos o asistes a reuniones con gente nueva",
+      "option2": "Pasas tiempo tranquilo en casa leyendo o viendo películas"
+    "q2": {
+      "question": "En fiestas o reuniones, tú:",
+      "option1": "Hablas con muchas personas y haces nuevos amigos fácilmente",
+      "option2": "Tienes conversaciones profundas solo con pocas personas cercanas"
+    "q3": {
+      "question": "Para recargar tu energía, tú:",
+      "option1": "Pasas tiempo activo socializando con personas",
+      "option2": "Descansas tranquilamente en soledad"
+    "q4": {
+      "question": "Al aprender algo nuevo, prefieres:",
+      "option1": "Aprender a través de ejemplos concretos y práctica",
+      "option2": "Entender primero los conceptos generales y teorías"
+    "q5": {
+      "question": "En las conversaciones, hablas sobre:",
+      "option1": "Experiencias reales y hechos concretos",
+      "option2": "Posibilidades e ideas"
+    "q6": {
+      "question": "Al resolver problemas, tú:",
+      "option1": "Usas métodos probados y experiencias pasadas",
+      "option2": "Pruebas nuevos métodos y enfoques innovadores"
+    "q7": {
+      "question": "Al tomar decisiones, valoras:",
+      "option1": "Análisis lógico y hechos objetivos",
+      "option2": "Sentimientos y valores de las personas"
+    "q8": {
+      "question": "Cuando un amigo pide consejo, tú:",
+      "option1": "Analizas el problema y sugieres soluciones",
+      "option2": "Empatizas y brindas apoyo emocional"
+    "q9": {
+      "question": "Al recibir críticas, primero:",
+      "option1": "Evalúas la validez lógica de la crítica",
+      "option2": "Consideras la intención de la persona y tus sentimientos"
+    "q10": {
+      "question": "Al viajar, tú:",
+      "option1": "Haces planes detallados y horarios por adelantado",
+      "option2": "Haces planes aproximados y te mueves espontáneamente"
+    "q11": {
+      "question": "Al trabajar en tareas, prefieres:",
+      "option1": "Terminar antes de la fecha límite",
+      "option2": "Trabajar mejor bajo presión de fecha límite"
+    "q12": {
+      "question": "En la vida diaria, prefieres:",
+      "option1": "Ambiente organizado y rutinas regulares",
+      "option2": "Ambiente flexible y libre"
+    }
+  },
   "resultScreen": {
     "analyzing": {
       "title": "Analizando...",
       "description": "Encontrando tu tipo de personalidad"
-    },
     "badge": "Análisis Completado",
     "mbtiType": "Tipo MBTI",
     "yourCharacter": "Tu Personaje es",
@@ -62,32 +180,26 @@
       "traits": "Rasgos Clave",
       "strengths": "Fortalezas",
       "description": "Descripción del Personaje"
-    },
     "characterStats": {
       "type": "Tipo",
       "rarity": "Rareza"
-    },
     "compatibility": {
       "title": "Compatibilidad",
       "bestMatch": "Mejor Compatibilidad",
       "goodMatch": "Buena Compatibilidad",
       "description": "Relaciones con otros tipos"
-    },
     "statistics": {
       "title": "Estadísticas",
       "percentage": "de la población",
       "similar": "Tipos similares"
-    },
     "sharing": {
       "title": "Compartir Resultados",
       "description": "Comparte y compara resultados con tus amigos"
-    },
     "stats": {
       "sameType": "Mismo Tipo",
       "accuracy": "Precisión",
       "averageRating": "Calificación Promedio",
       "satisfaction": "Satisfacción"
-    },
     "buttons": {
       "restart": "Hacer Test de Nuevo",
       "saveImage": "Guardar como Imagen",
@@ -114,6 +226,377 @@
   },
   "characters": {
     "coreTraits": "Rasgos Principales",
-    "bestCompatibility": "Mejor Compatibilidad"
+    "bestCompatibility": "Mejor Compatibilidad",
+    "INTJ": {
+      "name": "Levi Ackerman",
+      "title": "El Arquitecto",
+      "description": "El soldado más fuerte de la humanidad con habilidades de combate excepcionales y juicio frío. Valora a los camaradas aunque no muestra emociones.",
+      "traits": ["Estratégico", "Independiente", "Perfeccionista", "Eficiente"],
+      "quote": "Toma una decisión de la que no te arrepentirás"
+    "INTP": {
+      "name": "Hange Zoe",
+      "title": "El Pensador",
+      "description": "Líder de escuadrón del Cuerpo de Exploración con curiosidad infinita sobre los Titanes. Persigue la verdad a pesar de los peligros.",
+      "traits": ["Curioso", "Analítico", "Creativo", "Apasionado"],
+      "quote": "¡Los Titanes son tan interesantes!"
+    "ENTJ": {
+      "name": "Erwin Smith",
+      "title": "El Comandante",
+      "description": "Comandante del Cuerpo de Exploración que lo arriesga todo por el futuro de la humanidad. Ve el panorama general y acepta el sacrificio.",
+      "traits": ["Liderazgo", "Estratégico", "Decisivo", "Visionario"],
+      "quote": "¡Dediquen sus corazones!"
+    "ENTP": {
+      "name": "Floch Forster",
+      "title": "El Debatidor",
+      "description": "Sin miedo al debate por sus creencias. Desafía el orden existente.",
+      "traits": ["Argumentativo", "Innovador", "Independiente", "Desafiante"],
+      "quote": "Si necesitamos un demonio, con gusto me convertiré en uno"
+    "INFJ": {
+      "name": "Armin Arlert",
+      "title": "El Defensor",
+      "description": "Posee un pensamiento estratégico brillante y una visión profunda. Busca la paz pero acepta el sacrificio cuando es necesario.",
+      "traits": ["Perspicaz", "Idealista", "Estratégico", "Empático"],
+      "quote": "Para cambiar algo, tienes que renunciar a algo"
+    "INFP": {
+      "name": "Historia Reiss",
+      "title": "El Mediador",
+      "description": "En un viaje para encontrar su verdadero yo. Se preocupa por los demás mientras mantiene sus creencias.",
+      "traits": ["Idealista", "Auténtico", "Empático", "En crecimiento"],
+      "quote": "Soy enemiga de la humanidad, pero soy tu aliada"
+    "ENFJ": {
+      "name": "Marco Bott",
+      "title": "El Protagonista",
+      "description": "Apasionado por ayudar y liderar a otros. Tiene el poder de unir a todos.",
+      "traits": ["Liderazgo", "Altruista", "Carismático", "Devoto"],
+      "quote": "Si tan solo todos pudieran entenderse"
+    "ENFP": {
+      "name": "Sasha Blouse",
+      "title": "El Activista",
+      "description": "Ilumina el entorno con energía positiva. Un espíritu libre.",
+      "traits": ["Optimista", "Espíritu libre", "Amigable", "Espontáneo"],
+      "quote": "Carne... quiero comer carne"
+    "ISTJ": {
+      "name": "Mikasa Ackerman",
+      "title": "El Logístico",
+      "description": "Fuerte sentido del deber y lealtad. Hará cualquier cosa para proteger a sus seres queridos.",
+      "traits": ["Leal", "Responsable", "Práctico", "Protector"],
+      "quote": "Este mundo es cruel. Pero también es hermoso"
+    "ISFJ": {
+      "name": "Petra Ral",
+      "title": "El Defensor",
+      "description": "Persona dedicada que cuida y apoya a sus compañeros. Respalda silenciosamente al equipo.",
+      "traits": ["Devoto", "Cariñoso", "Confiable", "Solidario"],
+      "quote": "Tenemos que confiar el uno en el otro"
+    "ESTJ": {
+      "name": "Jean Kirstein",
+      "title": "El Ejecutivo",
+      "description": "Creció hasta convertirse en un líder realista y responsable. Valora los principios y lidera el equipo.",
+      "traits": ["Liderazgo", "Realista", "Responsable", "En crecimiento"],
+      "quote": "Me uniré al Cuerpo de Exploración"
+    "ESFJ": {
+      "name": "Connie Springer",
+      "title": "El Cónsul",
+      "description": "Fuerte camaradería y valora el trabajo en equipo. Nunca pierde el humor incluso en situaciones difíciles.",
+      "traits": ["Amigable", "Leal", "Humorístico", "Jugador de equipo"],
+      "quote": "Somos amigos, ¿no?"
+    "ISTP": {
+      "name": "Annie Leonhart",
+      "title": "El Virtuoso",
+      "description": "Habilidades de combate excepcionales y juicio frío. Independiente y práctica.",
+      "traits": ["Independiente", "Práctico", "Tranquilo", "Hábil"],
+      "quote": "Solo soy una persona normal"
+    "ISFP": {
+      "name": "Ymir",
+      "title": "El Aventurero",
+      "description": "Alma libre e independiente. Actúa según valores personales.",
+      "traits": ["Libre", "Independiente", "Leal", "Intuitivo"],
+      "quote": "Voy a vivir para mí misma"
+    "ESTP": {
+      "name": "Eren Yeager",
+      "title": "El Emprendedor",
+      "description": "Acción y determinación excepcionales. Lucha con todo por la libertad.",
+      "traits": ["Orientado a la acción", "Determinado", "Libertad", "Apasionado"],
+      "quote": "Nací libre"
+    "ESFP": {
+      "name": "Connie Springer",
+      "title": "El Animador",
+      "description": "Ilumina la atmósfera con personalidad alegre. Vive el momento.",
+      "traits": ["Humorístico", "Social", "Optimista", "Espontáneo"],
+      "quote": "¡Riamos! ¡Todo funciona cuando ríes!"
+    }
+  },
+  "worldCup": {
+    "title": "Torneo de Personajes de Attack on Titan",
+    "match": "Partido",
+    "rounds": {
+      "round16": "Octavos de Final",
+      "quarterFinal": "Cuartos de Final",
+      "semiFinal": "Semifinales",
+      "final": "Final"
+    "winner": {
+      "title": "Campeón",
+      "place": "Lugar",
+      "victories": "Victorias",
+      "winRate": "Tasa de Victoria"
+    "actions": {
+      "restart": "Reiniciar",
+      "back": "Volver"
+    "sharing": {
+      "title": "Comparte tu Campeón",
+      "kakao": "Compartir en KakaoTalk",
+      "copyLink": "Copiar enlace",
+      "copied": "¡Copiado!",
+      "kakaoTitle": "🏆 ¡{{characterName}} es mi personaje favorito!",
+      "kakaoDescription": "¡{{characterName}} ({{mbtiType}}) ganó el Torneo de Personajes de Attack on Titan!",
+      "kakaoButton": "Jugar Torneo"
+    }
+  },
+  "egenTest": {
+    "title": "Test de Personalidad Egen/Teto",
+    "subtitle": "Encuentra tu estilo de citas a través de personajes de Attack on Titan",
+    "badge": "Test Tendencia 2025",
+    "genderSelection": {
+      "title": "Selecciona tu género",
+      "description": "Los resultados varían según el género",
+      "male": "Masculino",
+      "female": "Femenino"
+    "questions": {
+      "q1": {
+        "question": "¿Tu estilo de citas es?",
+        "option1": "Planear eventos especiales y sorpresas",
+        "option2": "Pasar tiempo natural y cómodo juntos"
+      },
+      "q2": {
+        "question": "Al expresar sentimientos a tu pareja",
+        "option1": "Expresar amor activamente",
+        "option2": "Mostrar en silencio a través de acciones"
+      },
+      "q3": {
+        "question": "Cuando surgen conflictos con tu pareja",
+        "option1": "Tratar de resolver inmediatamente a través de la conversación",
+        "option2": "Tomar tiempo para pensar con calma"
+      },
+      "q4": {
+        "question": "¿Tu relación ideal es?",
+        "option1": "Relación apasionada con compromiso total",
+        "option2": "Relación independiente pero confiable"
+      },
+      "q5": {
+        "question": "Al conocer a los amigos de tu pareja",
+        "option1": "Intentar activamente hacerse amigo",
+        "option2": "Mantener distancia naturalmente"
+      },
+      "q6": {
+        "question": "¿Tu estilo de aniversario es?",
+        "option1": "Celebrar cada aniversario especialmente",
+        "option2": "Celebrar simplemente solo días importantes"
+      },
+      "q7": {
+        "question": "¿Planes futuros con tu pareja?",
+        "option1": "Hacer planes concretos juntos",
+        "option2": "Dejar que las cosas fluyan naturalmente"
+      }
+    "results": {
+      "egenMale": {
+        "title": "Hombre Egen",
+        "description": "¡Estilo de citas apasionado y directo! Como Eren, dándolo todo por amor.",
+        "traits": ["Apasionado", "Directo", "Devoto", "Honesto"]
+      },
+      "tetoMale": {
+        "title": "Hombre Teto",
+        "description": "¡Estilo de citas fresco e independiente! Como Levi, manteniendo tu propio ritmo.",
+        "traits": ["Independiente", "Tranquilo", "Cuidadoso", "Profesional"]
+      },
+      "egenFemale": {
+        "title": "Mujer Egen",
+        "description": "¡Estilo de citas puro y devoto! Como Historia, amando con todo tu corazón.",
+        "traits": ["Puro", "Devoto", "Genuino", "Cálido"]
+      },
+      "tetoFemale": {
+        "title": "Mujer Teto",
+        "description": "¡Estilo de citas independiente y misterioso! Como Annie, con tu encanto único.",
+        "traits": ["Independiente", "Misterioso", "Fuerte", "Atractivo"]
+      }
+    "analyzing": "Analizando...",
+    "yourStyle": "Tu Estilo de Citas",
+    "shareResults": "Compartir Resultados",
+    "testAgain": "Probar de nuevo",
+    "backToMain": "Menú Principal"
+  },
+  "romanceTest": {
+    "title": "Test de Estilo Romántico de Attack on Titan",
+    "subtitle": "Basado en relaciones canónicas",
+    "badge": "Basado en Relaciones de la Serie",
+    "questions": {
+      "q1": {
+        "question": "¿Qué es lo más importante en una relación?",
+        "option1": "Protegerse mutuamente",
+        "option2": "Confianza y respeto profundos",
+        "option3": "Mostrar tu verdadero yo",
+        "option4": "Compartir la felicidad diaria"
+      },
+      "q2": {
+        "question": "¿Cómo resuelves conflictos?",
+        "option1": "Demostrar sentimientos a través de acciones",
+        "option2": "Resolver con calma a través de la conversación",
+        "option3": "Tratar de entender la posición del otro",
+        "option4": "Esperar tranquilamente con tiempo"
+      },
+      "q3": {
+        "question": "¿Tu cita ideal?",
+        "option1": "Trabajar juntos hacia una meta",
+        "option2": "Disfrutar comida deliciosa juntos",
+        "option3": "Conversaciones profundas en tiempo tranquilo",
+        "option4": "Disfrutar pasatiempos juntos"
+      },
+      "q4": {
+        "question": "¿Cómo expresas amor?",
+        "option1": "Acciones protectoras",
+        "option2": "Estar confiablemente a su lado",
+        "option3": "Devoción para dar todo",
+        "option4": "Apoyo silencioso desde atrás"
+      },
+      "q5": {
+        "question": "¿Qué buscas en una relación?",
+        "option1": "Conexión destinada",
+        "option2": "Crecer juntos",
+        "option3": "Viaje hacia el mismo objetivo",
+        "option4": "Relación cómoda y libre"
+      },
+      "q6": {
+        "question": "¿Qué te atrae en una pareja?",
+        "option1": "Voluntad fuerte y determinación",
+        "option2": "Profesional y capaz",
+        "option3": "Energía pura y brillante",
+        "option4": "Personalidad apasionada y única"
+      },
+      "q7": {
+        "question": "¿En situaciones difíciles o a distancia?",
+        "option1": "Esperar y proteger hasta el final",
+        "option2": "Tratar de entender con paciencia",
+        "option3": "Aceptar y hacer lo mejor posible",
+        "option4": "Apoyar silenciosamente en tu corazón"
+      },
+      "q8": {
+        "question": "¿Momento más feliz en el amor?",
+        "option1": "Al protegerse mutuamente",
+        "option2": "Al confirmar confianza profunda",
+        "option3": "Cuando los verdaderos sentimientos son entendidos",
+        "option4": "Al reír y disfrutar juntos"
+      },
+      "q9": {
+        "question": "¿Si llega la separación?",
+        "option1": "Tratar de retener hasta el final",
+        "option2": "Respetar la elección del otro",
+        "option3": "Proteger sacrificando todo",
+        "option4": "Aceptar tranquilamente y recordar"
+      },
+      "q10": {
+        "question": "¿Tu forma ideal de amor?",
+        "option1": "Amor destinado y absoluto",
+        "option2": "Amor basado en confianza y respeto",
+        "option3": "Amor libre y genuino",
+        "option4": "Amor que crece junto"
+      }
+    "styles": {
+      "erenMikasa": {
+        "title": "Tipo Eren-Mikasa",
+        "subtitle": "Tipo Vínculo Destinado",
+        "description": "Vínculo profundo e instinto protector. Quieren protegerse pero a veces luchan para expresar sentimientos.",
+        "traits": ["Devoto", "Protector", "Vínculo Profundo", "Acciones sobre Palabras"],
+        "quote": "Siempre te protegeré"
+      },
+      "leviPetra": {
+        "title": "Tipo Levi-Petra",
+        "subtitle": "Tipo Confianza y Respeto",
+        "description": "Confianza profunda y respeto mutuo. Frío por fuera pero cálido por dentro.",
+        "traits": ["Confianza", "Respeto", "Profesional", "Calidez Oculta"],
+        "quote": "Confía y sígueme"
+      },
+      "ymirHistoria": {
+        "title": "Tipo Ymir-Historia",
+        "subtitle": "Tipo Amor Libre",
+        "description": "Mostrar y aceptar verdaderos yos. Amar puramente sin prejuicios sociales.",
+        "traits": ["Autenticidad", "Libertad", "Sacrificio", "Amor Puro"],
+        "quote": "Viviré mi vida por ti"
+      },
+      "jeanPieck": {
+        "title": "Tipo Jean-Pieck",
+        "subtitle": "Tipo Comprensión Madura",
+        "description": "Entender y respetar las posiciones del otro. Tratar de entender a pesar de conflictos.",
+        "traits": ["Comprensión", "Madurez", "Respeto", "Comunicación"],
+        "quote": "Podemos entendernos"
+      },
+      "arminAnnie": {
+        "title": "Tipo Armin-Annie",
+        "subtitle": "Tipo Conexión Intelectual",
+        "description": "Abrir corazones a través del diálogo y la comprensión. Comprensión profunda del yo interior.",
+        "traits": ["Vínculo Intelectual", "Paciencia", "Charlas Profundas", "Comprensión Interior"],
+        "quote": "Quiero ver tu verdadero yo"
+      },
+      "sashaNiccolo": {
+        "title": "Tipo Sasha-Niccolo",
+        "subtitle": "Tipo Alegría Pura",
+        "description": "Compartir pequeña felicidad diaria. Amor brillante que trae alegría y risas.",
+        "traits": ["Felicidad Diaria", "Pureza", "Alegría Compartida", "Calidez"],
+        "quote": "Cada momento contigo es felicidad"
+      },
+      "erwinLevi": {
+        "title": "Tipo Erwin-Levi",
+        "subtitle": "Tipo Vínculo de Camaradas",
+        "description": "Moverse hacia el mismo objetivo. Confianza profunda sin palabras.",
+        "traits": ["Camaradería", "Comprensión Silenciosa", "Creencias Compartidas", "Confianza Absoluta"],
+        "quote": "Vamos juntos hasta el final"
+      },
+      "bertholdtAnnie": {
+        "title": "Tipo Bertholdt-Annie",
+        "subtitle": "Tipo Devoción Silenciosa",
+        "description": "Observar y apoyar en silencio. Sentimientos profundos no mostrados externamente.",
+        "traits": ["Devoción Silenciosa", "Paciencia", "Sentimientos Ocultos", "Apoyo Tranquilo"],
+        "quote": "Mis sentimientos no cambiarán aunque no pueda decirlo"
+      },
+      "hangeMoblit": {
+        "title": "Tipo Hange-Moblit",
+        "subtitle": "Tipo Apoyo Apasionado",
+        "description": "La pasión de uno apoyada por otro. Complementándose perfectamente.",
+        "traits": ["Complementario", "Apoyo", "Pasión Compartida", "Balance"],
+        "quote": "Te ayudaré a desplegar tus alas"
+      }
+    "analyzingRomance": "Analizando Estilo Romántico...",
+    "yourRomanceStyle": "Tu Estilo Romántico",
+    "characteristics": "Características del Estilo Romántico",
+    "compatibility": "Estilos Románticos Compatibles",
+    "shareResults": "Compartir Resultados",
+    "testAgain": "Probar de nuevo",
+    "backToMain": "Menú Principal"
+  },
+  "titanQuiz": {
+    "complete": "¡Quiz Completado!",
+    "yourScore": "Tu Puntuación",
+    "accuracy": "Precisión",
+    "ranking": "Ranking",
+    "topScore": "Mejor Puntuación",
+    "newRecord": "¡Nuevo Récord!",
+    "topRankings": "Mejores Rankings",
+    "retry": "Intentar de Nuevo",
+    "share": "Compartir",
+    "shareKakao": "Compartir en KakaoTalk",
+    "copyLink": "Copiar Enlace",
+    "copied": "¡Copiado!",
+    "backToMain": "Volver al Inicio",
+    "currentTop": "Actual Mejor",
+    "quit": "Salir",
+    "quitConfirm": "¿Salir del Quiz?",
+    "quitMessage": "Tu progreso actual será guardado y podrás ver tus resultados.",
+    "currentProgress": "Progreso Actual",
+    "correct": "correctas",
+    "quitAndSee": "Salir y Ver Resultados",
+    "continue": "Continuar",
+    "category": {
+      "character": "Personaje",
+      "story": "Historia",
+      "titan": "Titán",
+      "world": "Mundo"
+    }
   }
 }

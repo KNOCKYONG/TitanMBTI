@@ -5,14 +5,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { 
+<<<<<<< HEAD
   FaTrophy, FaQuoteLeft, FaUndo, FaHeart, FaStar, FaShare, 
   FaDownload, FaUsers, FaBullseye, FaChartLine, FaChevronRight, FaAward
 } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
+=======
+  Trophy, Quote, RotateCcw, Heart, Star, Share2, Sparkles,
+  Download, Users, Target, TrendingUp, ChevronRight, Award, Swords
+} from 'lucide-react';
+>>>>>>> fbe4959b5491671c7c8ab56eabf5ac9f9c92a091
 import { characters } from '../data/characters';
 import ShareButtons from './ShareButtons.jsx';
 
-const ResultScreen = ({ mbtiType, onRestart }) => {
+const ResultScreen = ({ mbtiType, onRestart, onWorldCup }) => {
   const { t } = useTranslation();
   const character = characters[mbtiType];
   const [isRevealing, setIsRevealing] = useState(true);
@@ -197,6 +203,43 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3 }}
                 >
+                  {/* Action Section - Moved to top */}
+                  <Card className="glass border-amber-500/20 bg-gradient-to-br from-amber-500/5 to-orange-500/5">
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2 text-xl text-white">
+                        <Share2 className="w-5 h-5 text-amber-400" />
+                        {t('resultScreen.sharing.title')}
+                      </CardTitle>
+                      <CardDescription className="text-gray-300">
+                        {t('resultScreen.sharing.description')}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <ShareButtons mbtiType={mbtiType} character={character} />
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <Button
+                          onClick={onWorldCup}
+                          size="lg"
+                          className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-lg"
+                        >
+                          <Swords className="w-5 h-5 mr-2" />
+                          {t('resultScreen.worldCup.button')}
+                        </Button>
+                        
+                        <Button
+                          onClick={onRestart}
+                          size="lg"
+                          variant="outline"
+                          className="w-full hover:bg-amber-500/10 hover:border-amber-500/50 text-white"
+                        >
+                          <RotateCcw className="w-5 h-5 mr-2" />
+                          {t('common.restart')}
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+
                   {/* Description Card */}
                   <Card className="glass border-gray-700/50">
                     <CardHeader>
@@ -288,6 +331,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                       </CardContent>
                     </Card>
                   </div>
+<<<<<<< HEAD
 
                   {/* Action Section */}
                   <Card className="glass border-amber-500/20 bg-gradient-to-br from-amber-500/5 to-orange-500/5">
@@ -314,6 +358,8 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                       </Button>
                     </CardContent>
                   </Card>
+=======
+>>>>>>> fbe4959b5491671c7c8ab56eabf5ac9f9c92a091
                 </motion.div>
               </div>
 
