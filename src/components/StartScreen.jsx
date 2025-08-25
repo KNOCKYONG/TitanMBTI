@@ -4,33 +4,34 @@ import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { 
-  Play, Users, Clock, Star, ArrowRight, Zap, Shield, Award,
-  TrendingUp, Target, Heart, Sparkles 
-} from 'lucide-react';
+  FaPlay, FaUsers, FaClock, FaStar, FaArrowRight, FaBolt, FaShieldAlt, FaAward,
+  FaChartLine, FaBullseye, FaHeart 
+} from 'react-icons/fa';
+import { HiSparkles } from 'react-icons/hi';
 
 const StartScreen = ({ onStart }) => {
   const { t } = useTranslation();
   
   const stats = [
-    { value: "100K+", label: t('startScreen.stats.participants'), icon: Users },
-    { value: "97%", label: t('startScreen.stats.satisfaction'), icon: Heart },
-    { value: "3min", label: t('startScreen.stats.duration'), icon: Clock },
-    { value: "4.9", label: t('startScreen.stats.rating'), icon: Star }
+    { value: "100K+", label: t('startScreen.stats.participants'), icon: FaUsers },
+    { value: "97%", label: t('startScreen.stats.satisfaction'), icon: FaHeart },
+    { value: "3min", label: t('startScreen.stats.duration'), icon: FaClock },
+    { value: "4.9", label: t('startScreen.stats.rating'), icon: FaStar }
   ];
 
   const features = [
     {
-      icon: Target,
+      icon: FaBullseye,
       title: t('startScreen.features.accurate.title'),
       description: t('startScreen.features.accurate.description')
     },
     {
-      icon: Zap,
+      icon: FaBolt,
       title: t('startScreen.features.fast.title'),
       description: t('startScreen.features.fast.description')
     },
     {
-      icon: Shield,
+      icon: FaShieldAlt,
       title: t('startScreen.features.privacy.title'),
       description: t('startScreen.features.privacy.description')
     }
@@ -73,7 +74,7 @@ const StartScreen = ({ onStart }) => {
               transition={{ duration: 0.6 }}
             >
               <Badge className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 px-6 py-2">
-                <Sparkles className="w-4 h-4 mr-2 text-amber-400" />
+                <HiSparkles className="w-4 h-4 mr-2 text-amber-400" />
                 <span className="text-amber-300 font-medium">{t('startScreen.badge')}</span>
               </Badge>
             </motion.div>
@@ -111,9 +112,9 @@ const StartScreen = ({ onStart }) => {
                       size="lg"
                       className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-8 py-6 text-lg font-semibold shadow-2xl shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 group"
                     >
-                      <Play className="mr-2 h-5 w-5" />
+                      <FaPlay className="mr-2 h-5 w-5" />
                       {t('startScreen.buttons.start')}
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      <FaArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </motion.div>
                   
@@ -127,11 +128,11 @@ const StartScreen = ({ onStart }) => {
                   transition={{ delay: 0.8 }}
                 >
                   <div className="flex items-center gap-2">
-                    <Shield className="w-5 h-5 text-green-400" />
+                    <FaShieldAlt className="w-5 h-5 text-green-400" />
                     <span className="text-sm text-gray-400">{t('startScreen.trustIndicators.safe')}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5 text-blue-400" />
+                    <FaChartLine className="w-5 h-5 text-blue-400" />
                     <span className="text-sm text-gray-400">{t('startScreen.trustIndicators.scientific')}</span>
                   </div>
                 </motion.div>
@@ -158,7 +159,7 @@ const StartScreen = ({ onStart }) => {
                       {/* Character Preview */}
                       <div className="text-center mb-6">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-600/20 flex items-center justify-center animate-pulse-glow">
-                          <Users className="w-16 h-16 text-amber-400" />
+                          <FaUsers className="w-16 h-16 text-amber-400" />
                         </div>
                         <h3 className="text-2xl font-bold text-white mb-2">16가지 캐릭터</h3>
                         <p className="text-gray-400">당신과 닮은 캐릭터를 찾아보세요</p>

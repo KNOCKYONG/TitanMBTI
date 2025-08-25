@@ -5,7 +5,7 @@ import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Progress } from './ui/progress';
-import { ChevronLeft, Hash, Sparkles, CheckCircle2 } from 'lucide-react';
+import { FaChevronLeft, FaHashtag, FaStar, FaCheckCircle } from 'react-icons/fa';
 
 const QuestionCard = ({ 
   question, 
@@ -76,7 +76,7 @@ const QuestionCard = ({
               <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-3">
                   <Badge className="bg-amber-500/20 border-amber-500/30 px-4 py-1.5">
-                    <Hash className="w-3 h-3 mr-1 text-amber-400" />
+                    <FaHashtag className="w-3 h-3 mr-1 text-amber-400" />
                     <span className="text-amber-300 font-medium">{questionNumber} / {totalQuestions}</span>
                   </Badge>
                   <span className="text-gray-400 text-sm">{t('questionCard.progress.step')}</span>
@@ -123,7 +123,7 @@ const QuestionCard = ({
                     transition={{ delay: 0.3, type: "spring", stiffness: 500 }}
                     className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-600/20"
                   >
-                    <Sparkles className="w-8 h-8 text-amber-400" />
+                    <FaStar className="w-8 h-8 text-amber-400" />
                   </motion.div>
                   
                   <motion.h2 
@@ -211,7 +211,7 @@ const QuestionCard = ({
                           variant="ghost"
                           className="text-gray-400 hover:text-white hover:bg-gray-800/50 transition-all duration-300"
                         >
-                          <ChevronLeft className="w-5 h-5 mr-2" />
+                          <FaChevronLeft className="w-5 h-5 mr-2" />
                           {t('questionCard.navigation.previous')}
                         </Button>
                       ) : (

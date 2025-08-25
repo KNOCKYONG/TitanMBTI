@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Globe, Check, ChevronDown } from 'lucide-react';
+import { FaGlobe, FaCheck, FaChevronDown } from 'react-icons/fa';
 import { supportedLanguages } from '../i18n/config';
 
 const LanguageSelector = () => {
@@ -39,11 +39,11 @@ const LanguageSelector = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Globe className="w-4 h-4 text-amber-400" />
+        <FaGlobe className="w-4 h-4 text-amber-400" />
         <span className="text-sm font-medium text-gray-300 group-hover:text-white">
           {currentLang.flag} {currentLang.name}
         </span>
-        <ChevronDown className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+        <FaChevronDown className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </motion.button>
 
       <AnimatePresence>
@@ -73,7 +73,7 @@ const LanguageSelector = () => {
                     </span>
                   </div>
                   {i18n.language === lang.code && (
-                    <Check className="w-4 h-4 text-amber-400" />
+                    <FaCheck className="w-4 h-4 text-amber-400" />
                   )}
                 </motion.button>
               ))}

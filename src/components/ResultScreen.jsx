@@ -5,9 +5,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { 
-  Trophy, Quote, RotateCcw, Heart, Star, Share2, Sparkles,
-  Download, Users, Target, TrendingUp, ChevronRight, Award
-} from 'lucide-react';
+  FaTrophy, FaQuoteLeft, FaUndo, FaHeart, FaStar, FaShare, 
+  FaDownload, FaUsers, FaBullseye, FaChartLine, FaChevronRight, FaAward
+} from 'react-icons/fa';
+import { HiSparkles } from 'react-icons/hi';
 import { characters } from '../data/characters';
 import ShareButtons from './ShareButtons.jsx';
 
@@ -70,7 +71,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                   times: [0, 0.5, 1]
                 }}
               >
-                <Sparkles className="w-16 h-16 text-amber-400" />
+                <HiSparkles className="w-16 h-16 text-amber-400" />
               </motion.div>
               
               <motion.h2 
@@ -97,7 +98,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                 transition={{ duration: 0.6 }}
               >
                 <Badge className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-500/30 px-6 py-2 mb-6">
-                  <Trophy className="w-4 h-4 mr-2 text-amber-400" />
+                  <FaTrophy className="w-4 h-4 mr-2 text-amber-400" />
                   <span className="text-amber-300 font-medium">{t('resultScreen.badge')}</span>
                 </Badge>
                 
@@ -147,7 +148,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                           )}
                           {imageError && (
                             <div className="absolute inset-0 flex items-center justify-center">
-                              <Users className="w-24 h-24 text-amber-500/50" />
+                              <FaUsers className="w-24 h-24 text-amber-500/50" />
                             </div>
                           )}
                           <img 
@@ -175,12 +176,12 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                       {/* Character Stats */}
                       <div className="grid grid-cols-2 gap-4 mt-6">
                         <div className="p-3 rounded-lg bg-gray-800/50 border border-gray-700/50">
-                          <Award className="w-6 h-6 mx-auto mb-1 text-amber-400" />
+                          <FaAward className="w-6 h-6 mx-auto mb-1 text-amber-400" />
                           <p className="text-xs text-gray-400">{t('resultScreen.characterStats.type')}</p>
                           <p className="text-sm font-bold text-white">{mbtiType}</p>
                         </div>
                         <div className="p-3 rounded-lg bg-gray-800/50 border border-gray-700/50">
-                          <Star className="w-6 h-6 mx-auto mb-1 text-yellow-400" />
+                          <FaStar className="w-6 h-6 mx-auto mb-1 text-yellow-400" />
                           <p className="text-xs text-gray-400">{t('resultScreen.characterStats.rarity')}</p>
                           <p className="text-sm font-bold text-white">★★★★</p>
                         </div>
@@ -200,7 +201,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                   <Card className="glass border-gray-700/50">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2 text-xl text-white">
-                        <Target className="w-5 h-5 text-amber-400" />
+                        <FaBullseye className="w-5 h-5 text-amber-400" />
                         {t('resultScreen.characterAnalysis.title')}
                       </CardTitle>
                     </CardHeader>
@@ -215,7 +216,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                   {character.quote && (
                     <Card className="bg-gradient-to-br from-amber-500/10 to-orange-500/10 border-amber-500/20">
                       <CardContent className="p-6">
-                        <Quote className="w-8 h-8 text-amber-500/50 mb-4" />
+                        <FaQuoteLeft className="w-8 h-8 text-amber-500/50 mb-4" />
                         <p className="text-lg text-white italic leading-relaxed">
                           "{character.quote}"
                         </p>
@@ -229,7 +230,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                     <Card className="glass border-gray-700/50">
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2 text-lg text-white">
-                          <Sparkles className="w-5 h-5 text-amber-400" />
+                          <HiSparkles className="w-5 h-5 text-amber-400" />
                           {t('characters.coreTraits')}
                         </CardTitle>
                       </CardHeader>
@@ -258,7 +259,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                     <Card className="glass border-gray-700/50">
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2 text-lg text-white">
-                          <Heart className="w-5 h-5 text-red-400" />
+                          <FaHeart className="w-5 h-5 text-red-400" />
                           {t('characters.bestCompatibility')}
                         </CardTitle>
                       </CardHeader>
@@ -280,7 +281,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                                   {characters[type].name}
                                 </span>
                               </div>
-                              <ChevronRight className="w-4 h-4 text-gray-500" />
+                              <FaChevronRight className="w-4 h-4 text-gray-500" />
                             </motion.div>
                           ))}
                         </div>
@@ -292,7 +293,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                   <Card className="glass border-amber-500/20 bg-gradient-to-br from-amber-500/5 to-orange-500/5">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2 text-xl text-white">
-                        <Share2 className="w-5 h-5 text-amber-400" />
+                        <FaShare className="w-5 h-5 text-amber-400" />
                         {t('resultScreen.sharing.title')}
                       </CardTitle>
                       <CardDescription className="text-gray-300">
@@ -308,7 +309,7 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                         variant="outline"
                         className="w-full hover:bg-amber-500/10 hover:border-amber-500/50 text-white"
                       >
-                        <RotateCcw className="w-5 h-5 mr-2" />
+                        <FaUndo className="w-5 h-5 mr-2" />
                         {t('common.restart')}
                       </Button>
                     </CardContent>
@@ -324,10 +325,10 @@ const ResultScreen = ({ mbtiType, onRestart }) => {
                 transition={{ delay: 0.8 }}
               >
                 {[
-                  { icon: Users, label: t('resultScreen.stats.sameType'), value: "3.2%" },
-                  { icon: TrendingUp, label: t('resultScreen.stats.accuracy'), value: "95%" },
-                  { icon: Star, label: t('resultScreen.stats.averageRating'), value: "4.8" },
-                  { icon: Heart, label: t('resultScreen.stats.satisfaction'), value: "98%" }
+                  { icon: FaUsers, label: t('resultScreen.stats.sameType'), value: "3.2%" },
+                  { icon: FaChartLine, label: t('resultScreen.stats.accuracy'), value: "95%" },
+                  { icon: FaStar, label: t('resultScreen.stats.averageRating'), value: "4.8" },
+                  { icon: FaHeart, label: t('resultScreen.stats.satisfaction'), value: "98%" }
                 ].map((stat, index) => (
                   <Card key={index} className="glass border-gray-700/50 hover:border-amber-500/30 transition-colors">
                     <CardContent className="p-6 text-center">

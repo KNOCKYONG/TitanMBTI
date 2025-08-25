@@ -1,9 +1,12 @@
 export const characters = {
   'INTJ': {
-    name: '에르빈 스미스',
+    name: '리바이 아커만',
     title: '전략가',
-    description: '전략적 사고와 희생정신을 가진 지휘관. 인류의 미래를 위해 모든 것을 계획합니다.',
-    quote: '"나는 꿈을 포기하고 죽어간다. 신병들을 지옥으로 이끌고."',
+    motto: '완벽을 추구하는 냉철한 전략가',
+    description: '인류 최강의 병사. 완벽주의적이고 냉철하지만, 동료를 소중히 여기는 따뜻한 마음을 가지고 있습니다.',
+    quote: '"후회하지 않는 선택을 해라."',
+    strengths: ['전략적 사고', '완벽한 실행력', '독립성', '통찰력'],
+    weaknesses: ['감정 표현 부족', '지나친 완벽주의', '타인에 대한 높은 기대'],
     image: '/images/characters/INTJ/profile.png',
     compatibility: ['ENFP', 'ENTP'],
     traits: ['전략적', '결단력', '리더십', '희생정신']
@@ -18,13 +21,16 @@ export const characters = {
     traits: ['호기심', '분석적', '창의적', '열정적']
   },
   'ENTJ': {
-    name: '에렌 예거',
-    title: '지도자',
-    description: '강한 의지와 목표를 가진 투사. 자유를 위해 모든 것을 걸고 싸웁니다.',
-    quote: '"나는 그들을 모두 구축하겠어... 이 세상에서 한 마리도 남김없이!"',
+    name: '엘빈 스미스',
+    title: '통솔자',
+    motto: '인류의 미래를 이끄는 비전가',
+    description: '조사병단 단장. 큰 그림을 보는 전략가이자 카리스마 있는 리더입니다.',
+    quote: '"나는 꿈을 포기하고 죽어간다. 신병들을 지옥으로 이끌고."',
     image: '/images/characters/ENTJ/profile.png',
     compatibility: ['INTP', 'INFP'],
-    traits: ['결단력', '리더십', '열정', '의지']
+    traits: ['결단력', '리더십', '희생정신', '비전'],
+    strengths: ['카리스마', '전략적 사고', '리더십', '목표 지향성'],
+    weaknesses: ['감정 배제', '위험 감수', '고집']
   },
   'ENTP': {
     name: '피크 핑거',
